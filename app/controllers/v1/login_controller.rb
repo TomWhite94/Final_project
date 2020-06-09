@@ -2,8 +2,12 @@ class V1::LoginController < ApplicationController
     def index
         render json: { :login => [
             {
-                username: 'TomWhite94'
+                email: 'tomjameswhite94@gmail.com',
+                password: '1234'
             }
         ]}.to_json
+    end
+
+    def create
     end
 end
