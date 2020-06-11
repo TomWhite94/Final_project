@@ -29,7 +29,7 @@ export default class Login extends Component {
         headers: {'Content-Type': 'application/json'},
         body: JSON.stringify({email: email, password: password})
     }
-    fetch("http://localhost:3000/v1/login", loginDetails)
+    fetch("http://localhost:3000/v1/logins", loginDetails)
       .then(response => {
         if (response.data.logged_in) {
           this.props.handleSuccessfulAuth(response.data);

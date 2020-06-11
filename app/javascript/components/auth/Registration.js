@@ -28,16 +28,18 @@ export default class Registration extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
+    let body = JSON.stringify({
+      email: this.state.email, 
+      password: this.state.password,
+  })
+  console.log(body)
     const loginDetails = {
         method: 'POST',
         headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify({
-            email: this.state.email, 
-            password: this.state.password,
-        })
+        body: body
     }
     fetch("http://localhost:3000/v1/login", loginDetails)
       .then(response => response.json())

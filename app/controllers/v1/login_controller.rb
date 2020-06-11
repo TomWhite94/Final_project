@@ -7,7 +7,22 @@ class V1::LoginController < ApplicationController
             }
         ]}.to_json
     end
-
-    def create
+    
+    def new
+        @login = Login.new
     end
+
+    def create 
+      
+        @login = Login.new(login_params)
+        @login.save
+        render json: @login
+    
+     end
+
+     private 
+
+     def login_params
+        params.require(:login).permit!
+      end
 end
