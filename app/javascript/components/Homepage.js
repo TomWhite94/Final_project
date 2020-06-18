@@ -45,17 +45,17 @@ class Homepage extends Component {
 render() {
     
     return(
-        
+        <div>
         <h1>Artists</h1>
 
-        <ul>
+        {/* <ul>
         {this.state.artist_search.map((resp, id) => (
             
             <li key={id}>{resp.displayName}</li>
             
         ))}
-            </ul>
-        
+            </ul> */}
+            </div>
         )
 }
 
