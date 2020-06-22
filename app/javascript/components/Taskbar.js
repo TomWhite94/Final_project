@@ -9,17 +9,12 @@ let ARTIST_SEARCH = "https://api.songkick.com/api/3.0/search/artists.json?apikey
 
 class Taskbar extends Component {
 
-    constructor(props) {
-        super(props);
-        this.state = {
+    state = {
             artistSearchResult: [],
             isSearching: false 
-        }
-        this.handleSearch = this.handleSearch.bind(this)
-        
-    }
+            }
 
-    handleSearch(query) { 
+    handleSearch = query => { 
         this.setState({isSearching: true})
         fetch(ARTIST_SEARCH + query)
             .then(response => response.json())
