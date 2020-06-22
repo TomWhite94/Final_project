@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { withAsync } from '../behaviors/async';\nimport Typeahead from './Typeahead';\nexport default withAsync(Typeahead);","map":null,"metadata":{},"sourceType":"module"}
