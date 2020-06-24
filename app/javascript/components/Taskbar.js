@@ -3,6 +3,7 @@ import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import NavDropdown from 'react-bootstrap/NavDropdown'
 import { AsyncTypeahead } from 'react-bootstrap-typeahead'
+import { withRouter } from 'react-router-dom'
 
 
 let ARTIST_SEARCH = "https://api.songkick.com/api/3.0/search/artists.json?apikey=XyKG4KDNOliuaDev&per_page=5&page=1&query="
@@ -11,7 +12,7 @@ class Taskbar extends Component {
 
     state = {
             artistSearchResult: [],
-            isSearching: false 
+            isSearching: false
             }
 
     handleSearch = query => { 
@@ -39,11 +40,12 @@ class Taskbar extends Component {
             
 
 render() {
-    console.log(this.state.artistSearchResult)
+    // console.log(this.state.artistSearchResult)
+    
     return(
         
         <Navbar bg="light" expand="lg">
-            <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+            <Navbar.Brand href="#home">Gig Planner</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
@@ -60,12 +62,15 @@ render() {
     
                 <AsyncTypeahead
                         id="basic-typeahead-example"
+                        multiple={false}
                         isLoading={this.state.isSearching}
                         labelKey="displayName"
                         onSearch={this.handleSearch}
                         options={this.state.artistSearchResult}
                         placeholder="Artist Search"
-                        // selected={selected}
+                        onChange={(selected) => {
+                            selected.length && this.props.history.push(`/artist/${selected[0].id}`)
+                        }}
                     />
                 
             </Navbar.Collapse>
@@ -83,4 +88,4 @@ render() {
 }
 
 
-export default Taskbar
+export default withRouter(Taskbar)

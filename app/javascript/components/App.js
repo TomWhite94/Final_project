@@ -12,16 +12,19 @@ class App extends React.Component {
   
 render () {
     return (
-      <>
-      <Taskbar />
+      
+      
     <BrowserRouter>
+    <>
+    <Taskbar />
     <Switch>
       
       <Route exact path="/" render={() => <Registration />} />
       <Route exact path="/homepage" render={() => <Homepage />} />
+      <Route path="/artist/:id" render={() => <Registration />}/>
     </Switch>
-    </BrowserRouter>
     </>
+    </BrowserRouter>
     );
   }
 }

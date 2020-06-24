@@ -7,7 +7,7 @@ Rails.application.routes.draw do
     
   end
   root 'static#index'
-  get 'homepage', to: 'homepage#index'
+  get '*path', to: 'homepage#index'
   
   
 end
