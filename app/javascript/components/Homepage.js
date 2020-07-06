@@ -46,7 +46,7 @@ render() {
     
     return(
         <div>
-        <h1>Artists</h1>
+        <h1>Homepage</h1>
 
         {/* <ul>
         {this.state.artist_search.map((resp, id) => (

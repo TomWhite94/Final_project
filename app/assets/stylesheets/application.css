@@ -13,3 +13,29 @@
  *= require_tree .
  *= require_self
  */
+
+ .align-center {
+  
+    height: 100%;
+    margin: 0;
+    
+}
+
+.band-image {
+
+    background-image: url("default-artist.png");
+
+}
+
+
+.text-color-light {
+    color: white
+}
+
+.venue-image {
+    width: 286px;
+    height: 180px;
+    background-image: url("default-artist.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }

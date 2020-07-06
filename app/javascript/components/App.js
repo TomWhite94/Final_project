@@ -4,6 +4,7 @@ import { BrowserRouter, Switch, Route} from 'react-router-dom'
 import Homepage from './Homepage'
 import Registration from './auth/Registration'
 import Taskbar from './Taskbar'
+import Artist from './Artist'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 
@@ -21,7 +22,7 @@ render () {
       
       <Route exact path="/" render={() => <Registration />} />
       <Route exact path="/homepage" render={() => <Homepage />} />
-      <Route path="/artist/:id" render={() => <Registration />}/>
+      <Route path="/artist/:id" render={(props) => <Artist key={props.match.params.id} {...props} />}/>
     </Switch>
     </>
     </BrowserRouter>
