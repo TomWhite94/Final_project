@@ -29728,3 +29728,2652 @@ Entrypoint server_rendering = js/server_rendering-55977f91dd3238097314.js js/ser
 Completed 200 OK in 12629ms (Views: 12627.6ms | ActiveRecord: 0.0ms | Allocations: 5835)
 
 
+Started GET "/" for ::1 at 2020-07-07 11:51:11 +0100
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 306)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: c8700526af4a7b8bda47
+Version: webpack 4.43.0
+Time: 9804ms
+Built at: 07/07/2020 11:51:25 AM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-7a62aeb59f1d15a5ddaf.js   3.2 MiB       application  [emitted] [immutable]  application
+     js/application-7a62aeb59f1d15a5ddaf.js.map  3.16 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-419432d227c421812b18.js  3.08 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-419432d227c421812b18.js.map  3.03 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-7a62aeb59f1d15a5ddaf.js js/application-7a62aeb59f1d15a5ddaf.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-419432d227c421812b18.js js/server_rendering-419432d227c421812b18.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 442 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 306 hidden modules
+
+Completed 200 OK in 13764ms (Views: 13752.5ms | ActiveRecord: 0.0ms | Allocations: 13964)
+
+
+Started GET "/" for ::1 at 2020-07-07 11:53:08 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 67)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: eea91f20ed7ed6222b6f
+Version: webpack 4.43.0
+Time: 8785ms
+Built at: 07/07/2020 11:53:21 AM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-6293cbc76275e37c6831.js   3.2 MiB       application  [emitted] [immutable]  application
+     js/application-6293cbc76275e37c6831.js.map  3.16 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-616261e7b74bacdc81b6.js  3.08 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-616261e7b74bacdc81b6.js.map  3.03 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-6293cbc76275e37c6831.js js/application-6293cbc76275e37c6831.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-616261e7b74bacdc81b6.js js/server_rendering-616261e7b74bacdc81b6.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 442 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 306 hidden modules
+
+Completed 200 OK in 13132ms (Views: 13130.9ms | ActiveRecord: 0.0ms | Allocations: 5841)
+
+
+Started GET "/v1/login" for ::1 at 2020-07-07 11:53:22 +0100
+Processing by V1::LoginController#index as JSON
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 385)
+
+
+Started GET "/" for ::1 at 2020-07-07 12:16:27 +0100
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 66)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 5cb99475cbdca36fcebe
+Version: webpack 4.43.0
+Time: 9715ms
+Built at: 07/07/2020 12:16:41 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-1554b4de139cf176b523.js   3.2 MiB       application  [emitted] [immutable]  application
+     js/application-1554b4de139cf176b523.js.map  3.16 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-62cb8d24ee6f99b788a9.js  3.08 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-62cb8d24ee6f99b788a9.js.map  3.03 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-1554b4de139cf176b523.js js/application-1554b4de139cf176b523.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-62cb8d24ee6f99b788a9.js js/server_rendering-62cb8d24ee6f99b788a9.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 442 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 306 hidden modules
+
+Completed 200 OK in 14038ms (Views: 14035.7ms | ActiveRecord: 0.0ms | Allocations: 5847)
+
+
+Started GET "/" for ::1 at 2020-07-07 12:17:37 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 66)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 4a5234ba454999f69d29
+Version: webpack 4.43.0
+Time: 8534ms
+Built at: 07/07/2020 12:17:49 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-e1ac977ba1f076d73dbb.js  3.25 MiB       application  [emitted] [immutable]  application
+     js/application-e1ac977ba1f076d73dbb.js.map  3.19 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-da8129090bff91794e9a.js  3.14 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-da8129090bff91794e9a.js.map  3.05 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-e1ac977ba1f076d73dbb.js js/application-e1ac977ba1f076d73dbb.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-da8129090bff91794e9a.js js/server_rendering-da8129090bff91794e9a.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 442 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 320 hidden modules
+
+Completed 200 OK in 12345ms (Views: 12343.5ms | ActiveRecord: 0.0ms | Allocations: 5833)
+
+
+Started GET "/" for ::1 at 2020-07-07 12:18:03 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 67)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 1f48c44265b0d34d3c00
+Version: webpack 4.43.0
+Time: 8183ms
+Built at: 07/07/2020 12:18:14 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-c38427952b72d9e2f0e3.js  3.25 MiB       application  [emitted] [immutable]  application
+     js/application-c38427952b72d9e2f0e3.js.map  3.19 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-290dd4d1c104033bcf28.js  3.14 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-290dd4d1c104033bcf28.js.map  3.05 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-c38427952b72d9e2f0e3.js js/application-c38427952b72d9e2f0e3.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-290dd4d1c104033bcf28.js js/server_rendering-290dd4d1c104033bcf28.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 442 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 320 hidden modules
+
+Completed 200 OK in 11103ms (Views: 11099.7ms | ActiveRecord: 0.0ms | Allocations: 5848)
+
+
+Started GET "/v1/login" for ::1 at 2020-07-07 12:18:15 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by V1::LoginController#index as JSON
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 432)
+
+
+Started GET "/" for ::1 at 2020-07-07 12:22:09 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 66)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 3765febc03ea7fd6b2f1
+Version: webpack 4.43.0
+Time: 8819ms
+Built at: 07/07/2020 12:22:22 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-397b664a6c93e5e4fc3c.js  3.25 MiB       application  [emitted] [immutable]  application
+     js/application-397b664a6c93e5e4fc3c.js.map  3.19 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-18df2b23c2620531bb55.js  3.14 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-18df2b23c2620531bb55.js.map  3.06 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-397b664a6c93e5e4fc3c.js js/application-397b664a6c93e5e4fc3c.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-18df2b23c2620531bb55.js js/server_rendering-18df2b23c2620531bb55.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 442 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 320 hidden modules
+
+Completed 200 OK in 12984ms (Views: 12981.6ms | ActiveRecord: 0.0ms | Allocations: 5851)
+
+
+Started GET "/v1/login" for ::1 at 2020-07-07 12:22:23 +0100
+Processing by V1::LoginController#index as JSON
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 380)
+
+
+Started GET "/?email=test%40test.com&password=[FILTERED]" for ::1 at 2020-07-07 12:22:39 +0100
+Processing by StaticController#index as HTML
+  Parameters: {"email"=>"test@test.com", "password"=>"[FILTERED]"}
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 67)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 32ms (Views: 31.3ms | ActiveRecord: 0.0ms | Allocations: 4095)
+
+
+Started GET "/v1/login" for ::1 at 2020-07-07 12:22:40 +0100
+Processing by V1::LoginController#index as JSON
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 378)
+
+
+Started GET "/?email=test%40test.com&password=[FILTERED]" for ::1 at 2020-07-07 12:23:40 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticController#index as HTML
+  Parameters: {"email"=>"test@test.com", "password"=>"[FILTERED]"}
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 705cbee1889c83e846ea
+Version: webpack 4.43.0
+Time: 9834ms
+Built at: 07/07/2020 12:23:55 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-eb480c8aa0ef2f8a339d.js  3.25 MiB       application  [emitted] [immutable]  application
+     js/application-eb480c8aa0ef2f8a339d.js.map  3.19 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-2db8347cb1470cc82fac.js  3.14 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-2db8347cb1470cc82fac.js.map  3.06 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-eb480c8aa0ef2f8a339d.js js/application-eb480c8aa0ef2f8a339d.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-2db8347cb1470cc82fac.js js/server_rendering-2db8347cb1470cc82fac.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 442 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 320 hidden modules
+
+Completed 200 OK in 15468ms (Views: 15467.6ms | ActiveRecord: 0.0ms | Allocations: 5848)
+
+
+Started GET "/v1/login" for ::1 at 2020-07-07 12:23:56 +0100
+Processing by V1::LoginController#index as JSON
+Completed 200 OK in 4ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 382)
+
+
+Started GET "/?email=test%40test.com&password=[FILTERED]" for ::1 at 2020-07-07 12:24:02 +0100
+Processing by StaticController#index as HTML
+  Parameters: {"email"=>"test@test.com", "password"=>"[FILTERED]"}
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 67)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.3ms | ActiveRecord: 0.0ms | Allocations: 4079)
+
+
+Started GET "/v1/login" for ::1 at 2020-07-07 12:24:03 +0100
+Processing by V1::LoginController#index as JSON
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 377)
+
+
+Started GET "/?email=test%40test.com&password=[FILTERED]" for ::1 at 2020-07-07 12:32:26 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticController#index as HTML
+  Parameters: {"email"=>"test@test.com", "password"=>"[FILTERED]"}
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 66)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 68ms (Views: 52.8ms | ActiveRecord: 0.0ms | Allocations: 4074)
+
+
+Started GET "/v1/login" for ::1 at 2020-07-07 12:32:27 +0100
+Processing by V1::LoginController#index as JSON
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 380)
+
+
+Started GET "/" for ::1 at 2020-07-07 12:33:34 +0100
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 66)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 26.6ms | ActiveRecord: 0.0ms | Allocations: 4074)
+
+
+Started GET "/v1/login" for ::1 at 2020-07-07 12:33:34 +0100
+Processing by V1::LoginController#index as JSON
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 376)
+
+
+Started GET "/v1/login" for ::1 at 2020-07-07 12:33:54 +0100
+Processing by V1::LoginController#index as JSON
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 378)
+
+
+Started GET "/?email=test%40test.com&password=[FILTERED]" for ::1 at 2020-07-07 12:37:41 +0100
+Processing by StaticController#index as HTML
+  Parameters: {"email"=>"test@test.com", "password"=>"[FILTERED]"}
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 49ms (Views: 47.9ms | ActiveRecord: 0.0ms | Allocations: 4074)
+
+
+Started GET "/v1/login" for ::1 at 2020-07-07 12:37:42 +0100
+Processing by V1::LoginController#index as JSON
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 382)
+
+
+Started GET "/?email=test%40test.com&password=[FILTERED]" for ::1 at 2020-07-07 12:38:25 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticController#index as HTML
+  Parameters: {"email"=>"test@test.com", "password"=>"[FILTERED]"}
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 5c0ae8cb412cc84b28d9
+Version: webpack 4.43.0
+Time: 8652ms
+Built at: 07/07/2020 12:38:38 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-37ea79927447e0ef8acf.js  3.25 MiB       application  [emitted] [immutable]  application
+     js/application-37ea79927447e0ef8acf.js.map  3.19 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-fe04f9a0c510d763d495.js  3.14 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-fe04f9a0c510d763d495.js.map  3.06 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-37ea79927447e0ef8acf.js js/application-37ea79927447e0ef8acf.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-fe04f9a0c510d763d495.js js/server_rendering-fe04f9a0c510d763d495.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 442 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 320 hidden modules
+
+Completed 200 OK in 12901ms (Views: 12900.4ms | ActiveRecord: 0.0ms | Allocations: 5837)
+
+
+Started GET "/v1/login" for ::1 at 2020-07-07 12:38:39 +0100
+Processing by V1::LoginController#index as JSON
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 382)
+
+
+Started GET "/" for ::1 at 2020-07-07 12:38:47 +0100
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 66)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 22.6ms | ActiveRecord: 0.0ms | Allocations: 4071)
+
+
+Started GET "/v1/login" for ::1 at 2020-07-07 12:38:47 +0100
+Processing by V1::LoginController#index as JSON
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 375)
+
+
+Started GET "/" for ::1 at 2020-07-07 12:39:33 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Compiling...
+Started GET "/?email=test%40test.com&password=[FILTERED]" for ::1 at 2020-07-07 12:39:38 +0100
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 7c98bb3acc9bfda4116d
+Version: webpack 4.43.0
+Time: 8698ms
+Built at: 07/07/2020 12:39:46 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-a5206efa6f8865117c9b.js  3.25 MiB       application  [emitted] [immutable]  application
+     js/application-a5206efa6f8865117c9b.js.map  3.19 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-983c6d3252e7f22ed889.js  3.14 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-983c6d3252e7f22ed889.js.map  3.06 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-a5206efa6f8865117c9b.js js/application-a5206efa6f8865117c9b.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-983c6d3252e7f22ed889.js js/server_rendering-983c6d3252e7f22ed889.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 442 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 320 hidden modules
+
+Completed 200 OK in 12997ms (Views: 12995.9ms | ActiveRecord: 0.0ms | Allocations: 7450)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticController#index as HTML
+  Parameters: {"email"=>"test@test.com", "password"=>"[FILTERED]"}
+Started GET "/" for ::1 at 2020-07-07 12:39:46 +0100
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  Rendering static/index.html.erb within layouts/application
+Processing by StaticController#index as HTML
+  Rendered static/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 70)
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 66)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 23.8ms | ActiveRecord: 0.0ms | Allocations: 8798)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 20.8ms | ActiveRecord: 0.0ms | Allocations: 8057)
+
+
+Started GET "/" for ::1 at 2020-07-07 12:40:59 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 38aaa34e1a1dba98dc59
+Version: webpack 4.43.0
+Time: 8581ms
+Built at: 07/07/2020 12:41:12 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-22828fecd45463c68e32.js  3.25 MiB       application  [emitted] [immutable]  application
+     js/application-22828fecd45463c68e32.js.map  3.19 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-1dd2913569858327cbd7.js  3.14 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-1dd2913569858327cbd7.js.map  3.06 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-22828fecd45463c68e32.js js/application-22828fecd45463c68e32.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-1dd2913569858327cbd7.js js/server_rendering-1dd2913569858327cbd7.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 442 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 320 hidden modules
+
+Completed 200 OK in 12660ms (Views: 12659.2ms | ActiveRecord: 0.0ms | Allocations: 5840)
+
+
+Started POST "/v1/login" for ::1 at 2020-07-07 12:41:12 +0100
+Processing by V1::LoginController#create as JSON
+  Parameters: {"email"=>"", "password"=>"[FILTERED]", "login"=>{"email"=>"", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/v1/login_controller.rb:18:in `create'
+  [1m[36mLogin Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "logins" WHERE "logins"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/v1/login_controller.rb:18:in `create'
+  [1m[36mLogin Create (24.3ms)[0m  [1m[32mINSERT INTO "logins" ("email", "password") VALUES (?, ?)[0m  [["email", ""], ["password", ""]]
+  ↳ app/controllers/v1/login_controller.rb:18:in `create'
+  [1m[35m (2.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/v1/login_controller.rb:18:in `create'
+Completed 200 OK in 72ms (Views: 0.5ms | ActiveRecord: 30.7ms | Allocations: 7233)
+
+
+Started GET "/" for ::1 at 2020-07-07 12:41:59 +0100
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 48ms (Views: 46.7ms | ActiveRecord: 0.0ms | Allocations: 4072)
+
+
+Started GET "/" for ::1 at 2020-07-07 12:43:22 +0100
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 66)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 24.7ms | ActiveRecord: 0.0ms | Allocations: 4069)
+
+
+Started GET "/v1/login" for ::1 at 2020-07-07 12:43:22 +0100
+Processing by V1::LoginController#index as JSON
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 381)
+
+
+Started GET "/?email=test%40test.com&password=[FILTERED]" for ::1 at 2020-07-07 12:43:41 +0100
+Processing by StaticController#index as HTML
+  Parameters: {"email"=>"test@test.com", "password"=>"[FILTERED]"}
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 66)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 41ms (Views: 40.4ms | ActiveRecord: 0.0ms | Allocations: 4076)
+
+
+Started GET "/v1/login" for ::1 at 2020-07-07 12:43:41 +0100
+Processing by V1::LoginController#index as JSON
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 387)
+
+
+Started GET "/?email=test%40test.com&password=[FILTERED]" for ::1 at 2020-07-07 12:44:35 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticController#index as HTML
+  Parameters: {"email"=>"test@test.com", "password"=>"[FILTERED]"}
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Compiling...
+Started GET "/" for ::1 at 2020-07-07 12:44:40 +0100
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: d201d4f0f72c4f9c8bc7
+Version: webpack 4.43.0
+Time: 8564ms
+Built at: 07/07/2020 12:44:47 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-8a7fd69e20fcd31db094.js  3.25 MiB       application  [emitted] [immutable]  application
+     js/application-8a7fd69e20fcd31db094.js.map  3.19 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-cc7beb3730f469300568.js  3.14 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-cc7beb3730f469300568.js.map  3.06 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-8a7fd69e20fcd31db094.js js/application-8a7fd69e20fcd31db094.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-cc7beb3730f469300568.js js/server_rendering-cc7beb3730f469300568.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 442 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 320 hidden modules
+
+Completed 200 OK in 12638ms (Views: 12636.6ms | ActiveRecord: 0.0ms | Allocations: 8835)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Started GET "/" for ::1 at 2020-07-07 12:44:47 +0100
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  Rendered static/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 256)
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 20.7ms | ActiveRecord: 0.0ms | Allocations: 6679)
+
+
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 39ms (Views: 37.7ms | ActiveRecord: 0.0ms | Allocations: 6774)
+
+
+Started GET "/v1/login" for ::1 at 2020-07-07 12:44:48 +0100
+Processing by V1::LoginController#index as JSON
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 378)
+
+
+Started GET "/?email=test%40test.com&password=[FILTERED]" for ::1 at 2020-07-07 12:45:01 +0100
+Processing by StaticController#index as HTML
+  Parameters: {"email"=>"test@test.com", "password"=>"[FILTERED]"}
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 16.4ms | ActiveRecord: 0.0ms | Allocations: 4070)
+
+
+Started GET "/v1/login" for ::1 at 2020-07-07 12:45:02 +0100
+Processing by V1::LoginController#index as JSON
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 379)
+
+
+Started GET "/" for ::1 at 2020-07-07 12:46:31 +0100
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 66)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 5f374b55054506365b21
+Version: webpack 4.43.0
+Time: 8410ms
+Built at: 07/07/2020 12:46:43 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-f7af9044be654977eadf.js  3.25 MiB       application  [emitted] [immutable]  application
+     js/application-f7af9044be654977eadf.js.map  3.19 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-35715b2426689cd40cc3.js  3.14 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-35715b2426689cd40cc3.js.map  3.06 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-f7af9044be654977eadf.js js/application-f7af9044be654977eadf.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-35715b2426689cd40cc3.js js/server_rendering-35715b2426689cd40cc3.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 442 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 320 hidden modules
+
+Completed 200 OK in 12482ms (Views: 12481.3ms | ActiveRecord: 0.0ms | Allocations: 5837)
+
+
+Started GET "/v1/login" for ::1 at 2020-07-07 12:46:44 +0100
+Processing by V1::LoginController#index as JSON
+Completed 200 OK in 5ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 383)
+
+
+Started POST "/v1/login" for ::1 at 2020-07-07 12:46:56 +0100
+Processing by V1::LoginController#create as JSON
+  Parameters: {"email"=>"test@test.com", "password"=>"[FILTERED]", "login"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/v1/login_controller.rb:18:in `create'
+  [1m[36mLogin Exists? (2.9ms)[0m  [1m[34mSELECT 1 AS one FROM "logins" WHERE "logins"."email" = ? LIMIT ?[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  ↳ app/controllers/v1/login_controller.rb:18:in `create'
+  [1m[36mLogin Create (0.6ms)[0m  [1m[32mINSERT INTO "logins" ("email", "password") VALUES (?, ?)[0m  [["email", "test@test.com"], ["password", "666"]]
+  ↳ app/controllers/v1/login_controller.rb:18:in `create'
+  [1m[35m (3.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/v1/login_controller.rb:18:in `create'
+Completed 200 OK in 21ms (Views: 0.5ms | ActiveRecord: 7.8ms | Allocations: 5157)
+
+
+Started GET "/" for ::1 at 2020-07-07 12:51:24 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 8dd29581f94aee86f45c
+Version: webpack 4.43.0
+Time: 8277ms
+Built at: 07/07/2020 12:51:36 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-fb7f17e1205883b8e896.js  3.25 MiB       application  [emitted] [immutable]  application
+     js/application-fb7f17e1205883b8e896.js.map  3.19 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-beb145de658e273a6aa3.js  3.14 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-beb145de658e273a6aa3.js.map  3.05 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-fb7f17e1205883b8e896.js js/application-fb7f17e1205883b8e896.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-beb145de658e273a6aa3.js js/server_rendering-beb145de658e273a6aa3.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 442 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 320 hidden modules
+
+Completed 200 OK in 12432ms (Views: 12431.1ms | ActiveRecord: 0.0ms | Allocations: 7290)
+
+
+Started GET "/v1/login" for ::1 at 2020-07-07 12:51:37 +0100
+Processing by V1::LoginController#index as JSON
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 382)
+
+
+Started POST "/v1/login" for ::1 at 2020-07-07 12:51:59 +0100
+Processing by V1::LoginController#create as JSON
+  Parameters: {"email"=>"test2@test2.chum", "password"=>"[FILTERED]", "login"=>{"email"=>"test2@test2.chum", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/v1/login_controller.rb:18:in `create'
+  [1m[36mLogin Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "logins" WHERE "logins"."email" = ? LIMIT ?[0m  [["email", "test2@test2.chum"], ["LIMIT", 1]]
+  ↳ app/controllers/v1/login_controller.rb:18:in `create'
+  [1m[36mLogin Create (1.6ms)[0m  [1m[32mINSERT INTO "logins" ("email", "password") VALUES (?, ?)[0m  [["email", "test2@test2.chum"], ["password", "67890"]]
+  ↳ app/controllers/v1/login_controller.rb:18:in `create'
+  [1m[35m (1.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/v1/login_controller.rb:18:in `create'
+Completed 200 OK in 15ms (Views: 0.4ms | ActiveRecord: 4.6ms | Allocations: 5147)
+
+
+Started GET "/" for ::1 at 2020-07-07 12:52:23 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: a05d878941c4c92e9e71
+Version: webpack 4.43.0
+Time: 8647ms
+Built at: 07/07/2020 12:52:36 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-6ad2faa327e569a52472.js  3.25 MiB       application  [emitted] [immutable]  application
+     js/application-6ad2faa327e569a52472.js.map  3.19 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-25838394d9376126a000.js  3.14 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-25838394d9376126a000.js.map  3.05 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-6ad2faa327e569a52472.js js/application-6ad2faa327e569a52472.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-25838394d9376126a000.js js/server_rendering-25838394d9376126a000.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 442 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 320 hidden modules
+
+Completed 200 OK in 12658ms (Views: 12641.7ms | ActiveRecord: 0.0ms | Allocations: 5844)
+
+
+Started GET "/v1/login" for ::1 at 2020-07-07 12:52:37 +0100
+Processing by V1::LoginController#index as JSON
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 385)
+
+
+Started POST "/v1/login" for ::1 at 2020-07-07 12:52:54 +0100
+Processing by V1::LoginController#create as JSON
+  Parameters: {"email"=>"test3@test3.cum", "password"=>"[FILTERED]", "login"=>{"email"=>"test3@test3.cum", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/v1/login_controller.rb:18:in `create'
+  [1m[36mLogin Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "logins" WHERE "logins"."email" = ? LIMIT ?[0m  [["email", "test3@test3.cum"], ["LIMIT", 1]]
+  ↳ app/controllers/v1/login_controller.rb:18:in `create'
+  [1m[36mLogin Create (0.6ms)[0m  [1m[32mINSERT INTO "logins" ("email", "password") VALUES (?, ?)[0m  [["email", "test3@test3.cum"], ["password", "111111111"]]
+  ↳ app/controllers/v1/login_controller.rb:18:in `create'
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/v1/login_controller.rb:18:in `create'
+Completed 200 OK in 20ms (Views: 0.3ms | ActiveRecord: 3.7ms | Allocations: 5150)
+
+
+Started GET "/" for ::1 at 2020-07-07 13:04:51 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 067d1f5c8f9849b73f92
+Version: webpack 4.43.0
+Time: 8649ms
+Built at: 07/07/2020 1:05:04 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-859dd1096aeafd74cebc.js  3.25 MiB       application  [emitted] [immutable]  application
+     js/application-859dd1096aeafd74cebc.js.map  3.19 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-a3b80ede92da2d4564d8.js  3.14 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-a3b80ede92da2d4564d8.js.map  3.06 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-859dd1096aeafd74cebc.js js/application-859dd1096aeafd74cebc.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-a3b80ede92da2d4564d8.js js/server_rendering-a3b80ede92da2d4564d8.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 442 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 320 hidden modules
+
+Completed 200 OK in 13025ms (Views: 13024.2ms | ActiveRecord: 0.0ms | Allocations: 5895)
+
+
+Started GET "/v1/login" for ::1 at 2020-07-07 13:05:05 +0100
+Processing by V1::LoginController#index as JSON
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 391)
+
+
+Started GET "/" for ::1 at 2020-07-07 13:08:32 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 66)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 7691f231ed3bbb87625b
+Version: webpack 4.43.0
+Time: 8968ms
+Built at: 07/07/2020 1:08:46 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-1fd985e3bd1f34fb3f99.js  3.25 MiB       application  [emitted] [immutable]  application
+     js/application-1fd985e3bd1f34fb3f99.js.map  3.19 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-bbf7a4a54bc2e71ff4cc.js  3.14 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-bbf7a4a54bc2e71ff4cc.js.map  3.06 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-1fd985e3bd1f34fb3f99.js js/application-1fd985e3bd1f34fb3f99.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-bbf7a4a54bc2e71ff4cc.js js/server_rendering-bbf7a4a54bc2e71ff4cc.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 442 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 320 hidden modules
+
+Completed 200 OK in 13217ms (Views: 13213.8ms | ActiveRecord: 0.0ms | Allocations: 5833)
+
+
+Started GET "/v1/login" for ::1 at 2020-07-07 13:08:46 +0100
+Processing by V1::LoginController#index as JSON
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 385)
+
+
+Started GET "/" for ::1 at 2020-07-07 13:10:27 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 3df0ba044c735b7002d2
+Version: webpack 4.43.0
+Time: 8769ms
+Built at: 07/07/2020 1:10:40 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-2f289c7bd85b54efb462.js  3.26 MiB       application  [emitted] [immutable]  application
+     js/application-2f289c7bd85b54efb462.js.map  3.19 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-15bd6583bf0310cfdbcc.js  3.14 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-15bd6583bf0310cfdbcc.js.map  3.06 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-2f289c7bd85b54efb462.js js/application-2f289c7bd85b54efb462.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-15bd6583bf0310cfdbcc.js js/server_rendering-15bd6583bf0310cfdbcc.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 442 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 320 hidden modules
+
+Completed 200 OK in 13008ms (Views: 13006.6ms | ActiveRecord: 0.0ms | Allocations: 5841)
+
+
+Started GET "/v1/login" for ::1 at 2020-07-07 13:10:41 +0100
+Processing by V1::LoginController#index as JSON
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 381)
+
+
+Started GET "/" for ::1 at 2020-07-07 13:11:01 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: a1ac0996125f1525468b
+Version: webpack 4.43.0
+Time: 8878ms
+Built at: 07/07/2020 1:11:14 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-836825169a0de0c8aedb.js  3.26 MiB       application  [emitted] [immutable]  application
+     js/application-836825169a0de0c8aedb.js.map  3.19 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-96c547d9bbe6208affb7.js  3.14 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-96c547d9bbe6208affb7.js.map  3.06 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-836825169a0de0c8aedb.js js/application-836825169a0de0c8aedb.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-96c547d9bbe6208affb7.js js/server_rendering-96c547d9bbe6208affb7.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 442 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 320 hidden modules
+
+Completed 200 OK in 12816ms (Views: 12815.1ms | ActiveRecord: 0.0ms | Allocations: 5838)
+
+
+Started GET "/v1/login" for ::1 at 2020-07-07 13:11:15 +0100
+Processing by V1::LoginController#index as JSON
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 385)
+
+
+Started GET "/" for ::1 at 2020-07-07 13:11:37 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 66)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 47f3979758b9fb8c0154
+Version: webpack 4.43.0
+Time: 8668ms
+Built at: 07/07/2020 1:11:50 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-30a769dd5e7a4c7f1a57.js  3.26 MiB       application  [emitted] [immutable]  application
+     js/application-30a769dd5e7a4c7f1a57.js.map  3.19 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-c590649379d3a4827833.js  3.14 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-c590649379d3a4827833.js.map  3.06 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-30a769dd5e7a4c7f1a57.js js/application-30a769dd5e7a4c7f1a57.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-c590649379d3a4827833.js js/server_rendering-c590649379d3a4827833.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 442 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 320 hidden modules
+
+Completed 200 OK in 12519ms (Views: 12518.0ms | ActiveRecord: 0.0ms | Allocations: 5836)
+
+
+Started GET "/v1/login" for ::1 at 2020-07-07 13:11:50 +0100
+Processing by V1::LoginController#index as JSON
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 499)
+
+
+Started GET "/" for ::1 at 2020-07-07 13:12:34 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 890f51925193faa5ec01
+Version: webpack 4.43.0
+Time: 6973ms
+Built at: 07/07/2020 1:12:44 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-3fe363a2850a28178166.js  3.26 MiB       application  [emitted] [immutable]  application
+     js/application-3fe363a2850a28178166.js.map  3.19 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-8240d310ce3dd3f4deae.js  3.14 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-8240d310ce3dd3f4deae.js.map  3.06 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-3fe363a2850a28178166.js js/application-3fe363a2850a28178166.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-8240d310ce3dd3f4deae.js js/server_rendering-8240d310ce3dd3f4deae.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 442 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 320 hidden modules
+
+Completed 200 OK in 10781ms (Views: 10778.3ms | ActiveRecord: 0.0ms | Allocations: 5839)
+
+
+Started GET "/v1/login" for ::1 at 2020-07-07 13:12:45 +0100
+Processing by V1::LoginController#index as JSON
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 383)
+
+
+Started GET "/" for ::1 at 2020-07-07 13:15:59 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 5d9d5884820cbbedfc4a
+Version: webpack 4.43.0
+Time: 8615ms
+Built at: 07/07/2020 1:16:12 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-a1fce2531e0b6d1dac3f.js  3.26 MiB       application  [emitted] [immutable]  application
+     js/application-a1fce2531e0b6d1dac3f.js.map  3.19 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-3afc28387bca43394725.js  3.14 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-3afc28387bca43394725.js.map  3.06 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-a1fce2531e0b6d1dac3f.js js/application-a1fce2531e0b6d1dac3f.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-3afc28387bca43394725.js js/server_rendering-3afc28387bca43394725.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 442 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 320 hidden modules
+
+Completed 200 OK in 12594ms (Views: 12593.0ms | ActiveRecord: 0.0ms | Allocations: 5841)
+
+
+Started GET "/v1/login" for ::1 at 2020-07-07 13:16:13 +0100
+Processing by V1::LoginController#index as JSON
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 387)
+
+
+Started GET "/" for ::1 at 2020-07-07 13:16:22 +0100
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 66)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 38ce9ff1bcab833e91b2
+Version: webpack 4.43.0
+Time: 8770ms
+Built at: 07/07/2020 1:16:35 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-f34dde914c5735c26dcb.js  3.26 MiB       application  [emitted] [immutable]  application
+     js/application-f34dde914c5735c26dcb.js.map  3.19 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-9062f4c7215609d67185.js  3.14 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-9062f4c7215609d67185.js.map  3.06 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-f34dde914c5735c26dcb.js js/application-f34dde914c5735c26dcb.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-9062f4c7215609d67185.js js/server_rendering-9062f4c7215609d67185.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 442 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 320 hidden modules
+
+Completed 200 OK in 13171ms (Views: 13166.2ms | ActiveRecord: 0.0ms | Allocations: 6919)
+
+
+Started GET "/v1/login" for ::1 at 2020-07-07 13:16:36 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by V1::LoginController#index as JSON
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 434)
+
+
+Started GET "/" for ::1 at 2020-07-07 13:16:43 +0100
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 89e66429f135a3ece3b7
+Version: webpack 4.43.0
+Time: 7382ms
+Built at: 07/07/2020 1:16:54 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-f4e69329dde7221f2459.js  3.26 MiB       application  [emitted] [immutable]  application
+     js/application-f4e69329dde7221f2459.js.map  3.19 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-af0276db7245d9cbaad6.js  3.14 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-af0276db7245d9cbaad6.js.map  3.06 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-f4e69329dde7221f2459.js js/application-f4e69329dde7221f2459.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-af0276db7245d9cbaad6.js js/server_rendering-af0276db7245d9cbaad6.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 442 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 320 hidden modules
+
+Completed 200 OK in 11081ms (Views: 11079.7ms | ActiveRecord: 0.0ms | Allocations: 5931)
+
+
+Started GET "/v1/login" for ::1 at 2020-07-07 13:16:55 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by V1::LoginController#index as JSON
+Completed 200 OK in 44ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 436)
+
+
+Started GET "/" for ::1 at 2020-07-07 13:17:22 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 66)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 64aa42152586f8810c5c
+Version: webpack 4.43.0
+Time: 6982ms
+Built at: 07/07/2020 1:17:33 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-5057f011e32c97e0c754.js  3.26 MiB       application  [emitted] [immutable]  application
+     js/application-5057f011e32c97e0c754.js.map  3.19 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-410e784b12406c070cbb.js  3.14 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-410e784b12406c070cbb.js.map  3.06 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-5057f011e32c97e0c754.js js/application-5057f011e32c97e0c754.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-410e784b12406c070cbb.js js/server_rendering-410e784b12406c070cbb.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 442 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 320 hidden modules
+
+Completed 200 OK in 11074ms (Views: 11073.3ms | ActiveRecord: 0.0ms | Allocations: 5829)
+
+
+Started GET "/v1/login" for ::1 at 2020-07-07 13:17:34 +0100
+Processing by V1::LoginController#index as JSON
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 410)
+
+
+Started GET "/" for ::1 at 2020-07-07 13:24:17 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 66)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 5e0ebe25e4acbe3dfc91
+Version: webpack 4.43.0
+Time: 8820ms
+Built at: 07/07/2020 1:24:30 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-81d5c99a64a67ec69ca8.js  3.26 MiB       application  [emitted] [immutable]  application
+     js/application-81d5c99a64a67ec69ca8.js.map  3.19 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-82bdb865281e3231922f.js  3.14 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-82bdb865281e3231922f.js.map  3.06 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-81d5c99a64a67ec69ca8.js js/application-81d5c99a64a67ec69ca8.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-82bdb865281e3231922f.js js/server_rendering-82bdb865281e3231922f.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 442 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 320 hidden modules
+
+Completed 200 OK in 13167ms (Views: 13164.6ms | ActiveRecord: 0.0ms | Allocations: 5837)
+
+
+Started GET "/v1/login" for ::1 at 2020-07-07 13:24:31 +0100
+Processing by V1::LoginController#index as JSON
+Completed 200 OK in 5ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 508)
+
+
+Started GET "/" for ::1 at 2020-07-07 13:25:36 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 0f73ceb35babe2eb6653
+Version: webpack 4.43.0
+Time: 8642ms
+Built at: 07/07/2020 1:25:48 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-e113038b199e75a0d2b3.js  3.26 MiB       application  [emitted] [immutable]  application
+     js/application-e113038b199e75a0d2b3.js.map  3.19 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-b838b2103ecec212f158.js  3.14 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-b838b2103ecec212f158.js.map  3.06 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-e113038b199e75a0d2b3.js js/application-e113038b199e75a0d2b3.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-b838b2103ecec212f158.js js/server_rendering-b838b2103ecec212f158.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 442 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 320 hidden modules
+
+Completed 200 OK in 12586ms (Views: 12583.9ms | ActiveRecord: 0.0ms | Allocations: 5832)
+
+
+Started GET "/v1/login" for ::1 at 2020-07-07 13:25:49 +0100
+Processing by V1::LoginController#index as JSON
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 388)
+
+
+Started GET "/" for ::1 at 2020-07-07 13:30:36 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 90b4caee3e3a8d56fdfd
+Version: webpack 4.43.0
+Time: 8775ms
+Built at: 07/07/2020 1:30:49 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-62ae425a54404706ef4a.js  3.26 MiB       application  [emitted] [immutable]  application
+     js/application-62ae425a54404706ef4a.js.map  3.19 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-c84f6da9f7f530c77ecb.js  3.14 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-c84f6da9f7f530c77ecb.js.map  3.06 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-62ae425a54404706ef4a.js js/application-62ae425a54404706ef4a.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-c84f6da9f7f530c77ecb.js js/server_rendering-c84f6da9f7f530c77ecb.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 442 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 320 hidden modules
+
+Completed 200 OK in 12950ms (Views: 12948.7ms | ActiveRecord: 0.0ms | Allocations: 5832)
+
+
+Started GET "/v1/login" for ::1 at 2020-07-07 13:30:49 +0100
+Processing by V1::LoginController#index as JSON
+Completed 200 OK in 21ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 386)
+
+
+Started GET "/" for ::1 at 2020-07-07 13:31:18 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: d3e977b947daed8c81d8
+Version: webpack 4.43.0
+Time: 8895ms
+Built at: 07/07/2020 1:31:31 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-686b9a3f09b6827e647f.js  3.26 MiB       application  [emitted] [immutable]  application
+     js/application-686b9a3f09b6827e647f.js.map  3.19 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-f7d7c33138003c930066.js  3.14 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-f7d7c33138003c930066.js.map  3.06 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-686b9a3f09b6827e647f.js js/application-686b9a3f09b6827e647f.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-f7d7c33138003c930066.js js/server_rendering-f7d7c33138003c930066.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 442 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 320 hidden modules
+
+Completed 200 OK in 12787ms (Views: 12786.0ms | ActiveRecord: 0.0ms | Allocations: 5832)
+
+
+Started GET "/v1/login" for ::1 at 2020-07-07 13:31:31 +0100
+Processing by V1::LoginController#index as JSON
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 386)
+
+
+Started GET "/" for ::1 at 2020-07-07 13:31:54 +0100
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 66)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 6c137d21ce83cc6ee570
+Version: webpack 4.43.0
+Time: 7152ms
+Built at: 07/07/2020 1:32:04 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-34c256c9f30d020cc9f1.js  3.26 MiB       application  [emitted] [immutable]  application
+     js/application-34c256c9f30d020cc9f1.js.map  3.19 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-af24a9b6b986a66a262f.js  3.14 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-af24a9b6b986a66a262f.js.map  3.06 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-34c256c9f30d020cc9f1.js js/application-34c256c9f30d020cc9f1.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-af24a9b6b986a66a262f.js js/server_rendering-af24a9b6b986a66a262f.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 442 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 320 hidden modules
+
+Completed 200 OK in 10263ms (Views: 10262.3ms | ActiveRecord: 0.0ms | Allocations: 5814)
+
+
+Started GET "/v1/login" for ::1 at 2020-07-07 13:32:05 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by V1::LoginController#index as JSON
+Completed 200 OK in 49ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 437)
+
+
+Started GET "/?email=test%40test.com&password=[FILTERED]&passwordConfirmation=[FILTERED]" for ::1 at 2020-07-07 13:32:16 +0100
+Processing by StaticController#index as HTML
+  Parameters: {"email"=>"test@test.com", "password"=>"[FILTERED]", "passwordConfirmation"=>"[FILTERED]"}
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 66)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 20.3ms | ActiveRecord: 0.0ms | Allocations: 4183)
+
+
+Started GET "/v1/login" for ::1 at 2020-07-07 13:32:16 +0100
+Processing by V1::LoginController#index as JSON
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 381)
+
+
+Started GET "/?email=test%40test.com&password=[FILTERED]&passwordConfirmation=[FILTERED]" for ::1 at 2020-07-07 13:32:43 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticController#index as HTML
+  Parameters: {"email"=>"test@test.com", "password"=>"[FILTERED]", "passwordConfirmation"=>"[FILTERED]"}
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 66)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: ec5fa52135804eb35536
+Version: webpack 4.43.0
+Time: 6986ms
+Built at: 07/07/2020 1:32:53 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-b382b92c716a433bd30a.js  3.26 MiB       application  [emitted] [immutable]  application
+     js/application-b382b92c716a433bd30a.js.map  3.19 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-182fab0faa9cd02a43b9.js  3.14 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-182fab0faa9cd02a43b9.js.map  3.06 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-b382b92c716a433bd30a.js js/application-b382b92c716a433bd30a.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-182fab0faa9cd02a43b9.js js/server_rendering-182fab0faa9cd02a43b9.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 442 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 320 hidden modules
+
+Completed 200 OK in 10471ms (Views: 10470.3ms | ActiveRecord: 0.0ms | Allocations: 5829)
+
+
+Started GET "/v1/login" for ::1 at 2020-07-07 13:32:54 +0100
+Processing by V1::LoginController#index as JSON
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 387)
+
+
+Started GET "/?email=test%40test.com&password=[FILTERED]&passwordConfirmation=[FILTERED]" for ::1 at 2020-07-07 13:35:47 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticController#index as HTML
+  Parameters: {"email"=>"test@test.com", "password"=>"[FILTERED]", "passwordConfirmation"=>"[FILTERED]"}
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 4584d6d9b373fa96c299
+Version: webpack 4.43.0
+Time: 8798ms
+Built at: 07/07/2020 1:36:00 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-ada0c73a57f7301a46ee.js  3.26 MiB       application  [emitted] [immutable]  application
+     js/application-ada0c73a57f7301a46ee.js.map  3.19 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-46dadb691f5bfc1bac83.js  3.14 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-46dadb691f5bfc1bac83.js.map  3.06 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-ada0c73a57f7301a46ee.js js/application-ada0c73a57f7301a46ee.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-46dadb691f5bfc1bac83.js js/server_rendering-46dadb691f5bfc1bac83.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 442 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 320 hidden modules
+
+Completed 200 OK in 13107ms (Views: 13106.5ms | ActiveRecord: 0.0ms | Allocations: 5839)
+
+
+Started GET "/v1/login" for ::1 at 2020-07-07 13:36:01 +0100
+Processing by V1::LoginController#index as JSON
+Completed 200 OK in 4ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 427)
+
+
+Started GET "/?email=test%40test.com&password=[FILTERED]&passwordConfirmation=[FILTERED]" for ::1 at 2020-07-07 13:36:32 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticController#index as HTML
+  Parameters: {"email"=>"test@test.com", "password"=>"[FILTERED]", "passwordConfirmation"=>"[FILTERED]"}
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 65f29b7164feb6e2842d
+Version: webpack 4.43.0
+Time: 8915ms
+Built at: 07/07/2020 1:36:45 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-3ff6bad5ce84b2a44dc8.js  3.26 MiB       application  [emitted] [immutable]  application
+     js/application-3ff6bad5ce84b2a44dc8.js.map  3.19 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-9d36d06b11d9a1d92334.js  3.14 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-9d36d06b11d9a1d92334.js.map  3.06 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-3ff6bad5ce84b2a44dc8.js js/application-3ff6bad5ce84b2a44dc8.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-9d36d06b11d9a1d92334.js js/server_rendering-9d36d06b11d9a1d92334.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 442 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 320 hidden modules
+
+Completed 200 OK in 12759ms (Views: 12757.7ms | ActiveRecord: 0.0ms | Allocations: 5843)
+
+
+Started GET "/v1/login" for ::1 at 2020-07-07 13:36:45 +0100
+Processing by V1::LoginController#index as JSON
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 382)
+
+
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (4.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (2.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-07-07 13:50:05.964862"], ["updated_at", "2020-07-07 13:50:05.964862"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2020-07-07 14:52:36 +0100
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 306)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 88ms (Views: 72.7ms | ActiveRecord: 0.0ms | Allocations: 7874)
+
+
+Started GET "/" for ::1 at 2020-07-07 14:53:50 +0100
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 14.5ms | Allocations: 623)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 72ms (Views: 60.6ms | ActiveRecord: 0.0ms | Allocations: 8430)
+
+
+Started GET "/v1/login" for ::1 at 2020-07-07 14:53:50 +0100
+Processing by V1::LoginController#index as JSON
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 420)
+
+
+Started POST "/v1/login" for ::1 at 2020-07-07 14:54:01 +0100
+Processing by V1::LoginController#create as JSON
+  Parameters: {"email"=>"test@test.com", "password"=>"[FILTERED]", "login"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 1.8ms | Allocations: 851)
+
+
+  
+ActiveRecord::StatementInvalid (Could not find table 'logins'):
+  
+app/controllers/v1/login_controller.rb:17:in `create'
+Started GET "/" for ::1 at 2020-07-07 14:54:37 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 69)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: dd3e3dc24b242cc1d6c8
+Version: webpack 4.43.0
+Time: 9264ms
+Built at: 07/07/2020 2:54:50 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-30a9d26abea5485d560a.js  3.26 MiB       application  [emitted] [immutable]  application
+     js/application-30a9d26abea5485d560a.js.map  3.19 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-052928ef68580a8cba93.js  3.14 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-052928ef68580a8cba93.js.map  3.06 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-30a9d26abea5485d560a.js js/application-30a9d26abea5485d560a.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-052928ef68580a8cba93.js js/server_rendering-052928ef68580a8cba93.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 442 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 320 hidden modules
+
+Completed 200 OK in 13432ms (Views: 13431.2ms | ActiveRecord: 0.0ms | Allocations: 6009)
+
+
+Started GET "/v1/login" for ::1 at 2020-07-07 14:54:51 +0100
+Processing by V1::LoginController#index as JSON
+Completed 200 OK in 2ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 415)
+
+
+Started POST "/v1/login" for ::1 at 2020-07-07 14:55:10 +0100
+Processing by V1::LoginController#create as JSON
+  Parameters: {"email"=>"email@email.com", "password_digest"=>"[FILTERED]", "login"=>{"email"=>"email@email.com", "password_digest"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 2.3ms | Allocations: 821)
+
+
+  
+ActiveRecord::StatementInvalid (Could not find table 'logins'):
+  
+app/controllers/v1/login_controller.rb:17:in `create'
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-07-07 13:57:09.666466"], ["updated_at", "2020-07-07 13:57:09.666466"]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Started GET "/v1/login" for ::1 at 2020-07-07 14:58:18 +0100
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by V1::LoginController#index as JSON
+Completed 200 OK in 5ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 563)
+
+
+Started POST "/v1/login" for ::1 at 2020-07-07 14:58:35 +0100
+Processing by V1::LoginController#create as JSON
+  Parameters: {"email"=>"tdowgwhite@googlemail.com", "password_digest"=>"[FILTERED]", "login"=>{"email"=>"tdowgwhite@googlemail.com", "password_digest"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.3ms | Allocations: 852)
+
+
+  
+ActiveRecord::StatementInvalid (Could not find table 'logins'):
+  
+app/controllers/v1/login_controller.rb:17:in `create'
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-07-07 14:00:52.443410"], ["updated_at", "2020-07-07 14:00:52.443410"]]
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2020-07-07 15:01:36 +0100
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 306)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 55ms (Views: 43.5ms | ActiveRecord: 0.0ms | Allocations: 7952)
+
+
+Started GET "/v1/login" for ::1 at 2020-07-07 15:01:36 +0100
+Processing by V1::LoginController#index as JSON
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 421)
+
+
+Started POST "/v1/login" for ::1 at 2020-07-07 15:01:42 +0100
+Processing by V1::LoginController#create as JSON
+  Parameters: {"email"=>"test@test.com", "password_digest"=>"[FILTERED]", "login"=>{"email"=>"test@test.com", "password_digest"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.6ms | Allocations: 849)
+
+
+  
+ActiveRecord::StatementInvalid (Could not find table 'logins'):
+  
+app/controllers/v1/login_controller.rb:17:in `create'
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20200707140314)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "email" varchar, "password_digest" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200707140314"]]
+  [1m[35m (2.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2020-07-07 15:05:49 +0100
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 306)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 84ms (Views: 45.9ms | ActiveRecord: 0.0ms | Allocations: 8400)
+
+
+Started GET "/v1/login" for ::1 at 2020-07-07 15:05:49 +0100
+Processing by V1::LoginController#index as JSON
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 422)
+
+
+Started GET "/" for ::1 at 2020-07-07 15:09:24 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 67)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 23.7ms | ActiveRecord: 0.0ms | Allocations: 4266)
+
+
+Started GET "/v1/login" for ::1 at 2020-07-07 15:09:25 +0100
+Processing by V1::LoginController#index as JSON
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 407)
+
+
+Started GET "/users" for ::1 at 2020-07-07 15:10:49 +0100
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"users"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 167)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 37ms (Views: 34.2ms | ActiveRecord: 0.0ms | Allocations: 4738)
+
+
+Started GET "/sessions" for ::1 at 2020-07-07 15:11:03 +0100
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"sessions"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 21.8ms | ActiveRecord: 0.0ms | Allocations: 4099)
+
+
+Started GET "/" for ::1 at 2020-07-07 15:14:00 +0100
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 66)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 26fc9c7d75de4b03672c
+Version: webpack 4.43.0
+Time: 9306ms
+Built at: 07/07/2020 3:14:14 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-2b7c5cb4aa7d5848147c.js  3.26 MiB       application  [emitted] [immutable]  application
+     js/application-2b7c5cb4aa7d5848147c.js.map  3.19 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-8f42229be7c928cd97c3.js  3.14 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-8f42229be7c928cd97c3.js.map  3.06 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-2b7c5cb4aa7d5848147c.js js/application-2b7c5cb4aa7d5848147c.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-8f42229be7c928cd97c3.js js/server_rendering-8f42229be7c928cd97c3.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 442 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 320 hidden modules
+
+Completed 200 OK in 13938ms (Views: 13923.3ms | ActiveRecord: 0.0ms | Allocations: 5901)
+
+
+Started GET "/v1/login" for ::1 at 2020-07-07 15:14:15 +0100
+Processing by V1::LoginController#index as JSON
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 408)
+
+
+Started POST "/users" for ::1 at 2020-07-07 15:14:38 +0100
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"TarnyeWest", "email"=>"tomjameswhite94@gmail.com", "password_digest"=>"[FILTERED]", "user"=>{"username"=>"TarnyeWest", "email"=>"tomjameswhite94@gmail.com", "password_digest"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :password_digest[0m
+  [1m[35m (0.8ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `create'
+  [1m[36mUser Exists? (62.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "TarnyeWest"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "tomjameswhite94@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `create'
+  [1m[35m (7.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `create'
+Completed 200 OK in 132ms (Views: 1.0ms | ActiveRecord: 70.9ms | Allocations: 9936)
+
+
+Started POST "/users" for ::1 at 2020-07-07 15:14:55 +0100
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"TarnyeWest", "email"=>"tomjameswhite94@gmail.com", "password_digest"=>"[FILTERED]", "user"=>{"username"=>"TarnyeWest", "email"=>"tomjameswhite94@gmail.com", "password_digest"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :password_digest[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "TarnyeWest"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `create'
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "tomjameswhite94@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `create'
+Completed 200 OK in 16ms (Views: 0.3ms | ActiveRecord: 1.0ms | Allocations: 4551)
+
+
+Started GET "/" for ::1 at 2020-07-07 15:15:15 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 67)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 7fd261449055a80f4ac5
+Version: webpack 4.43.0
+Time: 8829ms
+Built at: 07/07/2020 3:15:27 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-6af97ad0e0fea9238dd3.js  3.26 MiB       application  [emitted] [immutable]  application
+     js/application-6af97ad0e0fea9238dd3.js.map  3.19 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-af892e9b16a9a4367203.js  3.14 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-af892e9b16a9a4367203.js.map  3.06 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-6af97ad0e0fea9238dd3.js js/application-6af97ad0e0fea9238dd3.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-af892e9b16a9a4367203.js js/server_rendering-af892e9b16a9a4367203.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 442 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 320 hidden modules
+
+Completed 200 OK in 12760ms (Views: 12757.1ms | ActiveRecord: 0.0ms | Allocations: 5869)
+
+
+Started GET "/v1/login" for ::1 at 2020-07-07 15:15:28 +0100
+Processing by V1::LoginController#index as JSON
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 413)
+
+
+Started POST "/users" for ::1 at 2020-07-07 15:15:41 +0100
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"TarnyeWest", "email"=>"tomjameswhite94@gmail.com", "password"=>"[FILTERED]", "user"=>{"username"=>"TarnyeWest", "email"=>"tomjameswhite94@gmail.com"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "TarnyeWest"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "tomjameswhite94@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `create'
+Completed 200 OK in 54ms (Views: 0.9ms | ActiveRecord: 2.1ms | Allocations: 8047)
+
+
+Started GET "/" for ::1 at 2020-07-07 15:16:08 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 66)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.0ms | Allocations: 4268)
+
+
+Started GET "/v1/login" for ::1 at 2020-07-07 15:16:09 +0100
+Processing by V1::LoginController#index as JSON
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 408)
+
+
+Started POST "/users" for ::1 at 2020-07-07 15:16:29 +0100
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"TarnyeWest", "email"=>"tomjameswhite94@gmail.com", "password"=>"[FILTERED]", "user"=>{"username"=>"TarnyeWest", "email"=>"tomjameswhite94@gmail.com"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "TarnyeWest"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "tomjameswhite94@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `create'
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "TarnyeWest"], ["email", "tomjameswhite94@gmail.com"], ["created_at", "2020-07-07 14:16:29.084374"], ["updated_at", "2020-07-07 14:16:29.084374"]]
+  ↳ app/controllers/users_controller.rb:31:in `create'
+  [1m[35m (10.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `create'
+Completed 200 OK in 54ms (Views: 3.6ms | ActiveRecord: 13.1ms | Allocations: 8073)
+
+
+Started GET "/" for ::1 at 2020-07-07 15:17:05 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 26fc9c7d75de4b03672c
+Version: webpack 4.43.0
+Time: 8218ms
+Built at: 07/07/2020 3:17:17 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-2b7c5cb4aa7d5848147c.js  3.26 MiB       application  [emitted] [immutable]  application
+     js/application-2b7c5cb4aa7d5848147c.js.map  3.19 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-8f42229be7c928cd97c3.js  3.14 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-8f42229be7c928cd97c3.js.map  3.06 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-2b7c5cb4aa7d5848147c.js js/application-2b7c5cb4aa7d5848147c.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-8f42229be7c928cd97c3.js js/server_rendering-8f42229be7c928cd97c3.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 442 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 320 hidden modules
+
+Completed 200 OK in 12267ms (Views: 12265.0ms | ActiveRecord: 0.0ms | Allocations: 7860)
+
+
+Started GET "/v1/login" for ::1 at 2020-07-07 15:17:19 +0100
+Processing by V1::LoginController#index as JSON
+Completed 200 OK in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 411)
+
+
+Started POST "/users" for ::1 at 2020-07-07 15:17:42 +0100
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"TarnyeWest", "email"=>"tomjameswhite94@gmail.com", "password_digest"=>"[FILTERED]", "user"=>{"username"=>"TarnyeWest", "email"=>"tomjameswhite94@gmail.com", "password_digest"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :password_digest[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "TarnyeWest"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "tomjameswhite94@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `create'
+Completed 200 OK in 38ms (Views: 2.3ms | ActiveRecord: 5.7ms | Allocations: 8602)
+
+
+Started POST "/users" for ::1 at 2020-07-07 15:17:54 +0100
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"TarnyeWest1", "email"=>"tdowgwhite@googlemail.com", "password_digest"=>"[FILTERED]", "user"=>{"username"=>"TarnyeWest1", "email"=>"tdowgwhite@googlemail.com", "password_digest"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :password_digest[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "TarnyeWest1"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "tdowgwhite@googlemail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `create'
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["username", "TarnyeWest1"], ["email", "tdowgwhite@googlemail.com"], ["created_at", "2020-07-07 14:17:54.427344"], ["updated_at", "2020-07-07 14:17:54.427344"]]
+  ↳ app/controllers/users_controller.rb:31:in `create'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `create'
+Completed 200 OK in 15ms (Views: 0.5ms | ActiveRecord: 2.8ms | Allocations: 4542)
+
+
+Started GET "/" for ::1 at 2020-07-07 15:21:10 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.0ms | Allocations: 4274)
+
+
+Started GET "/v1/login" for ::1 at 2020-07-07 15:21:10 +0100
+Processing by V1::LoginController#index as JSON
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 407)
+
+
+Started POST "/users" for ::1 at 2020-07-07 15:21:28 +0100
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"TEST", "email"=>"test@test.com", "password_digest"=>"[FILTERED]", "user"=>{"username"=>"TEST", "email"=>"test@test.com", "password_digest"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :password_digest[0m
+  [1m[35m (6.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "TEST"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `create'
+Completed 200 OK in 38ms (Views: 0.3ms | ActiveRecord: 7.9ms | Allocations: 8080)
+
+
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (3.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20200707140314)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "email" varchar, "password_digest" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200707140314"]]
+  [1m[35m (3.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-07-07 14:24:11.580213"], ["updated_at", "2020-07-07 14:24:11.580213"]]
+  [1m[35m (2.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2020-07-07 15:24:58 +0100
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 306)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 1741dc69d7d22ea18fa8
+Version: webpack 4.43.0
+Time: 8982ms
+Built at: 07/07/2020 3:25:11 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-bbf973cf0950f6c987b5.js  3.26 MiB       application  [emitted] [immutable]  application
+     js/application-bbf973cf0950f6c987b5.js.map  3.19 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-966f0af1687fa8f5944a.js  3.14 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-966f0af1687fa8f5944a.js.map  3.06 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-bbf973cf0950f6c987b5.js js/application-bbf973cf0950f6c987b5.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-966f0af1687fa8f5944a.js js/server_rendering-966f0af1687fa8f5944a.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 442 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 320 hidden modules
+
+Completed 200 OK in 13195ms (Views: 13183.9ms | ActiveRecord: 0.0ms | Allocations: 9554)
+
+
+Started GET "/v1/login" for ::1 at 2020-07-07 15:25:12 +0100
+Processing by V1::LoginController#index as JSON
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 421)
+
+
+Started POST "/users" for ::1 at 2020-07-07 15:25:23 +0100
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"TarnyeWest", "email"=>"tomjameswhite94@gmail.com", "password_digest"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"username"=>"TarnyeWest", "email"=>"tomjameswhite94@gmail.com", "password_digest"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :password_digest[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "TarnyeWest"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "tomjameswhite94@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `create'
+Completed 200 OK in 68ms (Views: 0.2ms | ActiveRecord: 4.0ms | Allocations: 9940)
+
+
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20200707140314)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar, "email" varchar, "password_digest" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mprimary::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20200707140314"]]
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-07-07 14:28:44.318174"], ["updated_at", "2020-07-07 14:28:44.318174"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2020-07-07 15:29:47 +0100
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 306)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 60ms (Views: 51.2ms | ActiveRecord: 0.0ms | Allocations: 7928)
+
+
+Started GET "/v1/login" for ::1 at 2020-07-07 15:29:47 +0100
+Processing by V1::LoginController#index as JSON
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 412)
+
+
+Started POST "/users" for ::1 at 2020-07-07 15:29:59 +0100
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"TarnyeWest", "email"=>"tomjameswhite94@gmail.com", "password_digest"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "user"=>{"username"=>"TarnyeWest", "email"=>"tomjameswhite94@gmail.com", "password_digest"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :password_digest[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `create'
+  [1m[36mUser Exists? (1.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "TarnyeWest"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "tomjameswhite94@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `create'
+Completed 200 OK in 85ms (Views: 0.3ms | ActiveRecord: 3.6ms | Allocations: 9947)
+
+
+Started GET "/" for ::1 at 2020-07-07 15:30:07 +0100
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 67)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.0ms | Allocations: 4113)
+
+
+Started GET "/v1/login" for ::1 at 2020-07-07 15:30:07 +0100
+Processing by V1::LoginController#index as JSON
+Completed 200 OK in 1ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 408)
+
+
+Started GET "/" for ::1 at 2020-07-07 15:36:29 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 67)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 7fd261449055a80f4ac5
+Version: webpack 4.43.0
+Time: 8879ms
+Built at: 07/07/2020 3:36:43 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-6af97ad0e0fea9238dd3.js  3.26 MiB       application  [emitted] [immutable]  application
+     js/application-6af97ad0e0fea9238dd3.js.map  3.19 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-af892e9b16a9a4367203.js  3.14 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-af892e9b16a9a4367203.js.map  3.06 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-6af97ad0e0fea9238dd3.js js/application-6af97ad0e0fea9238dd3.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-af892e9b16a9a4367203.js js/server_rendering-af892e9b16a9a4367203.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 442 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 320 hidden modules
+
+Completed 200 OK in 13394ms (Views: 13393.2ms | ActiveRecord: 0.0ms | Allocations: 5901)
+
+
+Started GET "/v1/login" for ::1 at 2020-07-07 15:36:43 +0100
+Processing by V1::LoginController#index as JSON
+Completed 200 OK in 5ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 531)
+
+
+Started POST "/users" for ::1 at 2020-07-07 15:37:06 +0100
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"TarnyeWest", "email"=>"tomjameswhite94@gmail.com", "password"=>"[FILTERED]", "user"=>{"username"=>"TarnyeWest", "email"=>"tomjameswhite94@gmail.com"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `create'
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "TarnyeWest"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "tomjameswhite94@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `create'
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `create'
+Completed 200 OK in 21ms (Views: 5.6ms | ActiveRecord: 0.9ms | Allocations: 7943)
+
+
+Started GET "/" for ::1 at 2020-07-07 15:50:00 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.0ms | Allocations: 4268)
+
+
+Started GET "/v1/login" for ::1 at 2020-07-07 15:50:01 +0100
+Processing by V1::LoginController#index as JSON
+Completed 200 OK in 4ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 415)
+
+
+Started POST "/users" for ::1 at 2020-07-07 15:50:15 +0100
+  
+ActionController::RoutingError (uninitialized constant UsersController
+Did you mean?  UserController):
+  
+activesupport (6.0.2.2) lib/active_support/inflector/methods.rb:282:in `const_get'
+activesupport (6.0.2.2) lib/active_support/inflector/methods.rb:282:in `block in constantize'
+activesupport (6.0.2.2) lib/active_support/inflector/methods.rb:280:in `each'
+activesupport (6.0.2.2) lib/active_support/inflector/methods.rb:280:in `inject'
+activesupport (6.0.2.2) lib/active_support/inflector/methods.rb:280:in `constantize'
+activesupport (6.0.2.2) lib/active_support/dependencies/zeitwerk_integration.rb:19:in `constantize'
+actionpack (6.0.2.2) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.2.2) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:45:in `controller'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.2.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.2.2) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.2.2) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.2) lib/rack/etag.rb:27:in `call'
+rack (2.2.2) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.2) lib/rack/head.rb:12:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.2) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.2) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.2.2) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.2.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.2) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.2.2) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.2) lib/rails/engine.rb:526:in `call'
+puma (4.3.3) lib/puma/configuration.rb:228:in `call'
+puma (4.3.3) lib/puma/server.rb:682:in `handle_request'
+puma (4.3.3) lib/puma/server.rb:472:in `process_client'
+puma (4.3.3) lib/puma/server.rb:328:in `block in run'
+puma (4.3.3) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-07-07 15:55:02 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 68)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: c889f2f5b2d4ac770da0
+Version: webpack 4.43.0
+Time: 8769ms
+Built at: 07/07/2020 3:55:15 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-ebb4dccea949d9c554a1.js  3.26 MiB       application  [emitted] [immutable]  application
+     js/application-ebb4dccea949d9c554a1.js.map  3.19 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-4a1435e5476679c9eb68.js  3.14 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-4a1435e5476679c9eb68.js.map  3.06 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-ebb4dccea949d9c554a1.js js/application-ebb4dccea949d9c554a1.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-4a1435e5476679c9eb68.js js/server_rendering-4a1435e5476679c9eb68.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 442 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 320 hidden modules
+
+Completed 200 OK in 13196ms (Views: 13194.8ms | ActiveRecord: 0.0ms | Allocations: 5903)
+
+
+Started GET "/users" for ::1 at 2020-07-07 15:55:16 +0100
+Processing by HomepageController#index as */*
+  Parameters: {"path"=>"users"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 166)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 16.6ms | ActiveRecord: 0.0ms | Allocations: 4792)
+
+
+Started GET "/" for ::1 at 2020-07-07 15:55:39 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 8518bacfce973dc6efe1
+Version: webpack 4.43.0
+Time: 8525ms
+Built at: 07/07/2020 3:55:52 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-d1f531fefdf0710528c2.js  3.26 MiB       application  [emitted] [immutable]  application
+     js/application-d1f531fefdf0710528c2.js.map  3.19 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-da7d5fb0d005bbbebe64.js  3.14 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-da7d5fb0d005bbbebe64.js.map  3.06 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-d1f531fefdf0710528c2.js js/application-d1f531fefdf0710528c2.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-da7d5fb0d005bbbebe64.js js/server_rendering-da7d5fb0d005bbbebe64.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 442 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 320 hidden modules
+
+Completed 200 OK in 12336ms (Views: 12334.7ms | ActiveRecord: 0.0ms | Allocations: 5865)
+
+
+Started POST "/users" for ::1 at 2020-07-07 15:56:07 +0100
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"TarnyeWest", "email"=>"tomjameswhite94@gmail.com", "password"=>"[FILTERED]", "user"=>{"username"=>"TarnyeWest", "email"=>"tomjameswhite94@gmail.com"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "TarnyeWest"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `create'
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "tomjameswhite94@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:31:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:31:in `create'
+Completed 200 OK in 30ms (Views: 0.3ms | ActiveRecord: 2.6ms | Allocations: 8115)
+
+
+Started GET "/" for ::1 at 2020-07-07 15:57:47 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 16.7ms | ActiveRecord: 0.0ms | Allocations: 4264)
+
+
+Started POST "/users" for ::1 at 2020-07-07 15:58:02 +0100
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"TarnyeWest", "email"=>"tomjameswhite94@gmail.com", "password"=>"[FILTERED]", "user"=>{"username"=>"TarnyeWest", "email"=>"tomjameswhite94@gmail.com"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:32:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "TarnyeWest"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:32:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "tomjameswhite94@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:32:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:32:in `create'
+Completed 200 OK in 27ms (Views: 0.3ms | ActiveRecord: 1.5ms | Allocations: 8070)
+
+
+Started GET "/" for ::1 at 2020-07-07 16:06:09 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 67)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.0ms | Allocations: 4272)
+
+
+Started POST "/users" for ::1 at 2020-07-07 16:06:21 +0100
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"TarnyeWest", "email"=>"tomjameswhite94@gmail.com", "password"=>"[FILTERED]", "user"=>{"username"=>"TarnyeWest", "email"=>"tomjameswhite94@gmail.com"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:33:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "TarnyeWest"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:33:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "tomjameswhite94@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:33:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:33:in `create'
+Completed 200 OK in 24ms (Views: 0.3ms | ActiveRecord: 0.7ms | Allocations: 7994)
+
+
+Started GET "/users" for ::1 at 2020-07-07 16:11:14 +0100
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"users"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 33ms (Views: 30.4ms | ActiveRecord: 0.0ms | Allocations: 4324)
+
+
+Started GET "/users/1" for ::1 at 2020-07-07 16:11:35 +0100
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"users/1"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 19.4ms | ActiveRecord: 0.0ms | Allocations: 4101)
+
+
+Started GET "/" for ::1 at 2020-07-07 16:11:40 +0100
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 17.6ms | ActiveRecord: 0.0ms | Allocations: 4100)
+
+
+Started GET "/" for ::1 at 2020-07-07 16:18:56 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 66)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 17.3ms | ActiveRecord: 0.0ms | Allocations: 4269)
+
+
+Started POST "/users" for ::1 at 2020-07-07 16:19:08 +0100
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"TarnyeWest", "email"=>"tomjameswhite94@gmail.com", "password"=>"[FILTERED]", "user"=>{"username"=>"TarnyeWest", "email"=>"tomjameswhite94@gmail.com"}}
+Completed 500 Internal Server Error in 420329ms (ActiveRecord: 0.0ms | Allocations: 76156)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/users_controller.rb:33:in `create'
+Started GET "/" for ::1 at 2020-07-07 16:27:01 +0100
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 306)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 83ms (Views: 70.3ms | ActiveRecord: 0.0ms | Allocations: 7930)
+
+
+Started POST "/users" for ::1 at 2020-07-07 16:27:14 +0100
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"TarnyeWest", "email"=>"tomjameswhite94@gmail.com", "password"=>"[FILTERED]", "user"=>{"username"=>"TarnyeWest", "email"=>"tomjameswhite94@gmail.com"}}
+Completed 500 Internal Server Error in 70253ms (ActiveRecord: 0.7ms | Allocations: 47704)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/users_controller.rb:33:in `create'
+Started GET "/" for ::1 at 2020-07-07 16:28:56 +0100
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 306)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 60ms (Views: 42.8ms | ActiveRecord: 0.0ms | Allocations: 7932)
+
+
+Started GET "/" for ::1 at 2020-07-07 16:29:00 +0100
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 67)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 16.5ms | ActiveRecord: 0.0ms | Allocations: 4107)
+
+
+Started POST "/users" for ::1 at 2020-07-07 16:29:10 +0100
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"TarnyeWest", "email"=>"tomjameswhite94@gmail.com", "password"=>"[FILTERED]", "user"=>{"username"=>"TarnyeWest", "email"=>"tomjameswhite94@gmail.com"}}
+Completed 500 Internal Server Error in 48557ms (ActiveRecord: 0.6ms | Allocations: 68460)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/users_controller.rb:33:in `create'
+Started GET "/" for ::1 at 2020-07-07 16:34:21 +0100
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 306)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 50ms (Views: 39.9ms | ActiveRecord: 0.0ms | Allocations: 7933)
+
+
+Started POST "/users" for ::1 at 2020-07-07 16:34:32 +0100
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"TarnyeWest", "email"=>"tomjameswhite94@gmail.com", "password"=>"[FILTERED]", "user"=>{"password"=>"[FILTERED]"}}
+Completed 500 Internal Server Error in 28766ms (ActiveRecord: 0.0ms | Allocations: 62362)
+
+
+  
+SystemExit (exit):
+  
+(byebug):1:in `exit'
+(byebug):1:in `create'
+app/controllers/users_controller.rb:34:in `create'
+Started GET "/" for ::1 at 2020-07-07 16:35:18 +0100
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 306)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 35ms (Views: 22.7ms | ActiveRecord: 0.0ms | Allocations: 7980)
+
+
+Started POST "/users" for ::1 at 2020-07-07 16:35:31 +0100
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"TarnyeWest", "email"=>"tomjameswhite94@gmail.com", "password"=>"[FILTERED]", "user"=>{"password"=>"[FILTERED]"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:35:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:35:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:35:in `create'
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:35:in `create'
+Completed 200 OK in 325ms (Views: 0.2ms | ActiveRecord: 2.1ms | Allocations: 12658)
+
+
+Started GET "/" for ::1 at 2020-07-07 16:36:07 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 67)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 4272)
+
+
+Started GET "/" for ::1 at 2020-07-07 16:36:21 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by StaticController#index as HTML
+  Rendering static/index.html.erb within layouts/application
+  Rendered static/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 66)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.0ms | Allocations: 4266)
+
+
+Started POST "/users" for ::1 at 2020-07-07 16:36:30 +0100
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"TarnyeWest", "email"=>"tomjameswhite94@gmail.com", "password"=>"[FILTERED]", "user"=>{"password"=>"[FILTERED]", "username"=>"TarnyeWest", "email"=>"tomjameswhite94@gmail.com"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:35:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "TarnyeWest"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:35:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "tomjameswhite94@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:35:in `create'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "TarnyeWest"], ["email", "tomjameswhite94@gmail.com"], ["password_digest", "$2a$12$ocdp37XpcPs8RT.kwUsZfemQxErDZfQNLiSh4fKLtaGk7JRxbrGCe"], ["created_at", "2020-07-07 15:36:31.287290"], ["updated_at", "2020-07-07 15:36:31.287290"]]
+  ↳ app/controllers/users_controller.rb:35:in `create'
+  [1m[35m (4.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:35:in `create'
+Completed 200 OK in 338ms (Views: 0.3ms | ActiveRecord: 5.9ms | Allocations: 9535)
+
+
+Started POST "/users" for ::1 at 2020-07-07 16:37:44 +0100
+Processing by UsersController#create as JSON
+  Parameters: {"username"=>"BIGRIG69", "email"=>"tdowgwhite@googlemail.com", "password"=>"[FILTERED]", "user"=>{"password"=>"[FILTERED]", "username"=>"BIGRIG69", "email"=>"tdowgwhite@googlemail.com"}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:35:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "BIGRIG69"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:35:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "tdowgwhite@googlemail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:35:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "BIGRIG69"], ["email", "tdowgwhite@googlemail.com"], ["password_digest", "$2a$12$wHvGj8V5tt4RGVa3h5KB/uE9AQO0fjfLwrFhWsTwZhP9k8ScVR6a2"], ["created_at", "2020-07-07 15:37:44.569708"], ["updated_at", "2020-07-07 15:37:44.569708"]]
+  ↳ app/controllers/users_controller.rb:35:in `create'
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:35:in `create'
+Completed 200 OK in 269ms (Views: 0.4ms | ActiveRecord: 2.1ms | Allocations: 4686)
+
+
