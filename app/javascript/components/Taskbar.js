@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
 import NavDropdown from 'react-bootstrap/NavDropdown'
+import axios from 'axios'
 import { AsyncTypeahead } from 'react-bootstrap-typeahead'
 import { withRouter } from 'react-router-dom'
 
@@ -38,22 +39,35 @@ class Taskbar extends Component {
             })
     }
 
+    logoutButton = () => {
+        axios.delete('http://localhost:3000/logout', {withCredentials: true})
+    .then(response => {
+      this.props.handleLogout()
+      console.log(response)
+      this.props.history.push('/Login')
+    })
+    .catch(error => console.log(error))
+  }
+
     usernameBar = () => {
         if (this.props.loggedInStatus == true) {
-            return  <Nav.Link style={{color: "white"}} href="/Homepage">{this.props.user.username}</Nav.Link>
+            return  <div>
+                <Nav.Link style={{color: "white"}} href="/Homepage">{this.props.user}</Nav.Link>
+                <button onClick={this.logoutButton}>Logout</button>
+                </div>
         } else {
-            return  <Nav.Link style={{color: "white"}} href="/Login">Login</Nav.Link>
+            return  <Nav.Link style={{color: "white"}} href="/Register">Login</Nav.Link>
         }
     }
-            
+
+ 
 
 render() {
-    // console.log(this.state.artistSearchResult)
     
     return(
         
         <Navbar  bg="dark" expand="lg">
-            <Navbar.Brand style={{color: "white"}} href="#home">Gig Planner</Navbar.Brand>
+            <Navbar.Brand style={{color: "white"}} href="/Homepage">Gig Planner</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">

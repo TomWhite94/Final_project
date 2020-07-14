@@ -1,71 +1,110 @@
 import React, { Component } from "react";
-import Registration from "./Registration";
-
+import Registration from './Registration'
+import axios from 'axios'
+import Form from 'react-bootstrap/Form'
+import Button from 'react-bootstrap/Button'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import Nav from 'react-bootstrap/Nav'
 
 export default class Login extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
+  
+  state = {
+      username: "",
       email: "",
       password: "",
-      loginErrors: ""
+      passwordConfirmation: "",
+      errors: ""
     };
 
 
-  }
 
-  handleChange(event) {
+  handleChange = event => {
     this.setState({
       [event.target.name]: event.target.value
     });
   }
 
-  handleSubmit(event) {
-    const { email, password } = this.state;
 
-    const loginDetails = {
-        method: 'POST',
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({email: email, password: password})
+  handleSubmit = (event) => {
+    event.preventDefault()
+    const {email, password} = this.state
+let user = {
+      email: email,
+      password: password
     }
-    fetch("http://localhost:3000/v1/logins", loginDetails)
-      .then(response => {
-        if (response.data.logged_in) {
-          this.props.handleSuccessfulAuth(response.data);
-        }
-      })
-      .catch(error => {
-        console.log("login error", error);
-      });
-    event.preventDefault();
+    
+    axios.post('http://localhost:3000/login', {user}, {withCredentials: true})
+    .then(response => {
+      if (response.data.logged_in) {
+        this.props.handleLogin(response.data.user.username)
+        this.redirect()
+      } else {
+        this.setState({
+          errors: response.data.errors
+        })
+      }
+    })
+    .catch(error => console.log('api errors:', error))
+  };
+redirect = () => {
+    this.props.history.push('/homepage')
   }
+
+
+handleErrors = () => {
+  return (
+    <div>
+      <ul>{this.state.errors.map((error) => {
+        return <p style={{color: "red"}} key={error}>{error}</p>
+      })}
+      </ul> 
+    </div>
+  )
+}
+
 
   render() {
     return (
       <div>
-        <form onSubmit={this.handleSubmit}>
-          <input
-            type="email"
-            name="email"
-            placeholder="Email"
-            value={this.state.email}
-            onChange={this.handleChange}
-            required
-          />
-
-          <input
-            type="password"
-            name="password"
-            placeholder="Password"
-            value={this.state.password}
-            onChange={this.handleChange}
-            required
-          />
-
-          <button type="submit">Login</button>
-        </form>
-   
+        <Form onSubmit={this.handleSubmit}>
+          <Row className="mt-5">
+            <Col md={{ span: 6, offset: 3 }}>
+              <Form.Group controlId="formBasicEmail">
+                <Form.Label>Email address</Form.Label>
+                <Form.Control type="email" placeholder="Enter email" name="email" value={this.state.email} onChange={this.handleChange} />
+                <Form.Text className="text-muted">
+                  We'll never share your email with anyone else.
+                </Form.Text>
+              </Form.Group>
+            </Col>
+          </Row>
+          
+          <Row>
+            <Col md={{ span: 6, offset: 3 }}>
+              <Form.Group controlId="formBasicPassword">
+                <Form.Label>Password</Form.Label>
+                <Form.Control type="password" placeholder="Password" name="password" value={this.state.password} onChange={this.handleChange} />
+              </Form.Group>
+            </Col>
+          </Row>
+          
+          <Row>
+            <Col md={{ span: 6, offset: 3 }}>
+              <Button variant="primary" type="submit" >
+                Login
+              </Button>
+              <div>
+                {
+                  this.state.errors ? this.handleErrors() : null
+                }
+              </div>
+              <div>
+              <Nav.Link href="/register">Don't have an account? Click here to register</Nav.Link>
+              </div>
+            </Col>
+          </Row>
+        </Form>
       </div>
     );
   }

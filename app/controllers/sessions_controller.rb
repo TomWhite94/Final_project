@@ -1,7 +1,8 @@
 class SessionsController < ApplicationController
+    # wrap_parameters :user, include: [:password, :username, :email, :password_confirmation]
     def create
         @user = User.find_by(email: session_params[:email])
-      
+        puts @user
         if @user && @user.authenticate(session_params[:password])
           login!
           render json: {
@@ -37,6 +38,6 @@ class SessionsController < ApplicationController
       end
     private
     def session_params
-        params.require(:user).permit(:username, :email, :password)
+        params.require(:user).permit!
       end
     end
