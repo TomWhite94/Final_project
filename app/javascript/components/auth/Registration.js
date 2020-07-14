@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import axios from 'axios'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import Row from 'react-bootstrap/Row'
@@ -11,7 +12,7 @@ export default class Registration extends Component {
       email: "",
       password: "",
       passwordConfirmation: "",
-      passwordMatch: true
+      errors: ""
     };
 
 
@@ -22,48 +23,76 @@ export default class Registration extends Component {
     });
   }
 
-  // componentDidMount() {
-  //     fetch("http://localhost:3000/users")
-  //     .then(response => response.json())
-  //     .then(resp => console.log(resp.login))
-  // }
 
-  handleSubmit = event => {
-    event.preventDefault();
-    if (this.state.password == this.state.passwordConfirmation) {
-      this.setState({passwordMatch: true })
-      let body = JSON.stringify({
-        username: this.state.username,
-        email: this.state.email, 
-        password: this.state.password,
-        // password_confirmation: this.state.passwordConfirmation
-      })
-    console.log(body)
-      const loginDetails = {
-          method: 'POST',
-          headers: {
-              'Accept': 'application/json',
-              'Content-Type': 'application/json'
-          },
-          body: body
-      }
-      fetch("http://localhost:3000/users", loginDetails)
-        .then(response => response.json())
-        .then(resp => console.log(resp))
+
+//   handleSubmit = event => {
+//     event.preventDefault();
+//     if (this.state.password == this.state.passwordConfirmation) {
+//       this.setState({passwordMatch: true })
+//       let body = JSON.stringify({
+//         username: this.state.username,
+//         email: this.state.email, 
+//         password: this.state.password,
+//         // password_confirmation: this.state.passwordConfirmation
+//       })
+//     console.log(body)
+//       const loginDetails = {
+//           method: 'POST',
+//           headers: {
+//               'Accept': 'application/json',
+//               'Content-Type': 'application/json'
+//           },
+//           body: body
+//       }
+//       fetch("http://localhost:3000/users", loginDetails)
+//         .then(response => response.json())
+//         .then(resp => console.log(resp))
+//     } else {
+//       this.setState({
+//         passwordMatch: false,
+//         password: "",
+//         passwordConfirmation: ""
+//       })
+//     }
+// }
+
+handleSubmit = (event) => {
+  event.preventDefault()
+  const {username, email, password, password_confirmation} = this.state
+  let user = {
+    username: username,
+    email: email,
+    password: password,
+    password_confirmation: password_confirmation,
+    liked_gigs: []
+  }
+axios.post('http://localhost:3000/users', {user}, {withCredentials: true})
+  .then(response => {
+    if (response.data.status === 'created') {
+      this.props.handleLogin(response.data)
+      this.redirect()
     } else {
       this.setState({
-        passwordMatch: false,
-        password: "",
-        passwordConfirmation: ""
+        errors: response.data.errors
       })
     }
+  })
+  .catch(error => console.log('api errors:', error))
+};
+redirect = () => {
+  this.props.history.push('/homepage')
+}
+handleErrors = () => {
+  return (
+    <div>
+      <ul>{this.state.errors.map((error) => {
+        return <p style={{color: "red"}} key={error}>{error}</p>
+      })}
+      </ul> 
+    </div>
+  )
 }
 
-errorToggle = () => {
-  if (this.state.passwordMatch == false) {
-    return <p style={{color: "red"}}>Passwords do not match</p>
-  }
-}
 
   render() {
     return (
@@ -113,7 +142,9 @@ errorToggle = () => {
                 Submit
               </Button>
               <div>
-              {this.errorToggle()}
+                {
+                  this.state.errors ? this.handleErrors() : null
+                }
               </div>
             </Col>
           </Row>

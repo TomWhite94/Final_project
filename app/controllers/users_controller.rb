@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
-  wrap_parameters :user, include: [:password, :username, :email]
+  
+  wrap_parameters :user, include: [:password, :username, :email, :password_confirmation, :liked_gigs]
     def index
         @users = User.all
         if @users
@@ -48,6 +49,6 @@ class UsersController < ApplicationController
     private
       
       def user_params
-        params.require(:user).permit(:username, :email, :password, :password_confirmation)
+        params.require(:user).permit(:username, :email, :password, :password_confirmation, :liked_gigs)
       end
     end

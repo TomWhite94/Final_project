@@ -36,7 +36,15 @@ class Taskbar extends Component {
                 }
 
             })
+    }
+
+    usernameBar = () => {
+        if (this.props.loggedInStatus == true) {
+            return  <Nav.Link style={{color: "white"}} href="/Homepage">{this.props.user.username}</Nav.Link>
+        } else {
+            return  <Nav.Link style={{color: "white"}} href="/Login">Login</Nav.Link>
         }
+    }
             
 
 render() {
@@ -49,7 +57,7 @@ render() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
-                    <Nav.Link style={{color: "white"}} href="#home">Home</Nav.Link>
+                    {this.usernameBar()}
                 </Nav>
     
                 <AsyncTypeahead

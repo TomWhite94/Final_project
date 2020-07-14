@@ -1,4 +1,6 @@
 class User < ApplicationRecord
+
+    serialize :liked_gigs, Array
    
         has_secure_password
       validates :username, presence: true
