@@ -99,9 +99,6 @@ handleErrors = () => {
                   this.state.errors ? this.handleErrors() : null
                 }
               </div>
-              <div>
-              <Nav.Link href="/register">Don't have an account? Click here to register</Nav.Link>
-              </div>
             </Col>
           </Row>
         </Form>

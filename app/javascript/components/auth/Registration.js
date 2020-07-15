@@ -116,9 +116,6 @@ handleErrors = () => {
                   this.state.errors ? this.handleErrors() : null
                 }
               </div>
-              <div>
-              <Nav.Link href="/login">Already have an account? Click here to log in</Nav.Link>
-              </div>
             </Col>
           </Row>
         </Form>

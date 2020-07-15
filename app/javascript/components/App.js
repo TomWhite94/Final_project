@@ -7,6 +7,7 @@ import Registration from './auth/Registration'
 import Taskbar from './Taskbar'
 import Artist from './Artist'
 import Login from './auth/Login'
+import LoginContainer from './auth/LoginContainer'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 
@@ -63,8 +64,8 @@ render () {
     <Taskbar loggedInStatus={this.state.isLoggedIn} user={this.state.user} handleLogout={this.handleLogout}/>
     <Switch>
       
-      <Route exact path="/register" render={(props) => <Registration {...props} handleLogin={this.handleLogin} loggedInStatus={this.state.isLoggedIn} />} />
-      <Route exact path="/login" render={(props) => <Login {...props} handleLogin={this.handleLogin} loggedInStatus={this.state.isLoggedIn} />} />
+      {/* <Route exact path="/register" render={(props) => <Registration {...props} handleLogin={this.handleLogin} loggedInStatus={this.state.isLoggedIn} />} /> */}
+      <Route exact path="/login" render={(props) => <LoginContainer {...props} handleLogin={this.handleLogin} loggedInStatus={this.state.isLoggedIn} />} />
       <Route exact path="/homepage" render={(props) => <Homepage {...props} loggedInStatus={this.state.isLoggedIn} />} />
       <Route path="/artist/:id" render={(props) => <Artist key={props.match.params.id} {...props} loggedInStatus={this.state.isLoggedIn} />}/>
     </Switch>
