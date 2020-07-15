@@ -16,22 +16,28 @@ class App extends React.Component {
 state = {
   isLoggedIn: !!localStorage.getItem("username"),
   user: localStorage.getItem("username"),
+  userId: "",
+  likedGigs: []
 }
 
 
   
-handleLogin = (username) => {
+handleLogin = (user) => {
   this.setState({
     isLoggedIn: true,
-    user: username
+    user: user.username,
+    userId: user.id,
+    likedGigs: user.liked_gigs
   })
-  localStorage.setItem("username", username)
+  localStorage.setItem("username", user)
 }
 
 handleLogout = () => {
   this.setState({
   isLoggedIn: false,
-  user: {}
+  user: "",
+  userId: "",
+  likedGigs: []
   })
   localStorage.removeItem("username")
 }
@@ -47,7 +53,7 @@ loginStatus = () => {
   {withCredentials: true})
     .then(response => {
       if (response.data.logged_in) {
-        this.handleLogin(response.data.user.username)
+        this.handleLogin(response.data.user)
       } else {
         this.handleLogout()
       }
@@ -56,6 +62,7 @@ loginStatus = () => {
 }
 
 render () {
+  console.log(this.state)
     return (
       
       
@@ -67,7 +74,7 @@ render () {
       {/* <Route exact path="/register" render={(props) => <Registration {...props} handleLogin={this.handleLogin} loggedInStatus={this.state.isLoggedIn} />} /> */}
       <Route exact path="/login" render={(props) => <LoginContainer {...props} handleLogin={this.handleLogin} loggedInStatus={this.state.isLoggedIn} />} />
       <Route exact path="/homepage" render={(props) => <Homepage {...props} loggedInStatus={this.state.isLoggedIn} />} />
-      <Route path="/artist/:id" render={(props) => <Artist key={props.match.params.id} {...props} loggedInStatus={this.state.isLoggedIn} />}/>
+      <Route path="/artist/:id" render={(props) => <Artist key={props.match.params.id} {...props} loggedInStatus={this.state.isLoggedIn} userId={this.state.userId} likedGigs={this.state.likedGigs} />}/>
     </Switch>
     </>
     </BrowserRouter>

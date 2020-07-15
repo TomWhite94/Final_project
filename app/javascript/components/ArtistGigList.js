@@ -15,7 +15,7 @@ render() {
         <Row>
         {this.props.artistGigs.map((gig, index) => (
             <Col md="4" key={index}>
-            <ArtistGig gig={gig} />
+            <ArtistGig gig={gig} userId={this.props.userId} likedGigs={this.props.likedGigs} />
             </Col>
         ))}
         </Row>

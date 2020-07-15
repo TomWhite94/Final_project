@@ -101,7 +101,7 @@ render() {
                 </Row>
             <Row>
                 <Col>
-                    <ArtistGigList artistGigs={this.state.artistGigs}/>
+                    <ArtistGigList artistGigs={this.state.artistGigs} userId={this.props.userId} likedGigs={this.props.likedGigs} />
                 </Col>
         
             </Row>

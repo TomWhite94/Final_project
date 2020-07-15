@@ -37,7 +37,7 @@ let user = {
     axios.post('http://localhost:3000/login', {user}, {withCredentials: true})
     .then(response => {
       if (response.data.logged_in) {
-        this.props.handleLogin(response.data.user.username)
+        this.props.handleLogin(response.data.user)
         this.redirect()
       } else {
         this.setState({

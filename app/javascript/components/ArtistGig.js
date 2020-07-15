@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-
 
 class ArtistGig extends Component {
 
+handleSubmit = () => {
 
+}
 
 
 
     render() {
-        
+        console.log(this.props.userId)
         return(
         <Card>
             <Card.Body>
@@ -20,7 +19,7 @@ class ArtistGig extends Component {
                 <Card.Text>
                 {this.props.gig.venue.metroArea.displayName}, {this.props.gig.venue.metroArea.country.displayName}
                 </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
+                <Button variant="primary">Save Gig</Button>
             </Card.Body>
         </Card>
 
