@@ -75,7 +75,7 @@ artistGigInformation = () => {
 }
 
 render() {
-    
+    console.log(this.props)
     if (this.state.isLoading == false) {
         return(
             <Container fluid>
