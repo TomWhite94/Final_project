@@ -6,7 +6,17 @@ class GigsController < ApplicationController
 
     def create
         @gig = Gig.new(gig_params)
-        @gig.save
+        if @gig.save
+            render json: {
+              status: :created,
+              gig: @gig
+            }
+          else 
+            render json: {
+              status: 500,
+              errors: @gig.errors.full_messages
+            }
+          end
     end
 
     def destroy

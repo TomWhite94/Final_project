@@ -1,6 +1,6 @@
 class User < ApplicationRecord
 
-  has_and_belongs_to_many :gigs
+  # has_and_belongs_to_many :gigs
    
         has_secure_password
       validates :username, presence: true

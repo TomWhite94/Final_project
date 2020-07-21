@@ -42502,3 +42502,721 @@ No template found for GigsController#create, rendering head :no_content
 Completed 204 No Content in 11ms (ActiveRecord: 5.9ms | Allocations: 2396)
 
 
+Started GET "/artist/264535" for ::1 at 2020-07-21 16:55:52 +0100
+  [1m[35m (4.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"artist/264535"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 289)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 93ba326a44db60b8c646
+Version: webpack 4.43.0
+Time: 8624ms
+Built at: 07/21/2020 4:56:04 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-28eee9070734e611a7fb.js  3.12 MiB       application  [emitted] [immutable]  application
+     js/application-28eee9070734e611a7fb.js.map  3.12 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-1f7a9c6d7e24a2677c7c.js  3.01 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-1f7a9c6d7e24a2677c7c.js.map  2.98 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-28eee9070734e611a7fb.js js/application-28eee9070734e611a7fb.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-1f7a9c6d7e24a2677c7c.js js/server_rendering-1f7a9c6d7e24a2677c7c.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 497 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 273 hidden modules
+
+Completed 200 OK in 12410ms (Views: 12399.7ms | ActiveRecord: 0.0ms | Allocations: 9826)
+
+
+Started GET "/artist/264535" for ::1 at 2020-07-21 16:58:44 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"artist/264535"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 55913d5db1b413f52df2
+Version: webpack 4.43.0
+Time: 10829ms
+Built at: 07/21/2020 4:58:59 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-bb4ec31e0631dc0aafe4.js  3.12 MiB       application  [emitted] [immutable]  application
+     js/application-bb4ec31e0631dc0aafe4.js.map  3.12 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-d362830407913fc3760e.js  3.01 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-d362830407913fc3760e.js.map  2.98 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-bb4ec31e0631dc0aafe4.js js/application-bb4ec31e0631dc0aafe4.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-d362830407913fc3760e.js js/server_rendering-d362830407913fc3760e.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 497 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 273 hidden modules
+
+Completed 200 OK in 14783ms (Views: 14782.5ms | ActiveRecord: 0.0ms | Allocations: 5902)
+
+
+Started GET "/artist/264535" for ::1 at 2020-07-21 16:59:34 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"artist/264535"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 9488daeb6da02ba568d0
+Version: webpack 4.43.0
+Time: 8368ms
+Built at: 07/21/2020 4:59:46 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-bfc15ed04b80b568a677.js  3.12 MiB       application  [emitted] [immutable]  application
+     js/application-bfc15ed04b80b568a677.js.map  3.12 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-7cac4d63b72f827131dc.js  3.01 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-7cac4d63b72f827131dc.js.map  2.98 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-bfc15ed04b80b568a677.js js/application-bfc15ed04b80b568a677.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-7cac4d63b72f827131dc.js js/server_rendering-7cac4d63b72f827131dc.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 497 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 273 hidden modules
+
+Completed 200 OK in 12331ms (Views: 12330.3ms | ActiveRecord: 0.0ms | Allocations: 5958)
+
+
+Started GET "/artist/264535" for ::1 at 2020-07-21 17:00:06 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"artist/264535"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 67)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 53ca48c7622df3431053
+Version: webpack 4.43.0
+Time: 8364ms
+Built at: 07/21/2020 5:00:19 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-58aa22cfaab683485635.js  3.12 MiB       application  [emitted] [immutable]  application
+     js/application-58aa22cfaab683485635.js.map  3.12 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-c34835f694c1ac115557.js  3.01 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-c34835f694c1ac115557.js.map  2.98 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-58aa22cfaab683485635.js js/application-58aa22cfaab683485635.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-c34835f694c1ac115557.js js/server_rendering-c34835f694c1ac115557.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 497 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 273 hidden modules
+
+Completed 200 OK in 12665ms (Views: 12664.4ms | ActiveRecord: 0.0ms | Allocations: 5904)
+
+
+Started POST "/gigs" for ::1 at 2020-07-21 17:00:23 +0100
+Processing by GigsController#create as HTML
+  Parameters: {"likedGig"=>{"userId"=>"1", "gigId"=>39580174}, "gig"=>{}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.4ms | Allocations: 684)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: gig):
+  
+app/controllers/gigs_controller.rb:18:in `gig_params'
+app/controllers/gigs_controller.rb:8:in `create'
+Started POST "/gigs" for ::1 at 2020-07-21 17:00:32 +0100
+Processing by GigsController#create as HTML
+  Parameters: {"likedGig"=>{"userId"=>"1", "gigId"=>39588765}, "gig"=>{}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 721)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: gig):
+  
+app/controllers/gigs_controller.rb:18:in `gig_params'
+app/controllers/gigs_controller.rb:8:in `create'
+Started GET "/artist/264535" for ::1 at 2020-07-21 17:02:39 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"artist/264535"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 15.8ms | Allocations: 69)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: daa74c5ab220c2308d63
+Version: webpack 4.43.0
+Time: 8127ms
+Built at: 07/21/2020 5:02:52 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-561192c3e78e79b3d046.js  3.12 MiB       application  [emitted] [immutable]  application
+     js/application-561192c3e78e79b3d046.js.map  3.12 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-85234c5c5f330f96268f.js  3.01 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-85234c5c5f330f96268f.js.map  2.98 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-561192c3e78e79b3d046.js js/application-561192c3e78e79b3d046.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-85234c5c5f330f96268f.js js/server_rendering-85234c5c5f330f96268f.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 497 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 273 hidden modules
+
+Completed 200 OK in 12669ms (Views: 12656.4ms | ActiveRecord: 0.0ms | Allocations: 5932)
+
+
+Started POST "/gigs" for ::1 at 2020-07-21 17:02:54 +0100
+Processing by GigsController#create as HTML
+  Parameters: {"likedGig"=>{"userId"=>"1", "gigId"=>39580174, "gig"=>39580174}, "gig"=>{}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.6ms | Allocations: 676)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: gig):
+  
+app/controllers/gigs_controller.rb:18:in `gig_params'
+app/controllers/gigs_controller.rb:8:in `create'
+Started GET "/artist/264535" for ::1 at 2020-07-21 17:03:47 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"artist/264535"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 53ca48c7622df3431053
+Version: webpack 4.43.0
+Time: 7986ms
+Built at: 07/21/2020 5:03:59 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-58aa22cfaab683485635.js  3.12 MiB       application  [emitted] [immutable]  application
+     js/application-58aa22cfaab683485635.js.map  3.12 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-c34835f694c1ac115557.js  3.01 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-c34835f694c1ac115557.js.map  2.98 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-58aa22cfaab683485635.js js/application-58aa22cfaab683485635.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-c34835f694c1ac115557.js js/server_rendering-c34835f694c1ac115557.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 497 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 273 hidden modules
+
+Completed 200 OK in 12147ms (Views: 12146.2ms | ActiveRecord: 0.0ms | Allocations: 5899)
+
+
+Started POST "/gigs" for ::1 at 2020-07-21 17:04:03 +0100
+Processing by GigsController#create as HTML
+  Parameters: {"likedGig"=>{"userId"=>"1", "gigId"=>39580174}, "gig"=>{}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.6ms | Allocations: 681)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: gig):
+  
+app/controllers/gigs_controller.rb:18:in `gig_params'
+app/controllers/gigs_controller.rb:8:in `create'
+Started GET "/artist/264535" for ::1 at 2020-07-21 17:08:19 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"artist/264535"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.0ms | Allocations: 4288)
+
+
+Started POST "/gigs" for ::1 at 2020-07-21 17:08:23 +0100
+Processing by GigsController#create as HTML
+  Parameters: {"likedGig"=>{"userId"=>"1", "gigId"=>39580174}, "gig"=>{}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.6ms | Allocations: 674)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: gig):
+  
+app/controllers/gigs_controller.rb:18:in `gig_params'
+app/controllers/gigs_controller.rb:8:in `create'
+Started GET "/artist/264535" for ::1 at 2020-07-21 17:10:37 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"artist/264535"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.0ms | Allocations: 4280)
+
+
+Started POST "/gigs" for ::1 at 2020-07-21 17:10:41 +0100
+Processing by GigsController#create as HTML
+  Parameters: {"likedGig"=>{"userId"=>"1", "gigId"=>39580174}, "gig"=>{}}
+Completed 400 Bad Request in 8ms (ActiveRecord: 0.0ms | Allocations: 1179)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: gig):
+  
+app/controllers/gigs_controller.rb:20:in `gig_params'
+app/controllers/gigs_controller.rb:10:in `create'
+Started GET "/artist/264535" for ::1 at 2020-07-21 17:10:51 +0100
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"artist/264535"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 23.9ms | ActiveRecord: 0.0ms | Allocations: 4116)
+
+
+Started GET "/artist/264535" for ::1 at 2020-07-21 17:11:18 +0100
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"artist/264535"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 289)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 56ms (Views: 45.4ms | ActiveRecord: 0.0ms | Allocations: 8265)
+
+
+Started POST "/gigs" for ::1 at 2020-07-21 17:11:23 +0100
+Processing by GigsController#create as HTML
+  Parameters: {"likedGig"=>{"userId"=>"1", "gigId"=>39580174}, "gig"=>{}}
+Completed 400 Bad Request in 40ms (ActiveRecord: 0.0ms | Allocations: 1514)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: gig):
+  
+app/controllers/gigs_controller.rb:20:in `gig_params'
+app/controllers/gigs_controller.rb:10:in `create'
+Started POST "/gigs" for ::1 at 2020-07-21 17:12:29 +0100
+Processing by GigsController#create as */*
+  Parameters: {"gigId"=>10555, "userId"=>10, "gig"=>{"userId"=>10, "gigId"=>10555}}
+No template found for GigsController#create, rendering head :no_content
+Completed 204 No Content in 73ms (ActiveRecord: 0.9ms | Allocations: 12584)
+
+
+Started POST "/gigs" for ::1 at 2020-07-21 17:13:48 +0100
+Processing by GigsController#create as */*
+  Parameters: {"gigId"=>10555, "userId"=>8, "gig"=>{"userId"=>8, "gigId"=>10555}}
+No template found for GigsController#create, rendering head :no_content
+Completed 204 No Content in 2ms (ActiveRecord: 0.0ms | Allocations: 1168)
+
+
+Started POST "/gigs" for ::1 at 2020-07-21 17:14:47 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by GigsController#create as */*
+  Parameters: {"gigId"=>10555, "userId"=>8, "gig"=>{"userId"=>8, "gigId"=>10555}}
+No template found for GigsController#create, rendering head :no_content
+Completed 204 No Content in 18ms (ActiveRecord: 2.1ms | Allocations: 5230)
+
+
+Started POST "/gigs" for ::1 at 2020-07-21 17:15:32 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by GigsController#create as */*
+  Parameters: {"gigId"=>10555, "userId"=>8, "gig"=>{"userId"=>8, "gigId"=>10555}}
+No template found for GigsController#create, rendering head :no_content
+Completed 204 No Content in 23ms (ActiveRecord: 1.0ms | Allocations: 5926)
+
+
+Started POST "/gigs" for ::1 at 2020-07-21 17:17:52 +0100
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GigsController#create as */*
+  Parameters: {"gigId"=>10555, "userId"=>8, "gig"=>{"userId"=>8, "gigId"=>10555}}
+Completed 200 OK in 41ms (Views: 0.2ms | ActiveRecord: 0.8ms | Allocations: 8225)
+
+
+Started POST "/gigs" for ::1 at 2020-07-21 17:18:08 +0100
+Processing by GigsController#create as */*
+  Parameters: {"gigId"=>10555, "userId"=>1, "gig"=>{"userId"=>1, "gigId"=>10555}}
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 1269)
+
+
+Started POST "/gigs" for ::1 at 2020-07-21 17:18:10 +0100
+Processing by GigsController#create as */*
+  Parameters: {"gigId"=>10555, "userId"=>1, "gig"=>{"userId"=>1, "gigId"=>10555}}
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1273)
+
+
+Started POST "/gigs" for ::1 at 2020-07-21 17:18:11 +0100
+Processing by GigsController#create as */*
+  Parameters: {"gigId"=>10555, "userId"=>1, "gig"=>{"userId"=>1, "gigId"=>10555}}
+Completed 200 OK in 42ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1275)
+
+
+Started POST "/gigs" for ::1 at 2020-07-21 17:18:12 +0100
+Processing by GigsController#create as */*
+  Parameters: {"gigId"=>10555, "userId"=>1, "gig"=>{"userId"=>1, "gigId"=>10555}}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1279)
+
+
+Started POST "/gigs" for ::1 at 2020-07-21 17:18:13 +0100
+Processing by GigsController#create as */*
+  Parameters: {"gigId"=>10555, "userId"=>1, "gig"=>{"userId"=>1, "gigId"=>10555}}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1260)
+
+
+Started POST "/gigs" for ::1 at 2020-07-21 17:18:14 +0100
+Processing by GigsController#create as */*
+  Parameters: {"gigId"=>10555, "userId"=>1, "gig"=>{"userId"=>1, "gigId"=>10555}}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1263)
+
+
+Started POST "/gigs" for ::1 at 2020-07-21 17:18:14 +0100
+Processing by GigsController#create as */*
+  Parameters: {"gigId"=>10555, "userId"=>1, "gig"=>{"userId"=>1, "gigId"=>10555}}
+Completed 200 OK in 2ms (Views: 0.1ms | ActiveRecord: 0.0ms | Allocations: 1262)
+
+
+Started POST "/gigs" for ::1 at 2020-07-21 17:18:30 +0100
+Processing by GigsController#create as */*
+  Parameters: {"gigId"=>1, "userId"=>10, "gig"=>{"userId"=>10, "gigId"=>1}}
+Completed 200 OK in 3ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 1263)
+
+
+Started POST "/gigs" for ::1 at 2020-07-21 17:20:19 +0100
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GigsController#create as */*
+  Parameters: {"gigId"=>1, "userId"=>10, "gig"=>{"userId"=>10, "gigId"=>1}}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gigs_controller.rb:9:in `create'
+  [1m[36mGig Create (0.5ms)[0m  [1m[32mINSERT INTO "gigs" ("userId", "gigId", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["userId", 10], ["gigId", 1], ["created_at", "2020-07-21 16:20:19.372379"], ["updated_at", "2020-07-21 16:20:19.372379"]]
+  ↳ app/controllers/gigs_controller.rb:9:in `create'
+  [1m[35m (1.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gigs_controller.rb:9:in `create'
+Completed 200 OK in 43ms (Views: 2.5ms | ActiveRecord: 5.1ms | Allocations: 5945)
+
+
+Started POST "/gigs" for ::1 at 2020-07-21 17:21:03 +0100
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GigsController#create as */*
+  Parameters: {"gigId"=>10000000, "userId"=>5000000, "gig"=>{"userId"=>5000000, "gigId"=>10000000}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gigs_controller.rb:9:in `create'
+  [1m[36mGig Create (0.6ms)[0m  [1m[32mINSERT INTO "gigs" ("userId", "gigId", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["userId", 5000000], ["gigId", 10000000], ["created_at", "2020-07-21 16:21:03.925019"], ["updated_at", "2020-07-21 16:21:03.925019"]]
+  ↳ app/controllers/gigs_controller.rb:9:in `create'
+  [1m[35m (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gigs_controller.rb:9:in `create'
+Completed 200 OK in 32ms (Views: 0.5ms | ActiveRecord: 4.6ms | Allocations: 5788)
+
+
+Started GET "/artist/264535" for ::1 at 2020-07-21 17:21:30 +0100
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"artist/264535"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 5.6ms | Allocations: 288)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 71ms (Views: 67.0ms | ActiveRecord: 0.0ms | Allocations: 7810)
+
+
+Started POST "/gigs" for ::1 at 2020-07-21 17:21:34 +0100
+Processing by GigsController#create as HTML
+  Parameters: {"likedGig"=>{"userId"=>"1", "gigId"=>39580174}, "gig"=>{}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 714)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: gig):
+  
+app/controllers/gigs_controller.rb:28:in `gig_params'
+app/controllers/gigs_controller.rb:8:in `create'
+Started GET "/artist/264535" for ::1 at 2020-07-21 17:22:15 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"artist/264535"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 69)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 2aacc0181765bcd48692
+Version: webpack 4.43.0
+Time: 8640ms
+Built at: 07/21/2020 5:22:28 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-e18c2f911ee8debce449.js  3.12 MiB       application  [emitted] [immutable]  application
+     js/application-e18c2f911ee8debce449.js.map  3.12 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-ac622c7aa7f8951a21fd.js  3.01 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-ac622c7aa7f8951a21fd.js.map  2.98 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-e18c2f911ee8debce449.js js/application-e18c2f911ee8debce449.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-ac622c7aa7f8951a21fd.js js/server_rendering-ac622c7aa7f8951a21fd.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 497 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 273 hidden modules
+
+Completed 200 OK in 12923ms (Views: 12922.3ms | ActiveRecord: 0.0ms | Allocations: 8219)
+
+
+Started POST "/gigs" for ::1 at 2020-07-21 17:22:33 +0100
+Processing by GigsController#create as HTML
+  Parameters: {"likedGig"=>{"userId"=>"1", "gigId"=>39580174}, "gig"=>{}}
+Completed 400 Bad Request in 2ms (ActiveRecord: 0.9ms | Allocations: 683)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: gig):
+  
+app/controllers/gigs_controller.rb:28:in `gig_params'
+app/controllers/gigs_controller.rb:8:in `create'
+Started GET "/artist/264535" for ::1 at 2020-07-21 17:23:18 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"artist/264535"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 67)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 99abf40ed0c0a258e438
+Version: webpack 4.43.0
+Time: 8235ms
+Built at: 07/21/2020 5:23:31 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-772010b5c6d9679aa786.js  3.12 MiB       application  [emitted] [immutable]  application
+     js/application-772010b5c6d9679aa786.js.map  3.12 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-cb91699858abf262905e.js  3.01 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-cb91699858abf262905e.js.map  2.98 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-772010b5c6d9679aa786.js js/application-772010b5c6d9679aa786.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-cb91699858abf262905e.js js/server_rendering-cb91699858abf262905e.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 497 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 273 hidden modules
+
+Completed 200 OK in 12278ms (Views: 12277.4ms | ActiveRecord: 0.0ms | Allocations: 5901)
+
+
+Started POST "/gigs" for ::1 at 2020-07-21 17:23:32 +0100
+Processing by GigsController#create as HTML
+  Parameters: {"likedGig"=>{"userId"=>"1", "gigId"=>39580174}, "gig"=>{}}
+Completed 400 Bad Request in 3ms (ActiveRecord: 0.6ms | Allocations: 672)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: gig):
+  
+app/controllers/gigs_controller.rb:28:in `gig_params'
+app/controllers/gigs_controller.rb:8:in `create'
+Started POST "/gigs" for ::1 at 2020-07-21 17:25:19 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by GigsController#create as */*
+  Parameters: {"gigId"=>10000000, "userId"=>"5000000", "gig"=>{"userId"=>"5000000", "gigId"=>10000000}}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gigs_controller.rb:9:in `create'
+  [1m[36mGig Create (1.7ms)[0m  [1m[32mINSERT INTO "gigs" ("userId", "gigId", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["userId", 5000000], ["gigId", 10000000], ["created_at", "2020-07-21 16:25:19.467021"], ["updated_at", "2020-07-21 16:25:19.467021"]]
+  ↳ app/controllers/gigs_controller.rb:9:in `create'
+  [1m[35m (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gigs_controller.rb:9:in `create'
+Completed 200 OK in 29ms (Views: 0.6ms | ActiveRecord: 5.2ms | Allocations: 5354)
+
+
+Started GET "/artist/264535" for ::1 at 2020-07-21 17:27:05 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"artist/264535"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: ac5107992750b37fb7cd
+Version: webpack 4.43.0
+Time: 8249ms
+Built at: 07/21/2020 5:27:17 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-b5fdf0c8ce8850bcf337.js  3.12 MiB       application  [emitted] [immutable]  application
+     js/application-b5fdf0c8ce8850bcf337.js.map  3.12 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-3cad173568f22b6755d5.js  3.01 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-3cad173568f22b6755d5.js.map  2.98 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-b5fdf0c8ce8850bcf337.js js/application-b5fdf0c8ce8850bcf337.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-3cad173568f22b6755d5.js js/server_rendering-3cad173568f22b6755d5.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 497 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 273 hidden modules
+
+Completed 200 OK in 12343ms (Views: 12342.0ms | ActiveRecord: 0.0ms | Allocations: 8157)
+
+
+Started GET "/artist/264535" for ::1 at 2020-07-21 17:27:41 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"artist/264535"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 452a538738c185a29775
+Version: webpack 4.43.0
+Time: 8240ms
+Built at: 07/21/2020 5:27:54 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-600c9c23829e223bda58.js  3.12 MiB       application  [emitted] [immutable]  application
+     js/application-600c9c23829e223bda58.js.map  3.12 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-ab84fd6ecc924c4a5ff9.js  3.01 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-ab84fd6ecc924c4a5ff9.js.map  2.98 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-600c9c23829e223bda58.js js/application-600c9c23829e223bda58.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-ab84fd6ecc924c4a5ff9.js js/server_rendering-ab84fd6ecc924c4a5ff9.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 497 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 273 hidden modules
+
+Completed 200 OK in 12144ms (Views: 12141.8ms | ActiveRecord: 0.0ms | Allocations: 5898)
+
+
+Started POST "/gigs" for ::1 at 2020-07-21 17:27:59 +0100
+Processing by GigsController#create as HTML
+  Parameters: {"gig"=>{"userId"=>"1", "gigId"=>39580174}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gigs_controller.rb:9:in `create'
+  [1m[36mGig Create (1.7ms)[0m  [1m[32mINSERT INTO "gigs" ("userId", "gigId", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["userId", 1], ["gigId", 39580174], ["created_at", "2020-07-21 16:27:59.674849"], ["updated_at", "2020-07-21 16:27:59.674849"]]
+  ↳ app/controllers/gigs_controller.rb:9:in `create'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gigs_controller.rb:9:in `create'
+Completed 200 OK in 27ms (Views: 0.5ms | ActiveRecord: 4.7ms | Allocations: 5766)
+
+
+Started GET "/artist/264535" for ::1 at 2020-07-21 17:30:37 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"artist/264535"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 141007a39941b1a191ce
+Version: webpack 4.43.0
+Time: 8204ms
+Built at: 07/21/2020 5:30:49 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-f4c80c4faec14291004c.js  3.12 MiB       application  [emitted] [immutable]  application
+     js/application-f4c80c4faec14291004c.js.map  3.12 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-668ea0cb5fa76ec3c1ab.js  3.01 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-668ea0cb5fa76ec3c1ab.js.map  2.98 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-f4c80c4faec14291004c.js js/application-f4c80c4faec14291004c.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-668ea0cb5fa76ec3c1ab.js js/server_rendering-668ea0cb5fa76ec3c1ab.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 497 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 273 hidden modules
+
+Completed 200 OK in 12132ms (Views: 12130.7ms | ActiveRecord: 0.0ms | Allocations: 8219)
+
+
+Started POST "/gigs" for ::1 at 2020-07-21 17:30:55 +0100
+Processing by GigsController#create as HTML
+  Parameters: {"userId"=>"1", "gigId"=>39588765, "gig"=>{"userId"=>"1", "gigId"=>39588765}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gigs_controller.rb:9:in `create'
+  [1m[36mGig Create (0.5ms)[0m  [1m[32mINSERT INTO "gigs" ("userId", "gigId", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["userId", 1], ["gigId", 39588765], ["created_at", "2020-07-21 16:30:55.124178"], ["updated_at", "2020-07-21 16:30:55.124178"]]
+  ↳ app/controllers/gigs_controller.rb:9:in `create'
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gigs_controller.rb:9:in `create'
+Completed 200 OK in 34ms (Views: 0.4ms | ActiveRecord: 3.7ms | Allocations: 5357)
+
+

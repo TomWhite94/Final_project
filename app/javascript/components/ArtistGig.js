@@ -7,17 +7,12 @@ class ArtistGig extends Component {
 
 handleSubmit = e => {
     e.preventDefault()
-    let respObject = {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ 
-            userId: this.props.userId,
-            gigId: this.props.gig.id
-         })
+    let likedGig = {
+        userId: this.props.userId,
+        gigId: this.props.gig.id
     }
-    fetch('http://localhost:3000/gigs', respObject)
-    .then(resp => resp.json())
-    .then(data => console.log(data))
+    axios.post('http://localhost:3000/gigs', likedGig, {withCredentials: true})
+    .then(resp => console.log(resp))
 }
 
 
@@ -26,13 +21,13 @@ handleSubmit = e => {
     render() {
         console.log(this.props.gig.id)
         return(
-        <Card onSubmit={this.handleSubmit}>
+        <Card >
             <Card.Body>
                 <Card.Title>{this.props.gig.displayName}</Card.Title>
                 <Card.Text>
                 {this.props.gig.venue.metroArea.displayName}, {this.props.gig.venue.metroArea.country.displayName}
                 </Card.Text>
-                <Button variant="primary">Save Gig</Button>
+                <Button variant="primary" type="submit" onClick={this.handleSubmit}>Save Gig</Button>
             </Card.Body>
         </Card>
 
