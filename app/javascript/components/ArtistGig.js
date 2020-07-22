@@ -29,6 +29,8 @@ componentDidMount = () => {
 }
 
 render() {
+    // let eventDate = new Date(this.props.gig.start.date)
+    // console.log(eventDate)
         return(
         <Card >
             <Card.Body>

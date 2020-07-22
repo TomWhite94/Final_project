@@ -45477,3 +45477,1223 @@ Processing by GigsController#index as HTML
 Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.2ms | Allocations: 1906)
 
 
+Started GET "/Homepage" for ::1 at 2020-07-22 15:23:42 +0100
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"Homepage"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 289)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 6cbeaa1c156ba4366dfa
+Version: webpack 4.43.0
+Time: 10321ms
+Built at: 07/22/2020 3:23:56 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-18730b1d5fc7663ab8b7.js  3.31 MiB       application  [emitted] [immutable]  application
+     js/application-18730b1d5fc7663ab8b7.js.map  3.27 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-65445079d339c2a4c8c7.js   3.2 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-65445079d339c2a4c8c7.js.map  3.14 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-18730b1d5fc7663ab8b7.js js/application-18730b1d5fc7663ab8b7.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-65445079d339c2a4c8c7.js js/server_rendering-65445079d339c2a4c8c7.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 497 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 303 hidden modules
+
+Completed 200 OK in 14095ms (Views: 14082.4ms | ActiveRecord: 0.0ms | Allocations: 9576)
+
+
+Started GET "/gigs" for ::1 at 2020-07-22 15:23:57 +0100
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.3ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs" WHERE "gigs"."userId" = ?[0m  [["userId", 1]]
+  ↳ app/controllers/gigs_controller.rb:5:in `index'
+Completed 200 OK in 45ms (Views: 24.0ms | ActiveRecord: 5.0ms | Allocations: 6088)
+
+
+Started GET "/Homepage" for ::1 at 2020-07-22 15:25:02 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"Homepage"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 67)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 8a0e052f354e69038d7e
+Version: webpack 4.43.0
+Time: 8502ms
+Built at: 07/22/2020 3:25:14 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-53bcd2da4710fc275cc7.js  3.32 MiB       application  [emitted] [immutable]  application
+     js/application-53bcd2da4710fc275cc7.js.map  3.28 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-9bec858aff718f0f6d6a.js  3.21 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-9bec858aff718f0f6d6a.js.map  3.15 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-53bcd2da4710fc275cc7.js js/application-53bcd2da4710fc275cc7.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-9bec858aff718f0f6d6a.js js/server_rendering-9bec858aff718f0f6d6a.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 497 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 305 hidden modules
+
+Completed 200 OK in 12322ms (Views: 12320.6ms | ActiveRecord: 0.0ms | Allocations: 5898)
+
+
+Started GET "/gigs" for ::1 at 2020-07-22 15:25:15 +0100
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.2ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs" WHERE "gigs"."userId" = ?[0m  [["userId", 1]]
+  ↳ app/controllers/gigs_controller.rb:5:in `index'
+Completed 200 OK in 125ms (Views: 107.6ms | ActiveRecord: 3.5ms | Allocations: 5642)
+
+
+Started GET "/Homepage" for ::1 at 2020-07-22 15:40:15 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"Homepage"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 67)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 04d88fd1a01275485a9a
+Version: webpack 4.43.0
+Time: 8552ms
+Built at: 07/22/2020 3:40:28 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-957160f309a85bbfbcf7.js  3.32 MiB       application  [emitted] [immutable]  application
+     js/application-957160f309a85bbfbcf7.js.map  3.28 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-57773cc5717a5792cd5c.js  3.21 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-57773cc5717a5792cd5c.js.map  3.15 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-957160f309a85bbfbcf7.js js/application-957160f309a85bbfbcf7.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-57773cc5717a5792cd5c.js js/server_rendering-57773cc5717a5792cd5c.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 497 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 305 hidden modules
+
+Completed 200 OK in 13063ms (Views: 13062.0ms | ActiveRecord: 0.0ms | Allocations: 12492)
+
+
+Started GET "/gigs" for ::1 at 2020-07-22 15:40:29 +0100
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (1.2ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs" WHERE "gigs"."userId" = ?[0m  [["userId", 1]]
+  ↳ app/controllers/gigs_controller.rb:5:in `index'
+Completed 200 OK in 19ms (Views: 12.2ms | ActiveRecord: 1.2ms | Allocations: 5229)
+
+
+Started GET "/Homepage" for ::1 at 2020-07-22 15:41:10 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"Homepage"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 67)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 5715316397afccd7ad4c
+Version: webpack 4.43.0
+Time: 8426ms
+Built at: 07/22/2020 3:41:23 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-f538a411fd652f19628a.js  3.32 MiB       application  [emitted] [immutable]  application
+     js/application-f538a411fd652f19628a.js.map  3.28 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-92e29613b8edff412d02.js  3.21 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-92e29613b8edff412d02.js.map  3.15 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-f538a411fd652f19628a.js js/application-f538a411fd652f19628a.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-92e29613b8edff412d02.js js/server_rendering-92e29613b8edff412d02.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 497 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 305 hidden modules
+
+Completed 200 OK in 12519ms (Views: 12517.7ms | ActiveRecord: 0.0ms | Allocations: 5905)
+
+
+Started GET "/gigs" for ::1 at 2020-07-22 15:41:24 +0100
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.2ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs" WHERE "gigs"."userId" = ?[0m  [["userId", 1]]
+  ↳ app/controllers/gigs_controller.rb:5:in `index'
+Completed 200 OK in 17ms (Views: 11.3ms | ActiveRecord: 1.3ms | Allocations: 5513)
+
+
+Started GET "/Homepage" for ::1 at 2020-07-22 15:42:08 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"Homepage"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 66)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 702184296ea400f37e65
+Version: webpack 4.43.0
+Time: 8565ms
+Built at: 07/22/2020 3:42:21 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-0c2d6bfcb489de0576d3.js  3.32 MiB       application  [emitted] [immutable]  application
+     js/application-0c2d6bfcb489de0576d3.js.map  3.28 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-5929fbd8f9d1a3f2faa1.js  3.21 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-5929fbd8f9d1a3f2faa1.js.map  3.15 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-0c2d6bfcb489de0576d3.js js/application-0c2d6bfcb489de0576d3.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-5929fbd8f9d1a3f2faa1.js js/server_rendering-5929fbd8f9d1a3f2faa1.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 497 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 305 hidden modules
+
+Completed 200 OK in 12581ms (Views: 12577.0ms | ActiveRecord: 0.0ms | Allocations: 5896)
+
+
+Started GET "/Homepage" for ::1 at 2020-07-22 15:43:49 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"Homepage"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 66)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 17396f78d8713c58f696
+Version: webpack 4.43.0
+Time: 8217ms
+Built at: 07/22/2020 3:44:02 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-28a99b3310e71c2a3d71.js  3.32 MiB       application  [emitted] [immutable]  application
+     js/application-28a99b3310e71c2a3d71.js.map  3.28 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-4da73ac9a764ac58edc5.js  3.21 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-4da73ac9a764ac58edc5.js.map  3.15 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-28a99b3310e71c2a3d71.js js/application-28a99b3310e71c2a3d71.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-4da73ac9a764ac58edc5.js js/server_rendering-4da73ac9a764ac58edc5.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 497 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 305 hidden modules
+
+Completed 200 OK in 12237ms (Views: 12235.5ms | ActiveRecord: 0.0ms | Allocations: 5899)
+
+
+Started GET "/gigs" for ::1 at 2020-07-22 15:44:02 +0100
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.3ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs" WHERE "gigs"."userId" = ?[0m  [["userId", 1]]
+  ↳ app/controllers/gigs_controller.rb:5:in `index'
+Completed 200 OK in 22ms (Views: 9.7ms | ActiveRecord: 3.0ms | Allocations: 5546)
+
+
+Started GET "/Homepage" for ::1 at 2020-07-22 15:48:43 +0100
+  [1m[35m (3.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"Homepage"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 289)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 3744fe1dfe3f19d860af
+Version: webpack 4.43.0
+Time: 10197ms
+Built at: 07/22/2020 3:48:56 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-6c25a4d82643c6de716c.js  3.46 MiB       application  [emitted] [immutable]  application
+     js/application-6c25a4d82643c6de716c.js.map  3.43 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-6a215cdc2ce4734c9a51.js  3.35 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-6a215cdc2ce4734c9a51.js.map  3.29 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-6c25a4d82643c6de716c.js js/application-6c25a4d82643c6de716c.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-6a215cdc2ce4734c9a51.js js/server_rendering-6a215cdc2ce4734c9a51.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 497 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 354 hidden modules
+
+Completed 200 OK in 13143ms (Views: 13126.9ms | ActiveRecord: 0.0ms | Allocations: 14111)
+
+
+Started GET "/gigs" for ::1 at 2020-07-22 15:48:57 +0100
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.2ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs" WHERE "gigs"."userId" = ?[0m  [["userId", 1]]
+  ↳ app/controllers/gigs_controller.rb:5:in `index'
+Completed 200 OK in 29ms (Views: 12.5ms | ActiveRecord: 3.5ms | Allocations: 6084)
+
+
+Started GET "/Homepage" for ::1 at 2020-07-22 15:51:14 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"Homepage"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 0b20b8b1fe69e5dd6a6d
+Version: webpack 4.43.0
+Time: 8745ms
+Built at: 07/22/2020 3:51:27 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-f25460205c14ca10a2e6.js  3.28 MiB       application  [emitted] [immutable]  application
+     js/application-f25460205c14ca10a2e6.js.map  3.27 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-21e5c78674e5c4f36648.js  3.16 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-21e5c78674e5c4f36648.js.map  3.14 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-f25460205c14ca10a2e6.js js/application-f25460205c14ca10a2e6.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-21e5c78674e5c4f36648.js js/server_rendering-21e5c78674e5c4f36648.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 497 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 324 hidden modules
+
+Completed 200 OK in 12799ms (Views: 12797.7ms | ActiveRecord: 0.0ms | Allocations: 5903)
+
+
+Started GET "/Homepage" for ::1 at 2020-07-22 15:51:33 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"Homepage"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 67)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: a550a9d19034bc207708
+Version: webpack 4.43.0
+Time: 8522ms
+Built at: 07/22/2020 3:51:46 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-d6f0a15a29714b71192a.js  3.28 MiB       application  [emitted] [immutable]  application
+     js/application-d6f0a15a29714b71192a.js.map  3.27 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-5f863e7e18684d6f3c42.js  3.16 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-5f863e7e18684d6f3c42.js.map  3.14 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-d6f0a15a29714b71192a.js js/application-d6f0a15a29714b71192a.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-5f863e7e18684d6f3c42.js js/server_rendering-5f863e7e18684d6f3c42.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 497 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 324 hidden modules
+
+Completed 200 OK in 12917ms (Views: 12914.6ms | ActiveRecord: 0.0ms | Allocations: 5910)
+
+
+Started GET "/gigs" for ::1 at 2020-07-22 15:51:47 +0100
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.2ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs" WHERE "gigs"."userId" = ?[0m  [["userId", 1]]
+  ↳ app/controllers/gigs_controller.rb:5:in `index'
+Completed 200 OK in 24ms (Views: 16.0ms | ActiveRecord: 1.4ms | Allocations: 5546)
+
+
+Started GET "/Homepage" for ::1 at 2020-07-22 15:59:49 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"Homepage"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 66)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 17396f78d8713c58f696
+Version: webpack 4.43.0
+Time: 9017ms
+Built at: 07/22/2020 4:00:02 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-28a99b3310e71c2a3d71.js  3.32 MiB       application  [emitted] [immutable]  application
+     js/application-28a99b3310e71c2a3d71.js.map  3.28 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-4da73ac9a764ac58edc5.js  3.21 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-4da73ac9a764ac58edc5.js.map  3.15 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-28a99b3310e71c2a3d71.js js/application-28a99b3310e71c2a3d71.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-4da73ac9a764ac58edc5.js js/server_rendering-4da73ac9a764ac58edc5.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 497 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 305 hidden modules
+
+Completed 200 OK in 13055ms (Views: 13054.3ms | ActiveRecord: 0.0ms | Allocations: 5901)
+
+
+Started GET "/gigs" for ::1 at 2020-07-22 16:00:04 +0100
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.4ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs" WHERE "gigs"."userId" = ?[0m  [["userId", 1]]
+  ↳ app/controllers/gigs_controller.rb:5:in `index'
+Completed 200 OK in 28ms (Views: 18.7ms | ActiveRecord: 0.4ms | Allocations: 5194)
+
+
+Started GET "/Homepage" for ::1 at 2020-07-22 16:07:26 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"Homepage"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 66)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 29ms (Views: 27.3ms | ActiveRecord: 0.0ms | Allocations: 4120)
+
+
+Started GET "/gigs" for ::1 at 2020-07-22 16:07:27 +0100
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (1.6ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs" WHERE "gigs"."userId" = ?[0m  [["userId", 1]]
+  ↳ app/controllers/gigs_controller.rb:5:in `index'
+Completed 200 OK in 11ms (Views: 4.7ms | ActiveRecord: 1.6ms | Allocations: 1913)
+
+
+Started GET "/gigs" for ::1 at 2020-07-22 16:07:32 +0100
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.2ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs" WHERE "gigs"."userId" = ?[0m  [["userId", 1]]
+  ↳ app/controllers/gigs_controller.rb:5:in `index'
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.2ms | Allocations: 1929)
+
+
+Started POST "/gigs" for ::1 at 2020-07-22 16:07:44 +0100
+Processing by GigsController#create as HTML
+  Parameters: {"userId"=>"1", "gigId"=>39167768, "gig"=>{"userId"=>"1", "gigId"=>39167768}}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/gigs_controller.rb:16:in `create'
+  [1m[36mGig Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "gigs" WHERE "gigs"."gigId" = ? LIMIT ?[0m  [["gigId", 39167768], ["LIMIT", 1]]
+  ↳ app/controllers/gigs_controller.rb:16:in `create'
+  [1m[36mGig Create (0.7ms)[0m  [1m[32mINSERT INTO "gigs" ("userId", "gigId", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["userId", 1], ["gigId", 39167768], ["created_at", "2020-07-22 15:07:44.662770"], ["updated_at", "2020-07-22 15:07:44.662770"]]
+  ↳ app/controllers/gigs_controller.rb:16:in `create'
+  [1m[35m (5.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/gigs_controller.rb:16:in `create'
+Completed 200 OK in 17ms (Views: 0.7ms | ActiveRecord: 6.1ms | Allocations: 3836)
+
+
+Started GET "/artist/264535" for ::1 at 2020-07-22 16:07:46 +0100
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"artist/264535"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 67)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 23.6ms | ActiveRecord: 0.0ms | Allocations: 4116)
+
+
+Started GET "/gigs" for ::1 at 2020-07-22 16:07:47 +0100
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.3ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs" WHERE "gigs"."userId" = ?[0m  [["userId", 1]]
+  ↳ app/controllers/gigs_controller.rb:5:in `index'
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.3ms | Allocations: 2058)
+
+
+Started GET "/Homepage" for ::1 at 2020-07-22 16:07:50 +0100
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"Homepage"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 38ms (Views: 36.8ms | ActiveRecord: 0.0ms | Allocations: 4122)
+
+
+Started GET "/gigs" for ::1 at 2020-07-22 16:07:50 +0100
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.1ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs" WHERE "gigs"."userId" = ?[0m  [["userId", 1]]
+  ↳ app/controllers/gigs_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 2.5ms | ActiveRecord: 0.1ms | Allocations: 2033)
+
+
+Started GET "/Homepage" for ::1 at 2020-07-22 16:14:54 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"Homepage"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 67)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 7e5a698f4bdd976e0fbb
+Version: webpack 4.43.0
+Time: 8659ms
+Built at: 07/22/2020 4:15:07 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-a33ddd2652db1bccc516.js  3.32 MiB       application  [emitted] [immutable]  application
+     js/application-a33ddd2652db1bccc516.js.map  3.28 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-bb0bfbc02807aabe6299.js  3.21 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-bb0bfbc02807aabe6299.js.map  3.15 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-a33ddd2652db1bccc516.js js/application-a33ddd2652db1bccc516.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-bb0bfbc02807aabe6299.js js/server_rendering-bb0bfbc02807aabe6299.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 497 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 305 hidden modules
+
+Completed 200 OK in 13299ms (Views: 13295.8ms | ActiveRecord: 0.0ms | Allocations: 5911)
+
+
+Started GET "/gigs" for ::1 at 2020-07-22 16:15:08 +0100
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.8ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs" WHERE "gigs"."userId" = ?[0m  [["userId", 1]]
+  ↳ app/controllers/gigs_controller.rb:5:in `index'
+Completed 200 OK in 20ms (Views: 10.0ms | ActiveRecord: 0.8ms | Allocations: 5316)
+
+
+Started GET "/Homepage" for ::1 at 2020-07-22 16:20:41 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"Homepage"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 821ea9ccb4f900a0da93
+Version: webpack 4.43.0
+Time: 8405ms
+Built at: 07/22/2020 4:20:54 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-af8d9960690b0d14caba.js  3.32 MiB       application  [emitted] [immutable]  application
+     js/application-af8d9960690b0d14caba.js.map  3.28 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-148a86c7fdda8f42053d.js  3.21 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-148a86c7fdda8f42053d.js.map  3.15 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-af8d9960690b0d14caba.js js/application-af8d9960690b0d14caba.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-148a86c7fdda8f42053d.js js/server_rendering-148a86c7fdda8f42053d.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 497 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 305 hidden modules
+
+Completed 200 OK in 12663ms (Views: 12659.6ms | ActiveRecord: 0.0ms | Allocations: 5904)
+
+
+Started GET "/gigs" for ::1 at 2020-07-22 16:20:55 +0100
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.2ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs" WHERE "gigs"."userId" = ?[0m  [["userId", 1]]
+  ↳ app/controllers/gigs_controller.rb:5:in `index'
+Completed 200 OK in 22ms (Views: 11.0ms | ActiveRecord: 1.1ms | Allocations: 5646)
+
+
+Started GET "/gigs" for ::1 at 2020-07-22 16:23:00 +0100
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.2ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs" WHERE "gigs"."userId" = ?[0m  [["userId", 1]]
+  ↳ app/controllers/gigs_controller.rb:5:in `index'
+Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 0.2ms | Allocations: 2024)
+
+
+Started GET "/artist/264535" for ::1 at 2020-07-22 16:24:12 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"artist/264535"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 66)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 5d4b677d59a5c2595b10
+Version: webpack 4.43.0
+Time: 9413ms
+Built at: 07/22/2020 4:24:26 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-39640e0f7423412a198b.js  3.32 MiB       application  [emitted] [immutable]  application
+     js/application-39640e0f7423412a198b.js.map  3.28 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-ddb95ff849893d73115b.js  3.21 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-ddb95ff849893d73115b.js.map  3.15 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-39640e0f7423412a198b.js js/application-39640e0f7423412a198b.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-ddb95ff849893d73115b.js js/server_rendering-ddb95ff849893d73115b.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 497 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 305 hidden modules
+
+Completed 200 OK in 13880ms (Views: 13873.9ms | ActiveRecord: 0.0ms | Allocations: 5900)
+
+
+Started GET "/gigs" for ::1 at 2020-07-22 16:24:26 +0100
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.5ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs" WHERE "gigs"."userId" = ?[0m  [["userId", 1]]
+  ↳ app/controllers/gigs_controller.rb:5:in `index'
+Completed 200 OK in 52ms (Views: 42.5ms | ActiveRecord: 1.5ms | Allocations: 5878)
+
+
+Started GET "/artist/264535" for ::1 at 2020-07-22 16:25:58 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"artist/264535"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: af51fb954a60f0602c0c
+Version: webpack 4.43.0
+Time: 8658ms
+Built at: 07/22/2020 4:26:11 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-a1495d7ec2bc9e4336bf.js  3.32 MiB       application  [emitted] [immutable]  application
+     js/application-a1495d7ec2bc9e4336bf.js.map  3.28 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-decb5e902574f0c1070a.js  3.21 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-decb5e902574f0c1070a.js.map  3.15 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-a1495d7ec2bc9e4336bf.js js/application-a1495d7ec2bc9e4336bf.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-decb5e902574f0c1070a.js js/server_rendering-decb5e902574f0c1070a.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 497 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 305 hidden modules
+
+Completed 200 OK in 12867ms (Views: 12865.5ms | ActiveRecord: 0.0ms | Allocations: 5904)
+
+
+Started GET "/gigs" for ::1 at 2020-07-22 16:26:12 +0100
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.3ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs" WHERE "gigs"."userId" = ?[0m  [["userId", 1]]
+  ↳ app/controllers/gigs_controller.rb:5:in `index'
+Completed 200 OK in 24ms (Views: 12.0ms | ActiveRecord: 1.6ms | Allocations: 5639)
+
+
+Started GET "/artist/264535" for ::1 at 2020-07-22 16:30:58 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"artist/264535"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: cc03a1c929f5c939b0da
+Version: webpack 4.43.0
+Time: 8585ms
+Built at: 07/22/2020 4:31:10 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-73538c8396f364fb2f3e.js  3.32 MiB       application  [emitted] [immutable]  application
+     js/application-73538c8396f364fb2f3e.js.map  3.28 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-a854ff5dcce14149ef78.js  3.21 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-a854ff5dcce14149ef78.js.map  3.15 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-73538c8396f364fb2f3e.js js/application-73538c8396f364fb2f3e.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-a854ff5dcce14149ef78.js js/server_rendering-a854ff5dcce14149ef78.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 497 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 305 hidden modules
+
+Completed 200 OK in 12914ms (Views: 12913.5ms | ActiveRecord: 0.0ms | Allocations: 5903)
+
+
+Started GET "/gigs" for ::1 at 2020-07-22 16:31:11 +0100
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.3ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs" WHERE "gigs"."userId" = ?[0m  [["userId", 1]]
+  ↳ app/controllers/gigs_controller.rb:5:in `index'
+Completed 200 OK in 24ms (Views: 11.8ms | ActiveRecord: 1.7ms | Allocations: 5639)
+
+
+Started GET "/Homepage" for ::1 at 2020-07-22 16:31:28 +0100
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"Homepage"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.0ms | Allocations: 4125)
+
+
+Started GET "/gigs" for ::1 at 2020-07-22 16:31:28 +0100
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.2ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs" WHERE "gigs"."userId" = ?[0m  [["userId", 1]]
+  ↳ app/controllers/gigs_controller.rb:5:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 2023)
+
+
+Started GET "/gigs" for ::1 at 2020-07-22 16:31:32 +0100
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.3ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs" WHERE "gigs"."userId" = ?[0m  [["userId", 1]]
+  ↳ app/controllers/gigs_controller.rb:5:in `index'
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.3ms | Allocations: 2021)
+
+
+Started GET "/artist/264535" for ::1 at 2020-07-22 16:57:41 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"artist/264535"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 622118ab360e00216efc
+Version: webpack 4.43.0
+Time: 8729ms
+Built at: 07/22/2020 4:57:55 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-076588aff655c69cc850.js  3.32 MiB       application  [emitted] [immutable]  application
+     js/application-076588aff655c69cc850.js.map  3.28 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-52af7f649ee0704a590a.js  3.21 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-52af7f649ee0704a590a.js.map  3.15 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-076588aff655c69cc850.js js/application-076588aff655c69cc850.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-52af7f649ee0704a590a.js js/server_rendering-52af7f649ee0704a590a.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 497 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 305 hidden modules
+
+Completed 200 OK in 13253ms (Views: 13252.3ms | ActiveRecord: 0.0ms | Allocations: 5909)
+
+
+Started GET "/gigs" for ::1 at 2020-07-22 16:57:56 +0100
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.3ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs" WHERE "gigs"."userId" = ?[0m  [["userId", 1]]
+  ↳ app/controllers/gigs_controller.rb:5:in `index'
+Completed 200 OK in 23ms (Views: 13.6ms | ActiveRecord: 0.3ms | Allocations: 5320)
+
+
+Started GET "/Homepage" for ::1 at 2020-07-22 16:57:58 +0100
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"Homepage"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.0ms | Allocations: 4119)
+
+
+Started GET "/gigs" for ::1 at 2020-07-22 16:57:58 +0100
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.2ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs" WHERE "gigs"."userId" = ?[0m  [["userId", 1]]
+  ↳ app/controllers/gigs_controller.rb:5:in `index'
+Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.2ms | Allocations: 2024)
+
+
+Started GET "/Homepage" for ::1 at 2020-07-22 16:58:57 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"Homepage"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 67)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 4a99a7b5f951031c79a1
+Version: webpack 4.43.0
+Time: 8538ms
+Built at: 07/22/2020 4:59:10 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-04368e36a2414a61534e.js  3.32 MiB       application  [emitted] [immutable]  application
+     js/application-04368e36a2414a61534e.js.map  3.28 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-a0d22c23465ae57c6ad2.js  3.21 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-a0d22c23465ae57c6ad2.js.map  3.15 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-04368e36a2414a61534e.js js/application-04368e36a2414a61534e.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-a0d22c23465ae57c6ad2.js js/server_rendering-a0d22c23465ae57c6ad2.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 497 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 305 hidden modules
+
+Completed 200 OK in 12548ms (Views: 12545.2ms | ActiveRecord: 0.0ms | Allocations: 5895)
+
+
+Started GET "/gigs" for ::1 at 2020-07-22 16:59:10 +0100
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.3ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs" WHERE "gigs"."userId" = ?[0m  [["userId", 1]]
+  ↳ app/controllers/gigs_controller.rb:5:in `index'
+Completed 200 OK in 29ms (Views: 19.9ms | ActiveRecord: 1.6ms | Allocations: 5669)
+
+
+Started GET "/Homepage" for ::1 at 2020-07-22 17:00:50 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"Homepage"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 66)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 7ade1dad0facbb2dbd13
+Version: webpack 4.43.0
+Time: 8719ms
+Built at: 07/22/2020 5:01:02 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-2f8712f0cb187bc15d22.js  3.32 MiB       application  [emitted] [immutable]  application
+     js/application-2f8712f0cb187bc15d22.js.map  3.28 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-9781ae30d272a9f7fc84.js  3.21 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-9781ae30d272a9f7fc84.js.map  3.15 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-2f8712f0cb187bc15d22.js js/application-2f8712f0cb187bc15d22.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-9781ae30d272a9f7fc84.js js/server_rendering-9781ae30d272a9f7fc84.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 497 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 305 hidden modules
+
+Completed 200 OK in 11979ms (Views: 11978.2ms | ActiveRecord: 0.0ms | Allocations: 5892)
+
+
+Started GET "/gigs" for ::1 at 2020-07-22 17:01:03 +0100
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.3ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs" WHERE "gigs"."userId" = ?[0m  [["userId", 1]]
+  ↳ app/controllers/gigs_controller.rb:5:in `index'
+Completed 200 OK in 18ms (Views: 12.0ms | ActiveRecord: 1.4ms | Allocations: 5655)
+
+
+Started GET "/Homepage" for ::1 at 2020-07-22 17:02:09 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"Homepage"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: e49d3f38565d90737d0e
+Version: webpack 4.43.0
+Time: 8582ms
+Built at: 07/22/2020 5:02:22 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-07b92b15cab66bb8f27c.js  3.32 MiB       application  [emitted] [immutable]  application
+     js/application-07b92b15cab66bb8f27c.js.map  3.28 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-0fc77ea96bf423ca9cac.js  3.21 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-0fc77ea96bf423ca9cac.js.map  3.15 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-07b92b15cab66bb8f27c.js js/application-07b92b15cab66bb8f27c.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-0fc77ea96bf423ca9cac.js js/server_rendering-0fc77ea96bf423ca9cac.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 497 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 305 hidden modules
+
+Completed 200 OK in 12767ms (Views: 12765.5ms | ActiveRecord: 0.0ms | Allocations: 5895)
+
+
+Started GET "/gigs" for ::1 at 2020-07-22 17:02:23 +0100
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.2ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs" WHERE "gigs"."userId" = ?[0m  [["userId", 1]]
+  ↳ app/controllers/gigs_controller.rb:5:in `index'
+Completed 200 OK in 22ms (Views: 12.4ms | ActiveRecord: 0.9ms | Allocations: 5604)
+
+
+Started GET "/Homepage" for ::1 at 2020-07-22 17:07:05 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"Homepage"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 7183b78a5943e5ee36e7
+Version: webpack 4.43.0
+Time: 9540ms
+Built at: 07/22/2020 5:07:19 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-559b247b1e086d0233d1.js  3.32 MiB       application  [emitted] [immutable]  application
+     js/application-559b247b1e086d0233d1.js.map  3.28 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-f79913d9b7339de9c4a6.js  3.21 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-f79913d9b7339de9c4a6.js.map  3.15 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-559b247b1e086d0233d1.js js/application-559b247b1e086d0233d1.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-f79913d9b7339de9c4a6.js js/server_rendering-f79913d9b7339de9c4a6.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 497 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 305 hidden modules
+
+Completed 200 OK in 13818ms (Views: 13815.4ms | ActiveRecord: 0.0ms | Allocations: 5913)
+
+
+Started GET "/gigs" for ::1 at 2020-07-22 17:07:20 +0100
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.9ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs" WHERE "gigs"."userId" = ?[0m  [["userId", 1]]
+  ↳ app/controllers/gigs_controller.rb:5:in `index'
+Completed 200 OK in 24ms (Views: 16.0ms | ActiveRecord: 2.0ms | Allocations: 5638)
+
+
+Started GET "/Homepage" for ::1 at 2020-07-22 17:24:45 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"Homepage"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 66)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 6f4cfce313e2e826e97b
+Version: webpack 4.43.0
+Time: 15479ms
+Built at: 07/22/2020 5:25:04 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-62b55842dc75e4bbeea1.js  3.32 MiB       application  [emitted] [immutable]  application
+     js/application-62b55842dc75e4bbeea1.js.map  3.28 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-3052bc93c037454e5c93.js  3.21 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-3052bc93c037454e5c93.js.map  3.15 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-62b55842dc75e4bbeea1.js js/application-62b55842dc75e4bbeea1.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-3052bc93c037454e5c93.js js/server_rendering-3052bc93c037454e5c93.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 497 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 305 hidden modules
+
+Completed 200 OK in 19947ms (Views: 19946.1ms | ActiveRecord: 0.0ms | Allocations: 10657)
+
+
+Started GET "/gigs" for ::1 at 2020-07-22 17:25:06 +0100
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.2ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs" WHERE "gigs"."userId" = ?[0m  [["userId", 1]]
+  ↳ app/controllers/gigs_controller.rb:5:in `index'
+Completed 200 OK in 21ms (Views: 12.6ms | ActiveRecord: 2.5ms | Allocations: 5644)
+
+
+Started GET "/Homepage" for ::1 at 2020-07-22 17:28:38 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"Homepage"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: b95328b77112b068f16e
+Version: webpack 4.43.0
+Time: 8596ms
+Built at: 07/22/2020 5:28:51 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-5a630f5cad25cee87774.js  3.32 MiB       application  [emitted] [immutable]  application
+     js/application-5a630f5cad25cee87774.js.map  3.28 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-da9a4a047c8dc5178cad.js  3.21 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-da9a4a047c8dc5178cad.js.map  3.15 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-5a630f5cad25cee87774.js js/application-5a630f5cad25cee87774.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-da9a4a047c8dc5178cad.js js/server_rendering-da9a4a047c8dc5178cad.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 497 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 305 hidden modules
+
+Completed 200 OK in 12743ms (Views: 12742.4ms | ActiveRecord: 0.0ms | Allocations: 5912)
+
+
+Started GET "/gigs" for ::1 at 2020-07-22 17:28:52 +0100
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.3ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs" WHERE "gigs"."userId" = ?[0m  [["userId", 1]]
+  ↳ app/controllers/gigs_controller.rb:5:in `index'
+Completed 200 OK in 27ms (Views: 18.7ms | ActiveRecord: 2.7ms | Allocations: 5653)
+
+
+Started GET "/Homepage" for ::1 at 2020-07-22 17:33:50 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"Homepage"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 66)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 69b60ea8f976eaf77053
+Version: webpack 4.43.0
+Time: 8845ms
+Built at: 07/22/2020 5:34:03 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-d8b640391be4bf72d9b5.js  3.32 MiB       application  [emitted] [immutable]  application
+     js/application-d8b640391be4bf72d9b5.js.map  3.28 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-2cf2da27b5b47d955624.js  3.21 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-2cf2da27b5b47d955624.js.map  3.15 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-d8b640391be4bf72d9b5.js js/application-d8b640391be4bf72d9b5.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-2cf2da27b5b47d955624.js js/server_rendering-2cf2da27b5b47d955624.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 497 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 305 hidden modules
+
+Completed 200 OK in 12917ms (Views: 12911.7ms | ActiveRecord: 0.0ms | Allocations: 5898)
+
+
+Started GET "/gigs" for ::1 at 2020-07-22 17:34:03 +0100
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.2ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs" WHERE "gigs"."userId" = ?[0m  [["userId", 1]]
+  ↳ app/controllers/gigs_controller.rb:5:in `index'
+Completed 200 OK in 50ms (Views: 17.6ms | ActiveRecord: 1.4ms | Allocations: 5643)
+
+
+Started GET "/Homepage" for ::1 at 2020-07-22 17:37:56 +0100
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"Homepage"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 66)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: c99301184ed048f4e9f0
+Version: webpack 4.43.0
+Time: 10866ms
+Built at: 07/22/2020 5:38:11 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-5d4abab854c65ef930d1.js  3.32 MiB       application  [emitted] [immutable]  application
+     js/application-5d4abab854c65ef930d1.js.map  3.28 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-94a58e6a9f0d88dd6d87.js  3.21 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-94a58e6a9f0d88dd6d87.js.map  3.15 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-5d4abab854c65ef930d1.js js/application-5d4abab854c65ef930d1.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-94a58e6a9f0d88dd6d87.js js/server_rendering-94a58e6a9f0d88dd6d87.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 497 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 305 hidden modules
+
+Completed 200 OK in 14956ms (Views: 14954.5ms | ActiveRecord: 0.0ms | Allocations: 5905)
+
+
+Started GET "/gigs" for ::1 at 2020-07-22 17:38:12 +0100
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.3ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs" WHERE "gigs"."userId" = ?[0m  [["userId", 1]]
+  ↳ app/controllers/gigs_controller.rb:5:in `index'
+Completed 200 OK in 37ms (Views: 30.4ms | ActiveRecord: 1.3ms | Allocations: 5640)
+
+
+Started GET "/Homepage" for ::1 at 2020-07-22 17:39:23 +0100
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"Homepage"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 43ms (Views: 42.6ms | ActiveRecord: 0.0ms | Allocations: 9984)
+
+
+Started GET "/gigs" for ::1 at 2020-07-22 17:39:24 +0100
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (1.4ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs" WHERE "gigs"."userId" = ?[0m  [["userId", 1]]
+  ↳ app/controllers/gigs_controller.rb:5:in `index'
+Completed 200 OK in 10ms (Views: 7.5ms | ActiveRecord: 1.4ms | Allocations: 2020)
+
+
+Started GET "/Homepage" for ::1 at 2020-07-22 17:40:10 +0100
+  [1m[35m (10.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by HomepageController#index as HTML
+  Parameters: {"path"=>"Homepage"}
+  Rendering homepage/index.html.erb within layouts/application
+  Rendered homepage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /Users/flatironschool/Documents/Final_project/public/packs
+[Webpacker] Hash: 762469f8100c0bfa29b6
+Version: webpack 4.43.0
+Time: 8543ms
+Built at: 07/22/2020 5:40:23 PM
+                                          Asset      Size            Chunks                         Chunk Names
+         js/application-52c277d5d743102e3569.js  3.32 MiB       application  [emitted] [immutable]  application
+     js/application-52c277d5d743102e3569.js.map  3.28 MiB       application  [emitted] [dev]        application
+         js/hello_react-a4ff77c4d5001e5c1cfc.js  1.05 MiB       hello_react  [emitted] [immutable]  hello_react
+     js/hello_react-a4ff77c4d5001e5c1cfc.js.map  1.21 MiB       hello_react  [emitted] [dev]        hello_react
+    js/server_rendering-4deb06c51ed717c8d799.js  3.21 MiB  server_rendering  [emitted] [immutable]  server_rendering
+js/server_rendering-4deb06c51ed717c8d799.js.map  3.15 MiB  server_rendering  [emitted] [dev]        server_rendering
+                                  manifest.json  1.05 KiB                    [emitted]              
+Entrypoint application = js/application-52c277d5d743102e3569.js js/application-52c277d5d743102e3569.js.map
+Entrypoint hello_react = js/hello_react-a4ff77c4d5001e5c1cfc.js js/hello_react-a4ff77c4d5001e5c1cfc.js.map
+Entrypoint server_rendering = js/server_rendering-4deb06c51ed717c8d799.js js/server_rendering-4deb06c51ed717c8d799.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/components sync recursive ^\.\/.*$] ./app/javascript/components sync ^\.\/.*$ 497 bytes {application} {server_rendering} [built]
+[./app/javascript/packs/application.js] 968 bytes {application} [built]
+[./app/javascript/packs/hello_react.jsx] 1.08 KiB {hello_react} [built]
+[./app/javascript/packs/server_rendering.js] 301 bytes {server_rendering} [built]
+[./node_modules/webpack/buildin/amd-options.js] (webpack)/buildin/amd-options.js 80 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} {server_rendering} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 305 hidden modules
+
+Completed 200 OK in 12632ms (Views: 12630.6ms | ActiveRecord: 0.0ms | Allocations: 5893)
+
+
+Started GET "/gigs" for ::1 at 2020-07-22 17:40:24 +0100
+Processing by GigsController#index as HTML
+  [1m[36mGig Load (0.3ms)[0m  [1m[34mSELECT "gigs".* FROM "gigs" WHERE "gigs"."userId" = ?[0m  [["userId", 1]]
+  ↳ app/controllers/gigs_controller.rb:5:in `index'
+Completed 200 OK in 26ms (Views: 16.1ms | ActiveRecord: 1.2ms | Allocations: 5642)
+
+
