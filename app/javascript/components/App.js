@@ -71,7 +71,7 @@ render () {
       
       <Route exact path="/login" render={(props) => <LoginContainer {...props} handleLogin={this.handleLogin} loggedInStatus={this.state.isLoggedIn} />} />
       <Route exact path="/homepage" render={(props) => <Homepage {...props} loggedInStatus={this.state.isLoggedIn} />} />
-      <Route path="/artist/:id" render={(props) => <Artist {...props} key={props.match.params.id} loggedInStatus={this.state.isLoggedIn} userId={this.state.userId} likedGigs={this.state.likedGigs} />}/>
+      <Route path="/artist/:id" render={(props) => <Artist {...props} key={props.match.params.id} loggedInStatus={this.state.isLoggedIn} userId={this.state.userId} />}/>
     </Switch>
     </>
     </BrowserRouter>

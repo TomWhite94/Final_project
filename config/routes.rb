@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   # root 'static#index'
   
   resources :users, only: [:create, :show, :index]
+  resources :gigs, only: [:index, :create, :show, :destroy]
   
   post '/login', to: 'sessions#create'
   delete '/logout', to: 'sessions#destroy'
@@ -17,7 +18,7 @@ Rails.application.routes.draw do
   
   get '*path', to: 'homepage#index'
 
-  resources :gigs, only: [:create, :show, :destroy]
+  
   
   
 end

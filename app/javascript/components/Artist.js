@@ -75,7 +75,6 @@ artistGigInformation = () => {
 }
 
 render() {
-    console.log(this.props)
     if (this.state.isLoading == false) {
         return(
             <Container fluid>
@@ -101,7 +100,7 @@ render() {
                 </Row>
             <Row>
                 <Col>
-                    <ArtistGigList artistGigs={this.state.artistGigs} userId={this.props.userId} likedGigs={this.props.likedGigs} />
+                    <ArtistGigList artistGigs={this.state.artistGigs} userId={this.props.userId} />
                 </Col>
         
             </Row>

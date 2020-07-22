@@ -5,21 +5,30 @@ import axios from 'axios'
 
 class ArtistGig extends Component {
 
+    state = {
+        buttonDisabled: false
+    }
+
 handleSubmit = e => {
     e.preventDefault()
     let likedGig = {
         userId: this.props.userId,
         gigId: this.props.gig.id
     }
+
     axios.post('http://localhost:3000/gigs', likedGig, {withCredentials: true})
-    .then(resp => console.log(resp))
+    .then(resp => this.setState({buttonDisabled: true}))
 }
 
+componentDidMount = () => {
+    if (this.props.likedGig) {
+        this.setState({
+            buttonDisabled: true
+        })
+    }
+}
 
-
-
-    render() {
-        console.log(this.props.gig.id)
+render() {
         return(
         <Card >
             <Card.Body>
@@ -27,7 +36,10 @@ handleSubmit = e => {
                 <Card.Text>
                 {this.props.gig.venue.metroArea.displayName}, {this.props.gig.venue.metroArea.country.displayName}
                 </Card.Text>
-                <Button variant="primary" type="submit" onClick={this.handleSubmit}>Save Gig</Button>
+                <Card.Text>
+                    {this.props.gig.start.date}
+                </Card.Text>
+                <Button variant="primary" type="submit" onClick={this.handleSubmit} disabled={this.state.buttonDisabled}>Save Gig</Button>
             </Card.Body>
         </Card>
 
