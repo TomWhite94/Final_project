@@ -52,7 +52,6 @@ class Homepage extends Component {
             selectedDate: moment(date).format('YYYY-MM-DD')
         })
     }
-
       
 render() {
     
@@ -68,13 +67,9 @@ render() {
         </Col>
         </Row>
         <div>
-            {/* {this.renderGigResults()} */}
             {this.state.selectedDate in this.state.likedGigs ? this.state.likedGigs[this.state.selectedDate].map((gig, key) => {
-                return  <Row key={key}>
-                            <Col>
-                                <GigDetails gig={gig} />
-                            </Col>
-                        </Row>
+                return <div key={key}><GigDetails gig={gig} /></div>
+                           
             }) :"No gigs on this day"}
         </div>
         </div>
