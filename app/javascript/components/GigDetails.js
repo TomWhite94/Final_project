@@ -3,6 +3,7 @@ import Jumbotron from 'react-bootstrap/Jumbotron'
 import Carousel from 'react-bootstrap/Carousel'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import { withRouter } from 'react-router-dom'
 
 class GigDetails extends Component {
 
@@ -17,17 +18,16 @@ class GigDetails extends Component {
         }
         console.log(outputArray)
         return outputArray.map((array, key) => (
-            <Carousel.Item key={key}><Row>
+            <Carousel.Item key={key} height="150"><Row>
             {array.map((performer, key) => (
-             <Col><img
-            className="d-flex w-100"
-            width="150" height="150"
+             <Col xs={3} key={performer.artist.id}><img
+            className="d-flex w-100 band-image"
+            width="150" height="300"
             src={`//images.sk-static.com/images/media/profile_images/artists/${performer.artist.id}/huge_avatar`}
             alt="First slide"
             />
             <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <h3 className="carousel-artist">{performer.artist.displayName}</h3>
             </Carousel.Caption></Col>
             ))}
             </Row>
@@ -38,13 +38,13 @@ class GigDetails extends Component {
     render() {
         console.log(this.props.gig.performance)
         return(
-            <Jumbotron className="bg-secondary"style={{
+            <Jumbotron className="bg-secondary" style={{
                 color: "white"
             }}>
            <h1>{this.props.gig.displayName}</h1>
            <p>City: {this.props.gig.venue.city.displayName}, {this.props.gig.venue.city.country.displayName}</p>
            <p>Venue: {this.props.gig.venue.displayName}</p>
-           <Carousel>
+           <Carousel className="carousel">
                 {this.renderCarousel()}
                 
             </Carousel>
@@ -55,4 +55,4 @@ class GigDetails extends Component {
 
 }
 
-export default GigDetails
+export default withRouter(GigDetails)

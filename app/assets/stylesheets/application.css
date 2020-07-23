@@ -43,3 +43,35 @@
   .date-fill {
       background: lightgray !important;
   }
+
+  .carousel {
+    
+    height:300px;
+    margin: auto;
+  }
+
+  .carousel-artist{
+
+    background-color: black;
+
+  }
+
+  .jumbotron-border {
+      border-top: 40px;
+  }
+
+  .homepage-title {
+      font-family: "New Brilliant";
+      font-size: 56pt;
+      text-align: center;
+      color: white;
+  }
+
+  .calendar-background {
+    background-image: url("vaporwave.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    }
+
+ 
