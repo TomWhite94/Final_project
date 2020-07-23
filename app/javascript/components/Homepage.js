@@ -1,18 +1,18 @@
 import React, { Component } from 'react'
-import Taskbar from './Taskbar'
+import GigDetails from './GigDetails'
 import axios from 'axios'
 import Calendar from 'react-calendar'
 import 'react-calendar/dist/Calendar.css';
-let SONGKICK_URL = 'https://api.songkick.com/api/3.0/artists/379603/gigography.json?apikey=XyKG4KDNOliuaDev'
-
-let SIMILAR_URL = 'https://api.songkick.com/api/3.0/artists/264535/similar_artists.json?apikey=XyKG4KDNOliuaDev'
-
+import moment from 'moment'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 
 class Homepage extends Component {
 
    state = {
             userlikedGigsId: [],
-            likedGigs: {}
+            likedGigs: {},
+            selectedDate: ""
         }
    
     componentDidMount() {
@@ -40,9 +40,19 @@ class Homepage extends Component {
     }
 
     setTileClassName = (date, view) => {
-        console.log(date)
-        return "date-fill"
+       
+        // console.log(moment(date.date).format('YYYY-MM-DD'))
+        if (moment(date.date).format('YYYY-MM-DD') in this.state.likedGigs)  {
+            return "date-fill"
+        }
     }
+
+    setOnClickDay = (date, event) => {
+        this.setState({
+            selectedDate: moment(date).format('YYYY-MM-DD')
+        })
+    }
+
       
 render() {
     
@@ -52,7 +62,21 @@ render() {
         <>
         {this.state.userlikedGigsId}
         </>
-        <Calendar minDetail="month" maxDetail="month" tileClassName={this.setTileClassName}/>
+        <Row className="mt-5 d-flex justify-content-center">
+        <Col md={{ span: 6, offset: 3 }}>
+        <Calendar minDetail="month" maxDetail="month" tileClassName={this.setTileClassName} onClickDay={this.setOnClickDay}/>
+        </Col>
+        </Row>
+        <div>
+            {/* {this.renderGigResults()} */}
+            {this.state.selectedDate in this.state.likedGigs ? this.state.likedGigs[this.state.selectedDate].map((gig, key) => {
+                return  <Row key={key}>
+                            <Col>
+                                <GigDetails gig={gig} />
+                            </Col>
+                        </Row>
+            }) :"No gigs on this day"}
+        </div>
         </div>
         )
 }
