@@ -22,9 +22,3 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
-
-# Additional Details
-
-* Testing git config change
-
-* Testing git config change again
