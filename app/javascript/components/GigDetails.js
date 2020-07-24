@@ -12,27 +12,29 @@ class GigDetails extends Component {
         let chunkSize = 4
         let index = 0
         let outputArray = []
-        while (index < this.props.gig.performance.length) {
-            outputArray.push(this.props.gig.performance.slice(index, index + chunkSize))
-            index += chunkSize
-        }
-        console.log(outputArray)
+            while (index < this.props.gig.performance.length) {
+                outputArray.push(this.props.gig.performance.slice(index, index + chunkSize))
+                index += chunkSize
+            }
         return outputArray.map((array, key) => (
-            <Carousel.Item key={key} height="150"><Row>
-            {array.map((performer, key) => (
-             <Col xs={3} key={performer.artist.id}><img
-            className="d-flex w-100 band-image"
-            width="150" height="300"
-            src={`//images.sk-static.com/images/media/profile_images/artists/${performer.artist.id}/huge_avatar`}
-            alt="First slide"
-            />
-            <Carousel.Caption>
-            <h3 className="carousel-artist">{performer.artist.displayName}</h3>
-            </Carousel.Caption></Col>
-            ))}
-            </Row>
+            <Carousel.Item key={key} height="150">
+                <Row>
+                {array.map((performer, key) => (
+                    <Col xs={3} key={performer.artist.id}>
+                        <img
+                            className="d-flex w-100 band-image"
+                            width="150" height="300"
+                            src={`//images.sk-static.com/images/media/profile_images/artists/${performer.artist.id}/huge_avatar`}
+                            alt="First slide"
+                        />
+                        <Carousel.Caption>
+                            <h3 className="carousel-artist">{performer.artist.displayName}</h3>
+                        </Carousel.Caption>
+                    </Col>
+                ))}
+                </Row>
             </Carousel.Item>
-           ))
+        ))
     }
 
     render() {

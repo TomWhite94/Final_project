@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import GigDetails from '../GigDetails'
 import SuggestedArtist from '../SuggestedArtist'
+import SuggestedArtistDefault from '../SuggestedArtistDefault'
 import axios from 'axios'
 import Calendar from 'react-calendar'
 import 'react-calendar/dist/Calendar.css';
@@ -16,6 +17,7 @@ class Homepage extends Component {
             userlikedGigsId: [],
             likedGigs: {},
             selectedDate: "",
+            randomArtist: ""
         }
    
     componentDidMount() {
@@ -24,9 +26,11 @@ class Homepage extends Component {
         
             this.setState({
             userlikedGigsId: resp.data.gigs.map(gig => gig.gigId)
-        })}
+        })
+        }
         
         )
+
     }
 
     fetchGigDetails = (gigId) => {
@@ -102,14 +106,36 @@ class Homepage extends Component {
 
     //     }
     // }
+
+    // renderSuggestedArtist = () => {
+    //     if (gigDetailLoaded) {
+    //         let randomKey = Object.keys(this.state.likedGigs)[Math.floor(Math.random()*Object.keys(this.state.likedGigs).length)]
+    //         let randomArtist = this.state.likedGigs[randomKey][0].performance[Math.floor(Math.random()*this.state.likedGigs[randomKey][0].performance.length)]
+    //         console.log(randomArtist.artist.id)
+    //         let randomArtistId = randomArtist.artist.id
+    //     }
+
+    // }
       
 render() {
-    
+    const reducer = (accumulator, currentValue) => accumulator + currentValue.length
+    let likedGigsCount = Object.values(this.state.likedGigs).reduce(reducer, 0)
+    const gigDetailLoaded = this.state.userlikedGigsId.length == likedGigsCount && likedGigsCount > 0 
+    let randomArtistId = 0
+    if (gigDetailLoaded) {
+        let randomKey = Object.keys(this.state.likedGigs)[Math.floor(Math.random()*Object.keys(this.state.likedGigs).length)]
+        let randomArtist = this.state.likedGigs[randomKey][0].performance[Math.floor(Math.random()*this.state.likedGigs[randomKey][0].performance.length)]
+        console.log(randomArtist.artist.id)
+        randomArtistId = randomArtist.artist.id 
+    }
+       
     return(
         <div>
 
                 <h1 className="homepage-title bg-secondary">Gig Planner</h1>
-                {/* <><SuggestedArtist /></> */}
+                <>
+                {gigDetailLoaded ? <SuggestedArtist artistId={randomArtistId}/> : <SuggestedArtistDefault />}
+                </>
 
         <Row className="d-flex justify-content-center calendar-background">
         <Col md={{ span: 6, offset: 3 }}>
