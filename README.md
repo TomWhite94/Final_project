@@ -26,3 +26,5 @@ Things you may want to cover:
 # Additional Details
 
 * Testing git config change
+
+* Testing git config change again
