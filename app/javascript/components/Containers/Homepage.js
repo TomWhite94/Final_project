@@ -8,7 +8,6 @@ import 'react-calendar/dist/Calendar.css';
 import moment from 'moment'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import Carousel from 'react-bootstrap/Carousel'
 import Jumbotron from 'react-bootstrap/Jumbotron'
 
 class Homepage extends Component {

@@ -24,21 +24,7 @@ class ArtistGig extends Component {
         })
     }
 
-// handleSubmit = e => {
-//     e.preventDefault()
-    
-//         // let removedGig = {data: {
-//         //     userId: this.props.userId,
-//         //     gigId: this.props.gig.id
-//         // }}
-//     axios.delete(`http://localhost:3000/gigs/3`, {withCredentials: true})
-//     .then(resp => this.setState({buttonDisabled: false}))
-    
-// }
-
-
 render() {
-    console.log(this.props)
         return(
         <Card >
             <Card.Body>

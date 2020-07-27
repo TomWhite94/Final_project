@@ -3,9 +3,12 @@ import ArtistGig from '../ArtistGig'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import axios from 'axios'
+import { connect } from 'react-redux'
 
 
 class ArtistGigList extends Component {
+
+
 
     state = {
         userLikedGigsId: [],
@@ -52,6 +55,7 @@ unlikeGig = (gigObjectId) => {
 
 
 render() {
+    console.log(this.props)
    return(
 
         <Row>
@@ -70,4 +74,8 @@ render() {
 }
 }
 
-export default ArtistGigList
+const mapStateToProps = state => {
+    return {userIdRedux: state.userId}
+} 
+
+export default connect(mapStateToProps)(ArtistGigList)

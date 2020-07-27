@@ -24,8 +24,6 @@ class Taskbar extends Component {
                 if (data.resultsPage.status == "ok" && data.resultsPage.results.hasOwnProperty("artist")) {
                     this.setState({
                         artistSearchResult: data.resultsPage.results.artist, 
-                        // page: data.resultsPage.page, 
-                        // numOfPages: Math.ceil(parseInt(data.resultsPage.totalEntries) / parseInt(data.resultsPage.perPage)),
                         isSearching: false,
                         
                     })

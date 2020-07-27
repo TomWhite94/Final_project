@@ -6,6 +6,8 @@ import Taskbar from './Taskbar'
 import Artist from './Containers/Artist'
 import LoginContainer from './auth/Containers/LoginContainer'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import { Provider } from 'react-redux'
+import { store } from './store'
 
 
 class App extends React.Component {
@@ -14,7 +16,7 @@ state = {
   isLoggedIn: !!localStorage.getItem("username"),
   user: localStorage.getItem("username"),
   userId: localStorage.getItem("userId"),
-  likedGigs: []
+
 }
 
 
@@ -24,7 +26,7 @@ handleLogin = (user) => {
     isLoggedIn: true,
     user: user.username,
     userId: user.id,
-    likedGigs: user.liked_gigs
+
   })
   localStorage.setItem("username", user.username)
   localStorage.setItem("userId", user.id)
@@ -35,7 +37,7 @@ handleLogout = () => {
   isLoggedIn: false,
   user: "",
   userId: "",
-  likedGigs: []
+
   })
   localStorage.removeItem("username")
 }
@@ -63,7 +65,7 @@ render () {
   
     return (
       
-      
+    <Provider store={store}>
     <BrowserRouter>
     <>
     <Taskbar loggedInStatus={this.state.isLoggedIn} user={this.state.user} handleLogout={this.handleLogout}/>
@@ -75,6 +77,7 @@ render () {
     </Switch>
     </>
     </BrowserRouter>
+    </Provider>
     );
   }
 }

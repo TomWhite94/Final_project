@@ -6,8 +6,10 @@ import Button from 'react-bootstrap/Button'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Nav from 'react-bootstrap/Nav'
+import { connect } from 'react-redux'
+import { setUserId } from '../actions'
 
-export default class Login extends Component {
+class Login extends Component {
   
   state = {
       username: "",
@@ -38,6 +40,7 @@ let user = {
     .then(response => {
       if (response.data.logged_in) {
         this.props.handleLogin(response.data.user)
+        this.props.setUserId(response.data.user.id)
         this.redirect()
       } else {
         this.setState({
@@ -65,6 +68,7 @@ handleErrors = () => {
 
 
   render() {
+    console.log(this.props)
     return (
       <div>
         <Form onSubmit={this.handleSubmit}>
@@ -102,7 +106,12 @@ handleErrors = () => {
             </Col>
           </Row>
         </Form>
+
       </div>
     );
   }
 }
+
+// const mapDispatchToProps = {setUserId: setUserId}
+
+export default connect(null, {setUserId: setUserId})(Login)

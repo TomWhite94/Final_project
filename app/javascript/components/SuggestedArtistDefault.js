@@ -32,13 +32,13 @@ class SuggestedArtistDefault extends Component {
     renderCarousel = () => (
         
         this.state.suggestedArtists.map((array, key) => (
-            <Carousel.Item key={key} height="150"> 
+            <Carousel.Item key={key} height="300"> 
                 <Row>
                     {array.map((performer, key) => (
                         <Col xs={3} key={performer.id}>
                             <img
                                 className="d-flex w-100 band-image"
-                                width="150" height="300"
+                                width="300" height="300"
                                 src={`//images.sk-static.com/images/media/profile_images/artists/${performer.id}/huge_avatar`}
                                 alt="First slide"
                             />

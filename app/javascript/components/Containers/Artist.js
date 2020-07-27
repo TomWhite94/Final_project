@@ -19,13 +19,6 @@ class Artist extends Component {
         
     }
 
-    // fetch(this.state.artistGigsUrl + "?apikey=XyKG4KDNOliuaDev")
-    // .then(resp => resp.json())
-    // .then(data => this.setState({
-    //     artistGigs: data.resultsPage.results.event
-    //     }))
-
-
 fetchArtist = () => {
     let artistUrl = `https://api.songkick.com/api/3.0/artists/${this.props.match.params.id}.json?apikey=XyKG4KDNOliuaDev`
     fetch(artistUrl)
