@@ -9,28 +9,36 @@ class ArtistGig extends Component {
         buttonDisabled: false
     }
 
-handleSubmit = e => {
-    e.preventDefault()
-    let likedGig = {
-        userId: this.props.userId,
-        gigId: this.props.gig.id
-    }
-
-    axios.post('http://localhost:3000/gigs', likedGig, {withCredentials: true})
-    .then(resp => this.setState({buttonDisabled: true}))
-}
-
-componentDidMount = () => {
-    if (this.props.likedGig) {
+    handleLikeGig = () => {
+        this.props.likeGig()
         this.setState({
             buttonDisabled: true
         })
+
     }
-}
+
+    handleUnlikeGig = () => {
+        this.props.unlikeGig()
+        this.setState({
+            buttonDisabled: false
+        })
+    }
+
+// handleSubmit = e => {
+//     e.preventDefault()
+    
+//         // let removedGig = {data: {
+//         //     userId: this.props.userId,
+//         //     gigId: this.props.gig.id
+//         // }}
+//     axios.delete(`http://localhost:3000/gigs/3`, {withCredentials: true})
+//     .then(resp => this.setState({buttonDisabled: false}))
+    
+// }
+
 
 render() {
-    // let eventDate = new Date(this.props.gig.start.date)
-    // console.log(eventDate)
+    console.log(this.props)
         return(
         <Card >
             <Card.Body>
@@ -41,7 +49,7 @@ render() {
                 <Card.Text>
                     {this.props.gig.start.date}
                 </Card.Text>
-                <Button variant="primary" type="submit" onClick={this.handleSubmit} disabled={this.state.buttonDisabled}>Save Gig</Button>
+                {this.props.isLiked ? <Button  variant="danger" onClick={this.handleUnlikeGig}>Remove Gig</Button> : <Button variant="primary" onClick={this.handleLikeGig}>Save Gig</Button>}
             </Card.Body>
         </Card>
 

@@ -56,6 +56,10 @@
 
   }
 
+  .remove-button {
+      background-color: red;
+  }
+
   .jumbotron-border {
       border-top: 40px;
   }

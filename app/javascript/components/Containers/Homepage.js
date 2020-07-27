@@ -60,62 +60,7 @@ class Homepage extends Component {
         })
     }
 
-    // renderRecommendedArtists = () => {
-        
-    //     if (this.state.userlikedGigsId.length > 0) {
-    //         let randomItem = this.state.userlikedGigsId[Math.floor(Math.random()*this.state.userlikedGigsId.length)]
-    //         axios.get(`https://api.songkick.com/api/3.0/events/${randomItem}.json?apikey=XyKG4KDNOliuaDev`)
-    //         .then(resp => {
-    //             let randomArtist = resp.data.resultsPage.results.event.performance[Math.floor(Math.random()*resp.data.resultsPage.results.event.performance.length)]
-    //             // console.log(randomArtist.artist.id)
-    //             axios.get(`https://api.songkick.com/api/3.0/artists/${randomArtist.artist.id}/similar_artists.json?apikey=XyKG4KDNOliuaDev`)
-    //             .then(resp =>  {
-    //                 if (resp.data.resultsPage.results.artist) {
-    //                 console.log(resp.data.resultsPage.results.artist)
-    //                 let chunkSize = 4
-    //                 let index = 0
-    //                 let outputArray = []
-    //                 while (index < resp.data.resultsPage.results.artist.length) {
-    //                     outputArray.push(resp.data.resultsPage.results.artist.slice(index, index + chunkSize))
-    //                     index += chunkSize
-    //                 }
-    //                 console.log(outputArray)
-    //                 return outputArray.map((array, key) => (
-    //                     <Carousel.Item key={key} height="150"><Row>
-    //                     {array.map((performer, key) => (
-    //                      <Col xs={3} key={performer.id}><img
-    //                     className="d-flex w-100 band-image"
-    //                     width="150" height="300"
-    //                     src={`//images.sk-static.com/images/media/profile_images/artists/${performer.id}/huge_avatar`}
-    //                     alt="First slide"
-    //                     />
-    //                     <Carousel.Caption>
-    //                     <h3 className="carousel-artist">{performer.displayName}</h3>
-    //                     </Carousel.Caption></Col>
-    //                     ))}
-    //                     </Row>
-    //                     </Carousel.Item>
-    //                    ))
-    //             }}
-                   
-                    
-    //             )
-    //             })
-           
-               
-
-    //     }
-    // }
-
-    // renderSuggestedArtist = () => {
-    //     if (gigDetailLoaded) {
-    //         let randomKey = Object.keys(this.state.likedGigs)[Math.floor(Math.random()*Object.keys(this.state.likedGigs).length)]
-    //         let randomArtist = this.state.likedGigs[randomKey][0].performance[Math.floor(Math.random()*this.state.likedGigs[randomKey][0].performance.length)]
-    //         console.log(randomArtist.artist.id)
-    //         let randomArtistId = randomArtist.artist.id
-    //     }
-
-    // }
+  
       
 render() {
     const reducer = (accumulator, currentValue) => accumulator + currentValue.length

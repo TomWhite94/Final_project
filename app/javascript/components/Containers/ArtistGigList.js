@@ -8,14 +8,45 @@ import axios from 'axios'
 class ArtistGigList extends Component {
 
     state = {
+        userLikedGigsId: [],
         userLikedGigs: []
     }
 
 componentDidMount = () => {
+  this.getData()
+}
+
+getData = () => {
     axios.get('http://localhost:3000/gigs', {withCredentials: true})
     .then(resp => this.setState({
-        userLikedGigs: resp.data.gigs.map(gig => gig.gigId)
+        userLikedGigsId: resp.data.gigs.map(gig => gig.gigId),
+        userLikedGigs: resp.data.gigs
     })
+    )
+}
+
+likeGig = (gigId) => {
+    let likedGig = {
+        userId: this.props.userId,
+        gigId: gigId
+    }
+
+    axios.post('http://localhost:3000/gigs', likedGig, {withCredentials: true})
+    .then(resp => {
+        this.setState({buttonDisabled: true})
+        this.getData()
+    }
+    )
+
+}
+
+unlikeGig = (gigObjectId) => {
+  
+    axios.delete(`http://localhost:3000/gigs/${gigObjectId}`, {withCredentials: true})
+    .then(resp => {
+        this.setState({buttonDisabled: false})
+        this.getData()
+    }
     )
 }
 
@@ -26,7 +57,7 @@ render() {
         <Row>
         {this.props.artistGigs.map((gig, index) => (
             <Col md="4" key={index}>
-            <ArtistGig gig={gig} userId={this.props.userId} likedGig={this.state.userLikedGigs.includes(gig.id)} />
+            <ArtistGig gig={gig} userId={this.props.userId} isLiked={this.state.userLikedGigsId.includes(gig.id)} likeGig={() => this.likeGig(gig.id)} unlikeGig={() => this.unlikeGig((this.state.userLikedGigs.filter(gigs => gigs.gigId == gig.id)[0].id))}/>
             </Col>
         ))}
         </Row>

@@ -8,7 +8,10 @@ class GigsController < ApplicationController
     end
 
     def show
-        @gig = Gig.find(userId: session[:user_id])
+        @gig = Gig.find(params[:id])
+        render json: {
+            gig: @gig
+        }
     end
 
     def create
@@ -27,6 +30,8 @@ class GigsController < ApplicationController
     end
 
     def destroy
+       @gig = Gig.find(params[:id])
+       @gig.destroy
     end
 
     private
