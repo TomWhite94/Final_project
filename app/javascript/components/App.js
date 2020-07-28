@@ -40,6 +40,7 @@ handleLogout = () => {
 
   })
   localStorage.removeItem("username")
+  localStorage.removeItem("userId")
 }
 
 componentDidMount = () => {

@@ -6,8 +6,10 @@ import Button from 'react-bootstrap/Button'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Nav from 'react-bootstrap/Nav'
+import { connect } from 'react-redux'
+import { setUserId } from '../actions'
 
-export default class Registration extends Component {
+class Registration extends Component {
   
   state = {
       username: "",
@@ -40,6 +42,7 @@ axios.post('http://localhost:3000/users', {user}, {withCredentials: true})
   .then(response => {
     if (response.data.status === 'created') {
       this.props.handleLogin(response.data.user)
+      this.props.setUserId(response.data.user.id)
       this.redirect()
       
     } else {
@@ -123,3 +126,5 @@ handleErrors = () => {
     );
   }
 }
+
+export default connect(null, {setUserId: setUserId})(Registration)

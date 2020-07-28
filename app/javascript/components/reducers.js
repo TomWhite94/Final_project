@@ -1,5 +1,5 @@
 import { SET_USER_ID } from './actions'
-const initialState = {userId: 99}
+const initialState = {userId: localStorage.getItem("userId")}
 
 const gigApp = (state = initialState, action) => {
     switch (action.type) {
