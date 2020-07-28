@@ -77,9 +77,11 @@ render() {
         <div>
 
                 <h1 className="homepage-title bg-secondary">Gig Planner</h1>
-                <>
+                <Row>
+                   <Col>
                 {gigDetailLoaded ? <SuggestedArtist artistId={randomArtistId}/> : <SuggestedArtistDefault />}
-                </>
+                    </Col> 
+                </Row>
 
         <Row className="d-flex justify-content-center calendar-background">
         <Col md={{ span: 6, offset: 3 }}>

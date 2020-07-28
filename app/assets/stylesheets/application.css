@@ -25,6 +25,11 @@
 
     background-image: url("default-artist.png");
 
+
+}
+
+.text-indent {
+    text-indent: 5%;
 }
 
 
@@ -44,9 +49,13 @@
       background: lightgray !important;
   }
 
+  .text-align {
+    text-align: "center"
+  }
+
   .carousel {
     
-    height:300px;
+    height: auto;
     margin: auto;
   }
 

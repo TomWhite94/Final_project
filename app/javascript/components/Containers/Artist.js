@@ -48,9 +48,9 @@ componentDidMount = () => {
 artistTourInformation = () => {
     
         if (this.state.artistTour != null){
-            return <p>On tour until {this.state.artistTour}</p>
+            return <h3>On tour until {this.state.artistTour}</h3>
         } else {
-            return <p>Not currently on tour</p>
+            return <h3>Not currently on tour</h3>
         }
 }
 
@@ -58,11 +58,11 @@ artistGigInformation = () => {
    
 
     if (this.state.artistGigs.length > 1){
-        return <p>{this.state.artistGigs.length} upcoming gigs</p>
+        return <h3>{this.state.artistGigs.length} upcoming gigs</h3>
     } else if (this.state.artistGigs.length == 1){
-        return <p>{this.state.artistGigs.length} upcoming gig</p>
+        return <h3>{this.state.artistGigs.length} upcoming gig</h3>
     } else {
-        return <p>No upcoming gigs</p>
+        return <h3>No upcoming gigs</h3>
     }
 
 }
@@ -75,6 +75,7 @@ render() {
                 <Col xs={12} md={{span: 7, offset: 1}}
                  style={{
                     color: "white"
+                    
                 }}>
                   
                     <h1>
@@ -93,7 +94,7 @@ render() {
                 </Row>
             <Row>
                 <Col>
-                    <ArtistGigList artistGigs={this.state.artistGigs} userId={this.props.userId} />
+                    <ArtistGigList artistGigs={this.state.artistGigs} />
                 </Col>
         
             </Row>

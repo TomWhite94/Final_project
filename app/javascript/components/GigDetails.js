@@ -42,10 +42,10 @@ class GigDetails extends Component {
         return(
             <Jumbotron className="bg-secondary" style={{
                 color: "white"
-            }}>
-           <h1>{this.props.gig.displayName}</h1>
-           <p>City: {this.props.gig.venue.city.displayName}, {this.props.gig.venue.city.country.displayName}</p>
-           <p>Venue: {this.props.gig.venue.displayName}</p>
+            }} fluid>
+           <h1 className="text-indent">{this.props.gig.displayName}</h1>
+           <h2 className="text-indent">City: {this.props.gig.venue.city.displayName}, {this.props.gig.venue.city.country.displayName}</h2>
+           <h2 className="text-indent">Venue: {this.props.gig.venue.displayName}</h2>
            <Carousel className="carousel">
                 {this.renderCarousel()}
                 

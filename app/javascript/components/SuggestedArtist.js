@@ -37,7 +37,7 @@ class SuggestedArtist extends Component {
                     {array.map((performer, key) => (
                         <Col xs={3} key={performer.id}>
                             <img
-                                className="d-flex w-100 band-image"
+                                className="w-100 band-image"
                                 width="300" height="300"
                                 src={`//images.sk-static.com/images/media/profile_images/artists/${performer.id}/huge_avatar`}
                                 alt="First slide"
@@ -59,8 +59,8 @@ render() {
     return (
         <Jumbotron className="bg-secondary" style={{
             color: "white"
-        }}>
-            <h1>Suggested Artists</h1>
+        }} fluid>
+            <h1 className="text-indent">Suggested Artists</h1>
             <Carousel className="carousel">
                 {this.renderCarousel()}
                 

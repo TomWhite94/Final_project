@@ -59,8 +59,8 @@ render() {
     return (
         <Jumbotron className="bg-secondary" style={{
             color: "white"
-        }}>
-            <h1>Suggested Artists</h1>
+        }} fluid>
+            <h1 className="text-indent">Suggested Artists</h1>
             <Carousel className="carousel">
                 {this.renderCarousel()}
                 

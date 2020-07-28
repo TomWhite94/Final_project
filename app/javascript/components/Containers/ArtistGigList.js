@@ -30,7 +30,7 @@ getData = () => {
 
 likeGig = (gigId) => {
     let likedGig = {
-        userId: this.props.userId,
+        userId: this.props.userIdRedux,
         gigId: gigId
     }
 
@@ -61,7 +61,7 @@ render() {
         <Row>
         {this.props.artistGigs.map((gig, index) => (
             <Col md="4" key={index}>
-            <ArtistGig gig={gig} userId={this.props.userId} isLiked={this.state.userLikedGigsId.includes(gig.id)} likeGig={() => this.likeGig(gig.id)} unlikeGig={() => this.unlikeGig((this.state.userLikedGigs.filter(gigs => gigs.gigId == gig.id)[0].id))}/>
+            <ArtistGig gig={gig} isLiked={this.state.userLikedGigsId.includes(gig.id)} likeGig={() => this.likeGig(gig.id)} unlikeGig={() => this.unlikeGig((this.state.userLikedGigs.filter(gigs => gigs.gigId == gig.id)[0].id))}/>
             </Col>
         ))}
         </Row>

@@ -6,9 +6,8 @@ import Taskbar from './Taskbar'
 import Artist from './Containers/Artist'
 import LoginContainer from './auth/Containers/LoginContainer'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Provider } from 'react-redux'
-import { store } from './store'
-
+import { connect } from 'react-redux'
+import { setUserId } from './actions'
 
 class App extends React.Component {
 
@@ -24,10 +23,9 @@ state = {
 handleLogin = (user) => {
   this.setState({
     isLoggedIn: true,
-    user: user.username,
-    userId: user.id,
-
+    user: user.username
   })
+  this.props.setUserId(user.id)
   localStorage.setItem("username", user.username)
   localStorage.setItem("userId", user.id)
 }
@@ -35,10 +33,9 @@ handleLogin = (user) => {
 handleLogout = () => {
   this.setState({
   isLoggedIn: false,
-  user: "",
-  userId: "",
-
+  user: ""
   })
+  this.props.setUserId('')
   localStorage.removeItem("username")
   localStorage.removeItem("userId")
 }
@@ -66,7 +63,7 @@ render () {
   
     return (
       
-    <Provider store={store}>
+    
     <BrowserRouter>
     <>
     <Taskbar loggedInStatus={this.state.isLoggedIn} user={this.state.user} handleLogout={this.handleLogout}/>
@@ -74,13 +71,13 @@ render () {
       
       <Route exact path="/login" render={(props) => <LoginContainer {...props} handleLogin={this.handleLogin} loggedInStatus={this.state.isLoggedIn} />} />
       <Route exact path="/homepage" render={(props) => <Homepage {...props} loggedInStatus={this.state.isLoggedIn} />} />
-      <Route path="/artist/:id" render={(props) => <Artist {...props} key={props.match.params.id} loggedInStatus={this.state.isLoggedIn} userId={this.state.userId} />}/>
+      <Route path="/artist/:id" render={(props) => <Artist {...props} key={props.match.params.id} loggedInStatus={this.state.isLoggedIn} />}/>
     </Switch>
     </>
     </BrowserRouter>
-    </Provider>
+   
     );
   }
 }
 
-export default App
+export default connect(null, {setUserId: setUserId})(App)
