@@ -26,6 +26,7 @@
     "react-router-dom": "^4.2.2",
     "react_ujs": "^2.6.1",
     "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
     "simple-react-calendar": "^2.2.7",
     "turbolinks": "^5.2.0"
   },

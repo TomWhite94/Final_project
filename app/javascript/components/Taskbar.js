@@ -5,6 +5,11 @@ import Button from 'react-bootstrap/Button'
 import axios from 'axios'
 import { AsyncTypeahead } from 'react-bootstrap-typeahead'
 import { withRouter } from 'react-router-dom'
+import { connect } from 'react-redux'
+import { fetchLogin } from './actions'
+import { setUserId } from './actions'
+import { setUsername } from './actions'
+
 
 
 let ARTIST_SEARCH = "https://api.songkick.com/api/3.0/search/artists.json?apikey=XyKG4KDNOliuaDev&per_page=5&page=1&query="
@@ -39,9 +44,10 @@ class Taskbar extends Component {
 
     logoutButton = () => {
         axios.delete('http://localhost:3000/logout', {withCredentials: true})
-    .then(response => {
-      this.props.handleLogout()
-      this.props.history.push('/Login')
+        .then(response => {
+        this.props.fetchLogin()
+        this.handleLogout()
+        this.props.history.push('/Login')
     })
     .catch(error => console.log(error))
   }
@@ -49,13 +55,20 @@ class Taskbar extends Component {
     usernameBar = () => {
         if (this.props.loggedInStatus == true) {
             return  <>
-                    <Nav.Link style={{color: "white"}} href="/Homepage">{this.props.user}</Nav.Link>
+                    <Nav.Link style={{color: "white"}} href="/Homepage">{this.props.usernameRedux}</Nav.Link>
                     <Button variant="light" onClick={this.logoutButton}>Logout</Button>
                     </>
         } else {
             return  <Nav.Link style={{color: "white"}} href="/Login">Login</Nav.Link>
         }
     }
+
+    handleLogout = () => {
+        this.props.setUserId('')
+        this.props.setUsername('')
+        localStorage.removeItem("username")
+        localStorage.removeItem("userId")
+      }
 
  
 
@@ -98,5 +111,9 @@ render() {
 
 }
 
+const mapStateToProps = state => {
+    return {usernameRedux: state.username, loggedInStatus: state.loginStatus}
+}
 
-export default withRouter(Taskbar)
+
+export default connect(mapStateToProps, {fetchLogin: fetchLogin, setUserId: setUserId, setUsername: setUsername})(withRouter(Taskbar))

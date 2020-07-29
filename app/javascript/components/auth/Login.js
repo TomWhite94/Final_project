@@ -8,6 +8,8 @@ import Col from 'react-bootstrap/Col'
 import Nav from 'react-bootstrap/Nav'
 import { connect } from 'react-redux'
 import { setUserId } from '../actions'
+import { setUsername } from '../actions'
+import { fetchLogin } from '../actions'
 
 class Login extends Component {
   
@@ -31,7 +33,7 @@ class Login extends Component {
   handleSubmit = (event) => {
     event.preventDefault()
     const {email, password} = this.state
-let user = {
+    let user = {
       email: email,
       password: password
     }
@@ -39,8 +41,10 @@ let user = {
     axios.post('http://localhost:3000/login', {user}, {withCredentials: true})
     .then(response => {
       if (response.data.logged_in) {
-        this.props.handleLogin(response.data.user)
+        this.handleLogin(response.data.user)
+        this.props.fetchLogin()
         this.props.setUserId(response.data.user.id)
+        this.props.setUsername(response.data.user.username)
         this.redirect()
       } else {
         this.setState({
@@ -64,6 +68,11 @@ handleErrors = () => {
       </ul> 
     </div>
   )
+}
+
+handleLogin = (user) => {
+  localStorage.setItem("username", user.username)
+  localStorage.setItem("userId", user.id)
 }
 
 
@@ -112,6 +121,4 @@ handleErrors = () => {
   }
 }
 
-// const mapDispatchToProps = {setUserId: setUserId}
-
-export default connect(null, {setUserId: setUserId})(Login)
+export default connect(null, {setUserId: setUserId, setUsername: setUsername, fetchLogin: fetchLogin})(Login)

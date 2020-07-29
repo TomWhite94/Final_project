@@ -1,13 +1,12 @@
 import React, { Component } from "react";
-import Login from './Login'
 import axios from 'axios'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import Nav from 'react-bootstrap/Nav'
 import { connect } from 'react-redux'
 import { setUserId } from '../actions'
+import { setUsername } from '../actions'
 
 class Registration extends Component {
   
@@ -41,8 +40,9 @@ handleSubmit = (event) => {
 axios.post('http://localhost:3000/users', {user}, {withCredentials: true})
   .then(response => {
     if (response.data.status === 'created') {
-      this.props.handleLogin(response.data.user)
+      this.handleLogin(response.data.user)
       this.props.setUserId(response.data.user.id)
+      this.props.setUsername(response.data.user.username)
       this.redirect()
       
     } else {
@@ -67,6 +67,11 @@ handleErrors = () => {
       </ul> 
     </div>
   )
+}
+
+handleLogin = (user) => {
+  localStorage.setItem("username", user.username)
+  localStorage.setItem("userId", user.id)
 }
 
 
@@ -127,4 +132,4 @@ handleErrors = () => {
   }
 }
 
-export default connect(null, {setUserId: setUserId})(Registration)
+export default connect(null, {setUserId: setUserId, setUsername: setUsername})(Registration)

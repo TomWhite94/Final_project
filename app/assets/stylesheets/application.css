@@ -87,4 +87,10 @@
     background-size: 100%;
     }
 
- 
+    .hidden {
+      visibility: hidden;
+    }
+
+    .visible {
+      visibility: visible;
+    }

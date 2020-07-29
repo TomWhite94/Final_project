@@ -20,12 +20,12 @@ class LoginContainer extends Component {
     handleToggle = () => {
         if (this.state.showLogin) {
             return <div>
-                        <Login {...this.props} handleLogin={this.props.handleLogin} loggedInStatus={this.props.isLoggedIn} />
+                        <Login {...this.props} />
                     </div> 
         }
         if (!this.state.showLogin) {
             return <div>
-                        <Registration {...this.props} handleLogin={this.props.handleLogin} loggedInStatus={this.props.isLoggedIn} />
+                        <Registration {...this.props} />
                     </div>
         }
     }
