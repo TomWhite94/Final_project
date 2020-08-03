@@ -27,9 +27,9 @@ fetchArtist = () => {
 
         fetch(data.resultsPage.results.artist.identifier[0].eventsHref + "?apikey=XyKG4KDNOliuaDev")
         .then(resp => resp.json())
-        .then(data => this.setState({
+        .then(data => {if (data.resultsPage.results.event) {this.setState({
             artistGigs: data.resultsPage.results.event
-            }))
+            })}})
 
         this.setState({
         artistName: data.resultsPage.results.artist.displayName,
