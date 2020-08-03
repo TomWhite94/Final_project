@@ -53,7 +53,7 @@ class Taskbar extends Component {
   }
 
     usernameBar = () => {
-        if (this.props.loggedInStatus == true) {
+        if (this.props.usernameRedux) {
             return  <>
                     <Nav.Link style={{color: "white"}} href="/Homepage">{this.props.usernameRedux}</Nav.Link>
                     <Button variant="light" onClick={this.logoutButton}>Logout</Button>
