@@ -16,6 +16,7 @@ class SuggestedArtist extends Component {
         console.log(this.props.artistId)
         axios.get(`https://api.songkick.com/api/3.0/artists/${this.props.artistId}/similar_artists.json?apikey=XyKG4KDNOliuaDev`)
         .then(resp => {
+            if (resp.data.resultsPage.results.artist) {
             console.log(resp.data)
             let chunkSize = 4
             let index = 0
@@ -27,6 +28,21 @@ class SuggestedArtist extends Component {
             this.setState({
                 suggestedArtists: outputArray
             })
+            } else {
+                axios.get(`https://api.songkick.com/api/3.0/artists/264535/similar_artists.json?apikey=XyKG4KDNOliuaDev`)
+                .then(resp => {
+                    let chunkSize = 4
+                    let index = 0
+                    let outputArray = []
+                    while (index < resp.data.resultsPage.results.artist.length) {
+                        outputArray.push(resp.data.resultsPage.results.artist.slice(index, index + chunkSize))
+                        index += chunkSize
+                    }
+                    this.setState({
+                        suggestedArtists: outputArray
+                    })
+                })
+            }
         })
         
     }
