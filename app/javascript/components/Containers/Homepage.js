@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { withRouter } from 'react-router-dom'
 import GigDetails from '../GigDetails'
 import SuggestedArtist from '../SuggestedArtist'
 import SuggestedArtistDefault from '../SuggestedArtistDefault'
@@ -69,7 +70,6 @@ render() {
     if (gigDetailLoaded) {
         let randomKey = Object.keys(this.state.likedGigs)[Math.floor(Math.random()*Object.keys(this.state.likedGigs).length)]
         let randomArtist = this.state.likedGigs[randomKey][0].performance[Math.floor(Math.random()*this.state.likedGigs[randomKey][0].performance.length)]
-        console.log(randomArtist.artist.id)
         randomArtistId = randomArtist.artist.id 
     }
        

@@ -25,7 +25,7 @@ render () {
     <Switch>
       
       <Route exact path="/login" render={(props) => <LoginContainer {...props} />} />
-      <Route exact path="/homepage" render={(props) => <Homepage {...props} />} />
+      <Route exact path="/homepage" render={(props) => <Homepage {...props} key={props.match.params.id}/>} />
       <Route path="/artist/:id" render={(props) => <Artist {...props} key={props.match.params.id} />}/>
     </Switch>
     </>
@@ -34,7 +34,5 @@ render () {
     );
   }
 }
-
-
 
 export default connect(null, {fetchLogin: fetchLogin})(App)

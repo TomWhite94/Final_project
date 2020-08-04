@@ -4,6 +4,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Carousel from 'react-bootstrap/Carousel'
 import Jumbotron from 'react-bootstrap/Jumbotron'
+import { withRouter } from 'react-router-dom'
 
 class SuggestedArtistDefault extends Component {
 
@@ -41,6 +42,7 @@ class SuggestedArtistDefault extends Component {
                                 width="300" height="300"
                                 src={`//images.sk-static.com/images/media/profile_images/artists/${performer.id}/huge_avatar`}
                                 alt="First slide"
+                                onClick={() => this.props.history.push(`Artist/${performer.id}`)}
                             />
                             <Carousel.Caption>
                                 <h3 className="carousel-artist">{performer.displayName}</h3>
@@ -72,4 +74,4 @@ render() {
 
 }
 
-export default SuggestedArtistDefault
+export default withRouter(SuggestedArtistDefault)

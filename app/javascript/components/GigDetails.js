@@ -26,6 +26,7 @@ class GigDetails extends Component {
                             width="150" height="300"
                             src={`//images.sk-static.com/images/media/profile_images/artists/${performer.artist.id}/huge_avatar`}
                             alt="First slide"
+                            onClick={() => this.props.history.push(`Artist/${performer.artist.id}`)}
                         />
                         <Carousel.Caption>
                             <h3 className="carousel-artist">{performer.artist.displayName}</h3>

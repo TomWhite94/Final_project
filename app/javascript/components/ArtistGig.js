@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
-import Card from 'react-bootstrap/Card'
-import Button from 'react-bootstrap/Button'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
-import Alert from 'react-bootstrap/Alert'
-import axios from 'axios'
 import { connect } from 'react-redux'
+import ArtistGigCard from './ArtistGigCard'
 
 class ArtistGig extends Component {
 
@@ -13,11 +8,6 @@ class ArtistGig extends Component {
         buttonDisabled: false,
         visibility: "hidden"
     }
-
-    renderAlert = () => {
-        
-    }
-    
 
     handleLikeGig = () => {
         if (this.props.userIdRedux != '') {
@@ -42,30 +32,9 @@ class ArtistGig extends Component {
 
 render() {
         return(
-        <Card >
-            <Card.Body>
-                <Card.Title>{this.props.gig.displayName}</Card.Title>
-                <Card.Text>
-                {this.props.gig.venue.metroArea.displayName}, {this.props.gig.venue.metroArea.country.displayName}
-                </Card.Text>
-                <Card.Text>
-                    {this.props.gig.start.date}
-                </Card.Text>
-                <Row>
-                <Col md="auto">
-                {this.props.isLiked ? <Button  variant="danger" onClick={this.handleUnlikeGig}>Remove Gig</Button> : <Button variant="primary" onClick={this.handleLikeGig}>Save Gig</Button>}
-                </Col>
-                <Col md="auto">
-                <Alert className={this.state.visibility} variant="danger">
-                    Log in to like gigs!
-                </Alert>
-                </Col>
-                </Row>
-            </Card.Body>
-        </Card>
-
+            <ArtistGigCard gig={this.props.gig} isLiked={this.props.isLiked} handleUnlikeGig={this.handleUnlikeGig} handleLikeGig={this.handleLikeGig} visibility={this.state.visibility}/>
         )
-    }
+}
 
 }
 

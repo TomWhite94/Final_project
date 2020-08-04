@@ -4,6 +4,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Carousel from 'react-bootstrap/Carousel'
 import Jumbotron from 'react-bootstrap/Jumbotron'
+import { withRouter } from 'react-router-dom'
 
 class SuggestedArtist extends Component {
 
@@ -12,8 +13,10 @@ class SuggestedArtist extends Component {
     }
 
     componentDidMount() {
+        console.log(this.props.artistId)
         axios.get(`https://api.songkick.com/api/3.0/artists/${this.props.artistId}/similar_artists.json?apikey=XyKG4KDNOliuaDev`)
         .then(resp => {
+            console.log(resp.data)
             let chunkSize = 4
             let index = 0
             let outputArray = []
@@ -41,6 +44,7 @@ class SuggestedArtist extends Component {
                                 width="300" height="300"
                                 src={`//images.sk-static.com/images/media/profile_images/artists/${performer.id}/huge_avatar`}
                                 alt="First slide"
+                                onClick={() => this.props.history.push(`Artist/${performer.id}`)}
                             />
                             <Carousel.Caption>
                                 <h3 className="carousel-artist">{performer.displayName}</h3>
@@ -72,4 +76,4 @@ render() {
 
 }
 
-export default SuggestedArtist
+export default withRouter(SuggestedArtist)
