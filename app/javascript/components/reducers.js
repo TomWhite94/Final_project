@@ -1,6 +1,5 @@
 import { SET_USER_ID } from './actions'
 import { SET_USERNAME } from './actions'
-import { FETCH_LOGIN } from './actions'
 import { IS_LOGGED_IN } from './actions'
 import { IS_NOT_LOGGED_IN} from './actions'
 

@@ -13,11 +13,9 @@ class SuggestedArtist extends Component {
     }
 
     componentDidMount() {
-        console.log(this.props.artistId)
         axios.get(`https://api.songkick.com/api/3.0/artists/${this.props.artistId}/similar_artists.json?apikey=XyKG4KDNOliuaDev`)
         .then(resp => {
             if (resp.data.resultsPage.results.artist) {
-            console.log(resp.data)
             let chunkSize = 4
             let index = 0
             let outputArray = []

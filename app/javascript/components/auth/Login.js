@@ -77,7 +77,6 @@ handleLogin = (user) => {
 
 
   render() {
-    console.log(this.props)
     return (
       <div>
         <Form onSubmit={this.handleSubmit}>

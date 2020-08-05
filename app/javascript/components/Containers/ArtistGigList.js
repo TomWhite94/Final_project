@@ -55,7 +55,6 @@ unlikeGig = (gigObjectId) => {
 
 
 render() {
-    console.log(this.props)
    return(
 
         <Row>
