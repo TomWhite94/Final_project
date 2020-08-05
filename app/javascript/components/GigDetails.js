@@ -1,19 +1,19 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Jumbotron from 'react-bootstrap/Jumbotron'
 import Carousel from 'react-bootstrap/Carousel'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { withRouter } from 'react-router-dom'
 
-class GigDetails extends Component {
+const GigDetails = props => {
 
 
-    renderCarousel = () => {
+    const renderCarousel = () => {
         let chunkSize = 4
         let index = 0
         let outputArray = []
-            while (index < this.props.gig.performance.length) {
-                outputArray.push(this.props.gig.performance.slice(index, index + chunkSize))
+            while (index < props.gig.performance.length) {
+                outputArray.push(props.gig.performance.slice(index, index + chunkSize))
                 index += chunkSize
             }
         return outputArray.map((array, key) => (
@@ -26,7 +26,7 @@ class GigDetails extends Component {
                             width="150" height="300"
                             src={`//images.sk-static.com/images/media/profile_images/artists/${performer.artist.id}/huge_avatar`}
                             alt="First slide"
-                            onClick={() => this.props.history.push(`Artist/${performer.artist.id}`)}
+                            onClick={() => props.history.push(`Artist/${performer.artist.id}`)}
                         />
                         <Carousel.Caption>
                             <h3 className="carousel-artist">{performer.artist.displayName}</h3>
@@ -38,23 +38,21 @@ class GigDetails extends Component {
         ))
     }
 
-    render() {
-        console.log(this.props.gig.performance)
+
         return(
             <Jumbotron className="bg-secondary" style={{
                 color: "white"
             }} fluid>
-           <h1 className="text-indent">{this.props.gig.displayName}</h1>
-           <h2 className="text-indent">City: {this.props.gig.venue.city.displayName}, {this.props.gig.venue.city.country.displayName}</h2>
-           <h2 className="text-indent">Venue: {this.props.gig.venue.displayName}</h2>
+           <h1 className="text-indent">{props.gig.displayName}</h1>
+           <h2 className="text-indent">City: {props.gig.venue.city.displayName}, {props.gig.venue.city.country.displayName}</h2>
+           <h2 className="text-indent">Venue: {props.gig.venue.displayName}</h2>
            <Carousel className="carousel">
-                {this.renderCarousel()}
+                {renderCarousel()}
                 
             </Carousel>
            
            </Jumbotron>
         )
-    }
 
 }
 
