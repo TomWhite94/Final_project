@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
 import GigDetails from '../GigDetails'
 import SuggestedArtist from '../SuggestedArtist'
+import AllUserGigs from '../AllUserGigs'
 import SuggestedArtistDefault from '../SuggestedArtistDefault'
 import axios from 'axios'
 import Calendar from 'react-calendar'
@@ -75,7 +76,7 @@ render() {
        
     return(
         <div>
-
+           
                 <h1 className="homepage-title bg-secondary">Gig Planner</h1>
                 <Row>
                    <Col>
@@ -96,6 +97,7 @@ render() {
                 <h1>No gigs liked for this day</h1>
                 </Jumbotron>}
         </div>
+        {gigDetailLoaded ? <AllUserGigs allLikedUserGigsId={this.state.userlikedGigsId}/> : "Loading"}
         <Row>
 
         </Row>
